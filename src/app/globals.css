@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #070707;
+  color: #fafafa;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -30,7 +35,7 @@
   content: '';
   display: none;
   position: absolute;
-  left: -106px;
+  left: 0px;
   top: 50%;
   transform: translateY(-50%);
   width: 82px;
