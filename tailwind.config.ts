@@ -10,6 +10,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        montserrat: ['"Montserrat"', 'sans-serif'],
+        dmSerif: ['"DM Serif Display"', 'serif'],
+        poppins: ['"Poppins"', 'sans-serif'],
+        inter: ['"Inter"', 'sans-serif'],
+      },
       screens: {
         desk: '1440px',
       },
