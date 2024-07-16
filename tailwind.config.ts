@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'workingProcess-bg': "url('/images/workingProcess-bg.png')",
+      },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],
         dmSerif: ['"DM Serif Display"', 'serif'],
