@@ -14,11 +14,11 @@ interface WorkProcess {
 
 export const WorkingProcessList: FC = () => {
   return (
-    <ul className="w-full   flex flex-wrap justify-center gap-4">
+    <ul className="grid grid-cols-2 gap-4">
       {workProcesses.map((process: WorkProcess) => (
         <li
           key={process.id}
-          className="gradient-border flex justify-start items-center"
+          className="gradient-border flex justify-center items-center"
         >
           <p className="text-balance w-full font-montserrat text-xl/5 text-center font-bold tracking-[0.6px]">
             {process.name}
