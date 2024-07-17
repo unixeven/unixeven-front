@@ -14,7 +14,7 @@ interface WorkProcess {
 
 export const WorkingProcessList: FC = () => {
   return (
-    <ul className="w-full   flex flex-wrap gap-4">
+    <ul className="w-full   flex flex-wrap justify-center gap-4">
       {workProcesses.map((process: WorkProcess) => (
         <li
           key={process.id}
