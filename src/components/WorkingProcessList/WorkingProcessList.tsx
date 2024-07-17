@@ -1,6 +1,5 @@
-// src/components/WorkingProcessList.tsx
 import React, { FC } from 'react';
-import workProcesses from '../data//workProcesses.json';
+import workProcesses from '../../data/workProcesses.json';
 
 interface Detail {
   [key: string]: string | undefined;
@@ -15,13 +14,15 @@ interface WorkProcess {
 
 export const WorkingProcessList: FC = () => {
   return (
-    <ul className="w-full h-full flex flex-wrap gap-4">
+    <ul className="w-full   flex flex-wrap justify-center gap-4">
       {workProcesses.map((process: WorkProcess) => (
         <li
           key={process.id}
-          className="h-10 w-14 !bg-cobalt border !border-red-500"
+          className="gradient-border flex justify-start items-center"
         >
-          {/* <p className="text-xs font-bold">{process.name}</p> */}
+          <p className="text-balance w-full font-montserrat text-xl/5 text-center font-bold tracking-[0.6px]">
+            {process.name}
+          </p>
         </li>
       ))}
     </ul>

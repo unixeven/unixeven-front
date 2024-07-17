@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} ${montserrat.className} ${dmSerifDisplay.className} ${poppins.className} `}
+        className={`${inter.className} ${montserrat.className} ${dmSerifDisplay.className} ${poppins.className} antialiased`}
       >
         <Header />
         {children}
