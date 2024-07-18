@@ -7,9 +7,9 @@ export const Logo: FC = () => {
     <Image
       src={logo}
       alt="Company Unixeven Logo"
-      width={243}
+      width={204}
       height={173}
-      className="w-[243px] h-[173px]"
+      className="w-[204px] h-[173px]"
     />
   );
 };
