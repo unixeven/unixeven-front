@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import clsx from 'clsx';
 import workProcesses from '../../data/workProcesses.json';
-import { Logo } from '../Logo/Logo';
+import { WorkingLogo } from '../WorkingLogo/WorkingLogo';
 
 interface Detail {
   [key: string]: string | undefined;
@@ -39,7 +39,7 @@ export const WorkingProcessList: FC = () => {
           </p>
         </li>
       ))}
-      <Logo />
+      <WorkingLogo />
     </ul>
   );
 };
