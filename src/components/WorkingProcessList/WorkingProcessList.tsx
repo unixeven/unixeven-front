@@ -16,7 +16,7 @@ interface WorkProcess {
 
 export const WorkingProcessList: FC = () => {
   return (
-    <ul className="grid grid-cols-2  gap-4 md:gap-0 md:w-full relative">
+    <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-full relative xl:transform xl:-rotate-90 xl:w-max">
       {workProcesses.map((process: WorkProcess, index: number) => (
         <li
           key={process.id}
@@ -25,16 +25,25 @@ export const WorkingProcessList: FC = () => {
             {
               'md:col-span-2 md:size-[162px] md:mx-auto':
                 index === 2 || index === 7,
-              'md:size-[221px] md:justify-self-start':
-                index === 0 || index === 8,
-              'md:size-[221px] md:justify-self-end': index === 1 || index === 9,
-              'md:size-[162px] md:mx-auto':
-                index === 3 || index === 4 || index === 5 || index === 6,
-              'md:mb-[173px]': index === 4,
+              'md:size-[221px] md:justify-self-start xl:justify-self-center xl:mr-[81px]':
+                index === 0,
+              'md:size-[221px] md:justify-self-end xl:justify-self-center xl:ml-[81px]':
+                index === 1,
+              'md:size-[221px] md:justify-self-start xl:justify-self-start  ':
+                index === 8,
+              'md:size-[221px] md:justify-self-end xl:justify-self-end':
+                index === 9,
+              'md:size-[162px] md:mx-auto xl:mx-0 xl:justify-self-end xl:mr-[81px]':
+                index === 3,
+              'md:size-[162px] md:mx-auto xl:mx-0 xl:ml-[81px]': index === 4,
+              'md:size-[162px] md:mx-auto xl:mx-0 xl:justify-self-end xl:mr-[81px] ':
+                index === 5,
+              'md:size-[162px] md:mx-auto xl:mx-0 xl:ml-[81px]  ': index === 6,
+              'md:mb-[173px] xl:mb-[236px]': index === 4,
             }
           )}
         >
-          <p className="text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
+          <p className="xl:transform xl:rotate-90 xl:origin-center text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
             {process.name}
           </p>
         </li>
