@@ -4,7 +4,7 @@ import { Logo } from '../Logo/Logo';
 
 export const WorkingLogo: FC = () => {
   return (
-    <div className="desk:transform desk:rotate-90 desk:origin-center  hidden logo-container md:flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+    <div className="  hidden logo-container md:flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
       <Logo />
     </div>
   );
