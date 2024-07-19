@@ -6,7 +6,7 @@ import workProcesses from '../../data/workProcesses.json';
 import { WorkingLogo } from '../WorkingLogo/WorkingLogo';
 import { WorkProcess } from '@/types/difinitions';
 import { Modal } from '../Modal/Modal';
-import { SelectedProcessDetails } from '../WorkingProcessDetails/WorkingProcessDetails';
+import { WorkingProcessDetails } from '../WorkingProcessDetails/WorkingProcessDetails';
 
 export const WorkingProcessList: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -70,9 +70,7 @@ export const WorkingProcessList: FC = () => {
         onClose={handleCloseModal}
         className="modal-workingProcess"
       >
-        {selectedProcess && (
-          <SelectedProcessDetails process={selectedProcess} />
-        )}
+        {selectedProcess && <WorkingProcessDetails process={selectedProcess} />}
       </Modal>
     </>
   );

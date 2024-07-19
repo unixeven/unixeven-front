@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
 import { WorkProcess } from '@/types/difinitions';
 
-interface SelectedProcessDetailsProps {
+interface WorkingProcessDetailsProps {
   process: WorkProcess;
 }
 
-export const SelectedProcessDetails: FC<SelectedProcessDetailsProps> = ({
+export const WorkingProcessDetails: FC<WorkingProcessDetailsProps> = ({
   process,
 }) => {
   return (
