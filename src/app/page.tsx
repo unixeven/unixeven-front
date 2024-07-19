@@ -11,16 +11,14 @@ import { WorkingProcess } from '@/components/WorkingProcess/WorkingProcess';
 export default function Home() {
   return (
     <main>
-      <Container>
-        <Hero />
-        <AboutUs />
-        <OurTeam />
-        <OurServices />
-        <WorkingProcess />
-        <OurClients />
-        <ContactUs />
-        <Footer />
-      </Container>
+      <Hero />
+      <AboutUs />
+      <OurTeam />
+      <OurServices />
+      <WorkingProcess />
+      <OurClients />
+      <ContactUs />
+      <Footer />
     </main>
   );
 }
