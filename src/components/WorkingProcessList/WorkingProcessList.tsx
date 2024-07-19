@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import workProcesses from '../../data/workProcesses.json';
 import { WorkingLogo } from '../WorkingLogo/WorkingLogo';
 import { WorkProcess } from '@/types/difinitions';
-import Modal from '../Modal/Modal';
+import { Modal } from '../Modal/Modal';
 
 export const WorkingProcessList: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -64,7 +64,11 @@ export const WorkingProcessList: FC = () => {
         <WorkingLogo />
       </ul>
 
-      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+      <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        className="modal-workingProcess"
+      >
         {selectedProcess && (
           <div className=" size-full flex flex-col justify-center  items-start w-full h-full  text-sm md:text-2xl font-montserrat font-normal md:font-medium tracking-[0.48px] md:tracking-[0.5px] text-lightWhite ">
             {Object.entries(selectedProcess.details).map(([key, value]) => (

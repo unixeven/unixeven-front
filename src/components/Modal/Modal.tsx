@@ -10,9 +10,15 @@ interface ModalProps {
   children: React.ReactNode;
   isOpen: boolean;
   onClose: () => void;
+  className: string;
 }
 
-const Modal: FC<ModalProps> = ({ children, isOpen, onClose }) => {
+export const Modal: FC<ModalProps> = ({
+  children,
+  isOpen,
+  onClose,
+  className,
+}) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -49,11 +55,12 @@ const Modal: FC<ModalProps> = ({ children, isOpen, onClose }) => {
         className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-5"
         onClick={handleBackdropClick}
       >
-        <div className=" relative size-[358px] md:size-[727px] rounded-full  bg-darkGrey bg-blackMain bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center">
+        <div className={` ${className}`}>
           <button
             type="button"
-            className="absolute right-[68px] top-[42px] md:right-32 md:top-32 transition-transform duration-300 hover:scale-125 "
+            className="transition-transform duration-300 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blackMain focus:ring-aqua"
             onClick={onClose}
+            aria-label="Close modal"
           >
             <IoMdClose className="fill-lightWhite size-5 md:size-8" />
           </button>
@@ -63,5 +70,3 @@ const Modal: FC<ModalProps> = ({ children, isOpen, onClose }) => {
     </ModalPortal>
   );
 };
-
-export default Modal;

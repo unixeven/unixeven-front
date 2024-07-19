@@ -65,3 +65,11 @@ body {
     display: block;
   }
 }
+
+.modal-workingProcess {
+  @apply relative size-[358px] md:size-[727px] rounded-full bg-blackMain bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center;
+
+  button {
+    @apply absolute right-[68px] top-[42px] md:right-32 md:top-32;
+  }
+}
