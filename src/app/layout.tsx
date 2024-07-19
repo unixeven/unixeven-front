@@ -34,6 +34,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <div id="modal-portal" />
       </body>
     </html>
   );
