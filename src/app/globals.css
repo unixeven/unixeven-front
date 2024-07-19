@@ -13,15 +13,6 @@ body {
   }
 }
 
-/* @layer utilities {
-  .gradient-border {
-    border: 1px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
-    border-radius: 50%;
-  }
-} */
-
 .gradient-border::before {
   content: '';
   position: absolute;

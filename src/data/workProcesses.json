@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Agile Development",
-    "angle": 288,
+
     "details": {
       "Iterative Planning and Execution": "Application of iterative planning and development, allowing quick adaptation to changes and regular feedback from clients.",
       "Cross-Functional Teams": "Working in cross-functional teams to ensure flexibility and improve communication between developers, designers, and project managers."
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "name": "Innovation and Research",
-    "angle": 324,
+
     "details": {
       "Emerging Technologies": "Exploration and application of the latest technologies for continuous improvement of developments and offering clients advanced solutions.",
       "R&D Initiatives": "Research and development initiatives that help discover new opportunities and create innovative products."
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "name": "Project Start and Estimation",
-    "angle": 0,
+
     "details": {
       "Expertise Assessment": "Analysis of resources, capabilities, and constraints of the project to determine its viability and potential success.",
       "Estimate and Proposal": "Developing a detailed plan and budget for the project, including timelines and required resources."
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "name": "Planning and Strategy",
-    "angle": 36,
+
     "details": {
       "Research and Analysis": "Analysis of user needs and competitive environment to develop a product strategy.",
       "User Story and Mockups": "Creating preliminary product concepts, visualizing its functions and user interaction."
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "name": "Design and Prototyping",
-    "angle": 72,
+
     "details": {
       "UI/UX Design": "Creating an intuitive and attractive interface that meets user needs.",
       "Prototyping": "Visualization of the product concept and its testing to validate the idea and gather feedback."
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "name": "Dev and Implement",
-    "angle": 108,
+
     "details": {
       "Development Process": "Programming and creating a functional product according to the technical specification.",
       "Server-Side Scripting": "Developing the server part of the product, including API and integration with other systems."
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "name": "Quality Assurance and Testing",
-    "angle": 144,
+
     "details": {
       "QA Testing": "Testing the product for compliance with functional requirements and usability.",
       "Performance and Security Testing": "Assessing the reliability, performance speed, and security of the product against potential threats."
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "name": "Deployment and Delivery",
-    "angle": 180,
+
     "details": {
       "Delivery": "Integrating the product into the operational environment and its launch.",
       "Cloud Services": "Supporting cloud infrastructure and ensuring continuous operation of the product."
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "name": "Evaluation and Growth",
-    "angle": 216,
+
     "details": {
       "Success Measurement": "Analyzing project results, including assessing efficiency and receiving feedback from users.",
       "Continuous Improvement": "Constant optimization of the product, its updating, and development in accordance with changing requirements and technologies."
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "name": "Support and Evolution",
-    "angle": 252,
+
     "details": {
       "Support": "Technical maintenance of the product, ensuring its stable operation and solving emerging problems.",
       "Evolution": "Development of the product, adapting it to new market requirements, and implementing improvements to meet user needs."
