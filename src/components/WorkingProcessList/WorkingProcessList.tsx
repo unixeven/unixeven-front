@@ -2,17 +2,7 @@ import React, { FC } from 'react';
 import clsx from 'clsx';
 import workProcesses from '../../data/workProcesses.json';
 import { WorkingLogo } from '../WorkingLogo/WorkingLogo';
-
-interface Detail {
-  [key: string]: string | undefined;
-}
-
-interface WorkProcess {
-  id: number;
-  name: string;
-  angle: number;
-  details: Detail;
-}
+import { WorkProcess } from '@/types/gifinitions';
 
 export const WorkingProcessList: FC = () => {
   return (
