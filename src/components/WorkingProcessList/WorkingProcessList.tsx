@@ -21,7 +21,7 @@ export const WorkingProcessList: FC = () => {
         <li
           key={process.id}
           className={clsx(
-            'gradient-border relative size-[171px] flex justify-center items-center',
+            'gradient-border relative size-[171px] flex justify-center items-center ',
             {
               'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-end desk:self-end':
                 index === 2,
