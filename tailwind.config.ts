@@ -12,6 +12,8 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
+        'workingProcess-bg-md': "url('/images/workingProcess-bg-md.png')",
+        'workingProcess-bg-desk': "url('/images/workingProcess-bg-desk.png')",
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],
