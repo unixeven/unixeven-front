@@ -49,13 +49,13 @@ const Modal: FC<ModalProps> = ({ children, isOpen, onClose }) => {
         className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-5"
         onClick={handleBackdropClick}
       >
-        <div className="md-[50px] relative w-[335px] rounded-full border border-liteGrey bg-darkGrey p-10 md:w-[342px] ">
+        <div className=" relative size-[358px] md:size-[727px] rounded-full  bg-darkGrey bg-blackMain bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center">
           <button
             type="button"
-            className="absolute right-5 top-5 transition-transform duration-300 hover:scale-125"
+            className="absolute right-[68px] top-[42px] md:right-32 md:top-32 transition-transform duration-300 hover:scale-125 "
             onClick={onClose}
           >
-            <IoMdClose size={22} className="fill-fogWhite" />
+            <IoMdClose className="fill-lightWhite size-5 md:size-8" />
           </button>
           {children}
         </div>

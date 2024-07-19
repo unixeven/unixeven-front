@@ -66,8 +66,15 @@ export const WorkingProcessList: FC = () => {
 
       <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
         {selectedProcess && (
-          <div>
-            <h2 className="text-2xl font-bold">{selectedProcess.name}</h2>
+          <div className=" size-full flex flex-col justify-center  items-start w-full h-full  text-sm md:text-2xl font-montserrat font-normal md:font-medium tracking-[0.48px] md:tracking-[0.5px] text-lightWhite ">
+            {Object.entries(selectedProcess.details).map(([key, value]) => (
+              <>
+                <h2 key={key} className="underline uppercase ">
+                  {key}:
+                </h2>
+                <p>{value}</p>
+              </>
+            ))}
           </div>
         )}
       </Modal>
