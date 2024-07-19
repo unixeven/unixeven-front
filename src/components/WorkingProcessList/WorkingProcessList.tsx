@@ -21,16 +21,16 @@ export const WorkingProcessList: FC = () => {
         <li
           key={process.id}
           className={clsx(
-            'gradient-border relative size-[171px] flex justify-center items-center',
+            'gradient-border relative size-[171px] flex justify-center items-center ',
             {
-              'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:self-end':
+              'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-end desk:self-end':
                 index === 2,
-              'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1':
+              'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-start':
                 index === 7,
               'md:size-[221px] md:justify-self-start': index === 0,
-              'md:size-[221px] md:justify-self-end desk:size-[162px] desk:justify-self-center desk:self-end':
+              'md:size-[221px] md:justify-self-end desk:size-[162px] desk:justify-self-start desk:self-end':
                 index === 1,
-              'md:size-[221px] md:justify-self-start desk:size-[162px] desk:justify-self-center':
+              'md:size-[221px] md:justify-self-start desk:size-[162px] desk:justify-self-end':
                 index === 8,
               'md:size-[221px] md:justify-self-end': index === 9,
               'md:size-[162px] md:justify-self-center desk:size-[221px] desk:justify-self-end':

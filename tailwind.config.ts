@@ -28,6 +28,7 @@ const config: Config = {
         lightWhite: '#FAFAFA',
         blackMain: '#070707',
         pacificBlue: '#049BBE',
+        aqua: '#02F5EE',
         cobalt: '#035D95',
         prussianBlue: '#00276B',
       },

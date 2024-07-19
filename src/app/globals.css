@@ -37,6 +37,10 @@ body {
   mask-composite: exclude;
   -webkit-mask-composite: xor;
 }
+.gradient-border:hover::before,
+.gradient-border:focus::before {
+  background: #02f5ee;
+}
 
 @layer utilities {
   .gradient-text {
