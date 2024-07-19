@@ -16,7 +16,7 @@ interface WorkProcess {
 
 export const WorkingProcessList: FC = () => {
   return (
-    <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-full relative desk:grid-cols-4 desk:gap-x-40">
+    <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-[720px] desk:w-full  relative desk:grid-cols-4 desk:gap-x-40 ">
       {workProcesses.map((process: WorkProcess, index: number) => (
         <li
           key={process.id}
@@ -46,7 +46,7 @@ export const WorkingProcessList: FC = () => {
           )}
         >
           <p className="text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
-            {index}
+            {process.name}
           </p>
         </li>
       ))}
