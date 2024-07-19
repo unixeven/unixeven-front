@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "name": "Innovation and Research",
+    "name": "Innovation & Research",
 
     "details": {
       "Emerging Technologies": "Exploration and application of the latest technologies for continuous improvement of developments and offering clients advanced solutions.",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Project Start and Estimation",
+    "name": "Project Start & Estimation",
 
     "details": {
       "Expertise Assessment": "Analysis of resources, capabilities, and constraints of the project to determine its viability and potential success.",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "Planning and Strategy",
+    "name": "Planning & Strategy",
 
     "details": {
       "Research and Analysis": "Analysis of user needs and competitive environment to develop a product strategy.",
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "name": "Design and Prototyping",
+    "name": "Design & Prototyping",
 
     "details": {
       "UI/UX Design": "Creating an intuitive and attractive interface that meets user needs.",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "Dev and Implement",
+    "name": "Dev & Implement",
 
     "details": {
       "Development Process": "Programming and creating a functional product according to the technical specification.",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "name": "Quality Assurance and Testing",
+    "name": "Quality Assurance & Testing",
 
     "details": {
       "QA Testing": "Testing the product for compliance with functional requirements and usability.",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "name": "Deployment and Delivery",
+    "name": "Deployment & Delivery",
 
     "details": {
       "Delivery": "Integrating the product into the operational environment and its launch.",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "name": "Evaluation and Growth",
+    "name": "Evaluation & Growth",
 
     "details": {
       "Success Measurement": "Analyzing project results, including assessing efficiency and receiving feedback from users.",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "name": "Support and Evolution",
+    "name": "Support & Evolution",
 
     "details": {
       "Support": "Technical maintenance of the product, ensuring its stable operation and solving emerging problems.",
