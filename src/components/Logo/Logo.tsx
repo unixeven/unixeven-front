@@ -1,15 +1,20 @@
-import React, { FC } from 'react';
-import Image from 'next/image';
-import logo from '../../../public/icons/logo.svg';
+import React, { FC } from "react";
+import Image from "next/image";
+import logo from "../../../public/icons/logo.svg";
 
-export const Logo: FC = () => {
+interface LogoProps {
+  width: number;
+  height: number;
+}
+
+export const Logo: FC<LogoProps> = ({ width, height }) => {
   return (
     <Image
       src={logo}
       alt="Company Unixeven Logo"
-      width={204}
-      height={173}
-      className="w-[204px] h-[173px]"
+      width={width}
+      height={height}
+      className={`block w-[${width}px] h-[${height}px]`}
     />
   );
 };
