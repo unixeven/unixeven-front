@@ -54,6 +54,9 @@ export const Modal: FC<ModalProps> = ({
       <div
         className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-5"
         onClick={handleBackdropClick}
+        aria-modal="true"
+        role="dialog"
+        aria-labelledby="modal-title"
       >
         <div className={` ${className}`}>
           <button

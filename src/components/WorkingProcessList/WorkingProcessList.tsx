@@ -10,6 +10,7 @@ import { WorkingProcessDetails } from '../WorkingProcessDetails/WorkingProcessDe
 
 export const WorkingProcessList: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   const [selectedProcess, setSelectedProcess] = useState<WorkProcess | null>(
     null
   );
