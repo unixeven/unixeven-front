@@ -4,7 +4,7 @@
     "name": "Agile Development",
 
     "details": {
-      "Iterative Planning and Execution": "Application of iterative planning and development, allowing quick adaptation to changes and regular feedback from clients.",
+      "Iterative Planning & Execution": "Application of iterative planning and development, allowing quick adaptation to changes and regular feedback from clients.",
       "Cross-Functional Teams": "Working in cross-functional teams to ensure flexibility and improve communication between developers, designers, and project managers."
     }
   },
@@ -23,7 +23,7 @@
 
     "details": {
       "Expertise Assessment": "Analysis of resources, capabilities, and constraints of the project to determine its viability and potential success.",
-      "Estimate and Proposal": "Developing a detailed plan and budget for the project, including timelines and required resources."
+      "Estimate & Proposal": "Developing a detailed plan and budget for the project, including timelines and required resources."
     }
   },
   {
@@ -31,8 +31,8 @@
     "name": "Planning & Strategy",
 
     "details": {
-      "Research and Analysis": "Analysis of user needs and competitive environment to develop a product strategy.",
-      "User Story and Mockups": "Creating preliminary product concepts, visualizing its functions and user interaction."
+      "Research & Analysis": "Analysis of user needs and competitive environment to develop a product strategy.",
+      "User Story & Mockups": "Creating preliminary product concepts, visualizing its functions and user interaction."
     }
   },
   {
@@ -59,7 +59,7 @@
 
     "details": {
       "QA Testing": "Testing the product for compliance with functional requirements and usability.",
-      "Performance and Security Testing": "Assessing the reliability, performance speed, and security of the product against potential threats."
+      "Performance & Security Testing": "Assessing the reliability, performance speed, and security of the product against potential threats."
     }
   },
   {
