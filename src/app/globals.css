@@ -75,3 +75,6 @@ body {
     @apply absolute right-[68px] top-[42px] md:right-32 md:top-32;
   }
 }
+.btn-request {
+  @apply w-[358px] md:w-[340px] desk:w-[400px]
+}
