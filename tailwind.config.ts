@@ -10,6 +10,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'cyan-light': '0 4px 6px rgba(2, 245, 238, 0.5)',
+      },
       backgroundImage: {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
         'workingProcess-bg-md': "url('/images/workingProcess-bg-md.png')",

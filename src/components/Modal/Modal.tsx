@@ -91,7 +91,7 @@ export const Modal: FC<ModalProps> = ({
           )}
           <button
             type="button"
-            className="transition-transform duration-300 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blackMain focus:ring-aqua"
+            className="transition-transform duration-300 hover:scale-125 focus:outline-none focus:scale-125 "
             onClick={onClose}
             aria-label="Close modal"
             ref={closeButtonRef}
