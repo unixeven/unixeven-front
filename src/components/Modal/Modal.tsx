@@ -1,9 +1,7 @@
 'use client';
 
-import { useEffect, FC, ReactNode, useRef } from 'react';
-
+import { useEffect, FC, ReactNode, useRef, useCallback } from 'react';
 import { IoMdClose } from 'react-icons/io';
-
 import { ModalPortal } from '../ModalPortal/ModalPortal';
 
 interface ModalProps {
@@ -12,6 +10,7 @@ interface ModalProps {
   onClose: () => void;
   className: string;
   title: string;
+  description?: string;
 }
 
 export const Modal: FC<ModalProps> = ({
@@ -20,15 +19,19 @@ export const Modal: FC<ModalProps> = ({
   onClose,
   className,
   title,
+  description,
 }) => {
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const previouslyFocusedElement = useRef<HTMLElement | null>(null);
 
-  const handleKeyDown = (event: KeyboardEvent) => {
-    if (event.key === 'Escape') {
-      onClose();
-    }
-  };
+  const handleKeyDown = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        onClose();
+      }
+    },
+    [onClose]
+  );
 
   useEffect(() => {
     if (isOpen) {
@@ -50,7 +53,7 @@ export const Modal: FC<ModalProps> = ({
       document.body.style.overflow = '';
       document.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isOpen, onClose]);
+  }, [handleKeyDown, isOpen]);
 
   if (!isOpen) return null;
 
@@ -67,7 +70,7 @@ export const Modal: FC<ModalProps> = ({
       <dialog
         aria-modal="true"
         aria-labelledby="modal-title"
-        aria-describedby="modal-description"
+        aria-describedby={description ? 'modal-description' : undefined}
         className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-5"
         open
       >
@@ -81,6 +84,11 @@ export const Modal: FC<ModalProps> = ({
           <h2 id="modal-title" className="sr-only">
             {title}
           </h2>
+          {description && (
+            <div id="modal-description" className="sr-only">
+              {description}
+            </div>
+          )}
           <button
             type="button"
             className="transition-transform duration-300 hover:scale-125 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blackMain focus:ring-aqua"
@@ -90,9 +98,6 @@ export const Modal: FC<ModalProps> = ({
           >
             <IoMdClose className="fill-lightWhite size-5 md:size-8" />
           </button>
-          <div id="modal-description" className="sr-only">
-            Description of modal content
-          </div>
           {children}
         </div>
       </dialog>

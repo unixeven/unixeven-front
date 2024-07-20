@@ -10,7 +10,6 @@ import { WorkingProcessDetails } from '../WorkingProcessDetails/WorkingProcessDe
 
 export const WorkingProcessList: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const [selectedProcess, setSelectedProcess] = useState<WorkProcess | null>(
     null
   );
@@ -44,6 +43,7 @@ export const WorkingProcessList: FC = () => {
         onClose={handleCloseModal}
         className="modal-workingProcess"
         title="Working process details"
+        description={selectedProcess ? selectedProcess.name : undefined}
       >
         {selectedProcess && <WorkingProcessDetails process={selectedProcess} />}
       </Modal>
