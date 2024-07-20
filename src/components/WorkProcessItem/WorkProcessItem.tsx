@@ -1,5 +1,6 @@
-import React, { FC, KeyboardEvent } from 'react';
+import React, { FC, KeyboardEvent, useEffect, useRef } from 'react';
 import clsx from 'clsx';
+import { gsap } from 'gsap';
 import { WorkProcess } from '@/types/difinitions';
 
 interface WorkProcessItemProps {
@@ -13,6 +14,18 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
   index,
   handleOpenModal,
 }) => {
+  const itemRef = useRef<HTMLLIElement>(null);
+
+  useEffect(() => {
+    if (itemRef.current) {
+      gsap.fromTo(
+        itemRef.current,
+        { opacity: 0, y: -50 },
+        { opacity: 1, y: 0, duration: 1, delay: index * 0.1 }
+      );
+    }
+  }, [index]);
+
   const handleKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
     if (event.key === 'Enter' || event.key === ' ') {
       handleOpenModal(process);
@@ -21,9 +34,10 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
 
   return (
     <li
+      ref={itemRef}
       key={process.id}
       className={clsx(
-        '  size-[171px] flex justify-center items-center cursor-pointer',
+        'size-[171px] flex justify-center items-center cursor-pointer',
         {
           'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-end desk:self-end':
             index === 2,
