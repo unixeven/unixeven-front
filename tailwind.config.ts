@@ -14,6 +14,7 @@ const config: Config = {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
         'workingProcess-bg-md': "url('/images/workingProcess-bg-md.png')",
         'workingProcess-bg-desk': "url('/images/workingProcess-bg-desk.png')",
+        'btn-background-color': "linear-gradient(to right, #035d95, #049bbe, #01c8ee)",
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],

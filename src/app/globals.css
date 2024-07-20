@@ -13,12 +13,14 @@ body {
   }
 }
 
-.gradient-border {
+.gradient-border,
+.btn {
   border-radius: 9999px;
   overflow: hidden;
 }
 
-.gradient-border::before {
+.gradient-border::before, 
+.btn::before{
   content: '';
   position: absolute;
   top: 0;
@@ -65,3 +67,5 @@ body {
     display: block;
   }
 }
+
+
