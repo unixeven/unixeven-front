@@ -17,6 +17,7 @@ const config: Config = {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
         'workingProcess-bg-md': "url('/images/workingProcess-bg-md.png')",
         'workingProcess-bg-desk': "url('/images/workingProcess-bg-desk.png')",
+        'btn-background-color': "linear-gradient(to right, #035d95, #049bbe, #01c8ee)",
         modalWorkProcessBg: "url('/images/modalWorkProcessBg.png')",
         'hero-bg-up': "url('/images/hero-bg-up.svg')",
         'hero-bg-down': "url('/images/hero-bg-down.svg')",

@@ -13,12 +13,14 @@ body {
   }
 }
 
-.gradient-border {
+.gradient-border,
+.btn {
   border-radius: 9999px;
   overflow: hidden;
 }
 
-.gradient-border::before {
+.gradient-border::before, 
+.btn::before{
   content: '';
   position: absolute;
   top: 0;
@@ -72,4 +74,7 @@ body {
   button {
     @apply absolute right-[68px] top-[42px] md:right-32 md:top-32;
   }
+}
+.btn-request {
+  @apply w-[358px] md:w-[340px] desk:w-[400px]
 }
