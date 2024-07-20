@@ -43,6 +43,7 @@ export const WorkingProcessList: FC = () => {
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         className="modal-workingProcess"
+        title="Working process details"
       >
         {selectedProcess && <WorkingProcessDetails process={selectedProcess} />}
       </Modal>
