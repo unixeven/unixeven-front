@@ -1,6 +1,6 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import { Logo } from "../Logo/Logo";
+import { Logo } from '../Logo/Logo';
 
 export const WorkingLogo: FC = () => {
   return (
