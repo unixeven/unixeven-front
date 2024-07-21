@@ -96,7 +96,7 @@ export const Modal: FC<ModalProps> = ({
             aria-label="Close modal"
             ref={closeButtonRef}
           >
-            <IoMdClose className="fill-lightWhite size-5 md:size-8" />
+            <IoMdClose className="fill-cobalt dark:fill-lightWhite size-5 md:size-8" />
           </button>
           {children}
         </div>

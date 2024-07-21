@@ -37,7 +37,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
       ref={itemRef}
       key={process.id}
       className={clsx(
-        'size-[171px] flex justify-center items-center cursor-pointer',
+        'size-[171px] flex justify-center items-center cursor-pointer rounded-full',
         {
           'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-end desk:self-end':
             index === 2,
@@ -63,7 +63,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
       <button
         onClick={() => handleOpenModal(process)}
         onKeyDown={handleKeyDown}
-        className="gradient-border size-full relative outline-none "
+        className="gradient-border btn-light size-full relative outline-none "
         tabIndex={0}
         aria-label={`Open modal for ${process.name}`}
       >
