@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { FC, useState } from 'react';
-import workProcesses from '../../data/workProcesses.json';
-import { WorkingLogo } from '../WorkingLogo/WorkingLogo';
-import { WorkProcess } from '@/types/difinitions';
-import { Modal } from '../Modal/Modal';
-import { WorkProcessItem } from '../WorkProcessItem/WorkProcessItem';
-import { WorkingProcessDetails } from '../WorkingProcessDetails/WorkingProcessDetails';
+import React, { FC, useState } from "react";
+import workProcesses from "../../data/workProcesses.json";
+import { WorkingLogo } from "../WorkingLogo/WorkingLogo";
+import { WorkProcess } from "@/types/definitions";
+import { Modal } from "../Modal/Modal";
+import { WorkProcessItem } from "../WorkProcessItem/WorkProcessItem";
+import { WorkingProcessDetails } from "../WorkingProcessDetails/WorkingProcessDetails";
 
 export const WorkingProcessList: FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
