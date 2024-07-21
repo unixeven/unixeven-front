@@ -4,7 +4,7 @@ import { FooterTitle } from '../FooterTitle/FooterTitle';
 
 export const OnlineChat = () => {
   return (
-    <div className="flex flex-col gap-6 self-start">
+    <div className="flex flex-col gap-6 ">
       <FooterTitle text="Online chat" />
       <ul className="flex flex-col gap-2 text-lg/normal font-normal">
         <li className="flex items-center gap-2">
