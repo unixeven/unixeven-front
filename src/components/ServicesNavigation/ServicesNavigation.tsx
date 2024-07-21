@@ -5,7 +5,7 @@ import { FooterTitle } from '../FooterTitle/FooterTitle';
 
 export const ServicesNavigation = () => {
   return (
-    <div className="flex flex-col gap-6 self-start">
+    <div className="flex flex-col gap-6 ">
       <FooterTitle text="Services" />
       <nav className="">
         <ul className="flex flex-col gap-4">

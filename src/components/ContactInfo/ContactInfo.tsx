@@ -4,7 +4,7 @@ import { FooterTitle } from '../FooterTitle/FooterTitle';
 
 export const ContactInfo = () => {
   return (
-    <div className="flex flex-col gap-6 self-start">
+    <div className="flex flex-col gap-6 ">
       <FooterTitle text="Contact us" />
       <address>
         <ul className="flex flex-col gap-2 text-lg/normal font-normal">
