@@ -13,7 +13,7 @@ export const ServicesNavigation = () => {
             <li key={service.id} className="text-lg/normal font-normal">
               <Link
                 href="#"
-                className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite"
+                className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
               >
                 {service.title}
               </Link>

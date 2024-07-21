@@ -11,7 +11,7 @@ export const ContactInfo = () => {
           <FiPhoneCall size={36} />
           <a
             href="tel:+380967845734"
-            className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite"
+            className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
             aria-label="Call us at +380967845734"
           >
             +380967845734
@@ -21,7 +21,7 @@ export const ContactInfo = () => {
           <FiMail size={36} />
           <a
             href="mailto:email458678@gmail.com"
-            className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite"
+            className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
             aria-label="Email us at email458678@gmail.com"
           >
             email458678@gmail.com
