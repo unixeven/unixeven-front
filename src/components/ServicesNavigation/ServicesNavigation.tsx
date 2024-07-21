@@ -11,7 +11,10 @@ export const ServicesNavigation = () => {
         <ul className="flex flex-col gap-4">
           {services.map(service => (
             <li key={service.id} className="text-lg/normal font-normal">
-              <Link href="#" className="hover:text-gray-300">
+              <Link
+                href="#"
+                className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite"
+              >
                 {service.title}
               </Link>
             </li>
