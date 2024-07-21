@@ -65,3 +65,11 @@ body {
     display: block;
   }
 }
+
+:root {
+  --nextui-danger: transparent;
+}
+/* .group[data-selected='true'] .group-data-[selected='true']\:bg-danger {
+  --tw-bg-opacity: 1;
+  background-color: transparent;
+} */
