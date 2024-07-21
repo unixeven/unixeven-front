@@ -2,6 +2,7 @@ import type { Config } from 'tailwindcss';
 import { nextui } from '@nextui-org/react';
 
 const config: Config = {
+  darkMode: 'class',
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -17,8 +18,10 @@ const config: Config = {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
         'workingProcess-bg-md': "url('/images/workingProcess-bg-md.png')",
         'workingProcess-bg-desk': "url('/images/workingProcess-bg-desk.png')",
-        'btn-background-color': "linear-gradient(to right, #035d95, #049bbe, #01c8ee)",
+        'btn-background-color':
+          'linear-gradient(to right, #035d95, #049bbe, #01c8ee)',
         modalWorkProcessBg: "url('/images/modalWorkProcessBg.png')",
+        modalWorkProcessLightBg: "url('/images/modalWorkProcessLightBg.png')",
         'hero-bg-up': "url('/images/hero-bg-up.svg')",
         'hero-bg-down': "url('/images/hero-bg-down.svg')",
       },
@@ -32,16 +35,18 @@ const config: Config = {
         desk: '1440px',
       },
       colors: {
+        lightBackground: '#ffffff',
         lightWhite: '#FAFAFA',
         blackMain: '#070707',
         pacificBlue: '#049BBE',
         aqua: '#02F5EE',
         cobalt: '#035D95',
         prussianBlue: '#00276B',
+        gainsboro: '#DEDEDE',
       },
     },
   },
-  darkMode: 'class',
+
   plugins: [nextui()],
 };
 export default config;
