@@ -21,7 +21,7 @@ export const BurgerMenu: FC<BurgerMenuProps> = ({ nav }) => {
   };
   return (
     <div className="ml-3 md:ml-10">
-      <RxHamburgerMenu size={40} onClick={toggleMenu} className="fill-" />
+      <RxHamburgerMenu size={40} onClick={toggleMenu} className="icon" />
 
       {isOpen && (
         <div className="absolute top-24 left-0 z-40 min-h-screen min-w-full border-[2px] bg-black">

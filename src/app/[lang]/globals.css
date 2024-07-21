@@ -13,12 +13,14 @@ body {
   }
 }
 
-.gradient-border {
+.gradient-border,
+.btn {
   border-radius: 9999px;
   overflow: hidden;
 }
 
-.gradient-border::before {
+.gradient-border::before,
+.btn::before {
   content: '';
   position: absolute;
   top: 0;
@@ -48,6 +50,22 @@ body {
   }
 }
 
+.icon {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  padding: 2px;
+  background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
 .title-section::before {
   content: '';
   display: none;
@@ -69,7 +87,14 @@ body {
 :root {
   --nextui-danger: transparent;
 }
-/* .group[data-selected='true'] .group-data-[selected='true']\:bg-danger {
-  --tw-bg-opacity: 1;
-  background-color: transparent;
-} */
+
+.modal-workingProcess {
+  @apply gradient-border relative size-[358px] md:size-[727px] rounded-full bg-blackMain bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center;
+
+  button {
+    @apply absolute right-[68px] top-[42px] md:right-32 md:top-32;
+  }
+}
+.btn-request {
+  @apply w-[358px] md:w-[340px] desk:w-[400px];
+}

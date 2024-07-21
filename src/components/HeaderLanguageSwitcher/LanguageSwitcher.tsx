@@ -35,18 +35,17 @@ export const LanguageSwitcher = () => {
       className="justify-between "
       // className={`${isSelected ? 'translate-x-0' : 'translate-x-6'}`}
       classNames={{
-        base: 'w-[95px] h-[45px] ',
-        wrapper:
-          'w-[95px] h-[45px] bg-transparent gradient-border before:p-[1.5px] justify-center',
+        base: ' ',
+        wrapper: 'bg-transparent gradient-border before:p-[1.5px]',
         thumb: 'bg-transparent',
         thumbIcon: 'fill-white  ml-0',
         label: '',
-        startContent: 'text-lightWhite text-[25px]',
-        endContent: 'text-lightWhite text-[25px]',
+        startContent: 'text-lightWhite ',
+        endContent: 'text-lightWhite ',
       }}
       thumbIcon={<MdLanguage size={16} />}
       defaultSelected
-      // size="lg"
+      size="lg"
       color="danger"
       startContent={<span>EN</span>}
       endContent={<span>UA</span>}
