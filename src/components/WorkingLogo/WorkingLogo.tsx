@@ -16,7 +16,7 @@ export const WorkingLogo: FC = () => {
           rotationY: 360,
           duration: 1,
           ease: 'power2.out',
-          delay: 1.5, // задержка после анимации заголовка
+          delay: 1.5,
         }
       );
     }
