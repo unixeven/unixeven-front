@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Web Development Solutions",
+    "title": "Web Dev Solutions",
     "category": "Development",
     "content": "We offer comprehensive solutions for developing high-quality, intuitive websites. We combine innovative design, advanced technologies, and a personalized approach to each project to ensure a unique user experience and maximum audience engagement. Our team of professionals is ready to bring your ideas to life.",
     "subsections": {
@@ -115,7 +115,7 @@
   },
   {
     "id": 4,
-    "title": "Server-Side Development",
+    "title": "Server-Side Dev",
     "category": "Backend Development",
     "content": "Our server-side development services focus on creating robust and scalable backend systems that power your applications. Utilizing the latest frameworks and technologies, we ensure that your server architecture is secure, efficient, and capable of handling complex business logic and data processing.",
     "subsections": {
@@ -153,7 +153,7 @@
   },
   {
     "id": 5,
-    "title": "Mobile App Development",
+    "title": "Mobile App Dev",
     "category": "Mobile Development",
     "content": "We specialize in crafting mobile applications that offer compelling user experiences and robust functionality. Our end-to-end mobile app development services cover everything from concept to deployment, ensuring your app performs seamlessly across all devices and platforms.",
     "subsections": {
