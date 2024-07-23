@@ -108,10 +108,10 @@ body {
 }
 
 .modal-services {
-  @apply relative w-[358px] h-[594px]  rounded-[32px]  bg-gainsboro  bg-modalWorkProcessLightBg    dark:bg-blackMain !bg-modalServicesBg bg-contain bg-bottom bg-no-repeat px-8 py-[104px]  flex items-center justify-center;
+  @apply relative w-[358px] h-[594px] md:w-[518px] md:h-[652px] desk:w-[757px] desk:h-[617px]  rounded-[32px]  bg-gainsboro  bg-modalWorkProcessLightBg    dark:bg-blackMain !bg-modalServicesBg md:!bg-modalServicesBgMd desk:!bg-modalServicesBgDesk   bg-no-repeat bg-contain bg-bottom md:bg-auto px-8 py-[104px] md:px-[46px] md:py-24 desk:px-24 desk:py-[100px]  flex items-center justify-center;
 
   button {
-    @apply absolute right-8 top-8 size-8 md:right-32 md:top-32 text-cobalt dark:text-lightWhite;
+    @apply absolute right-8 top-8 size-8  text-cobalt dark:text-lightWhite;
   }
 }
 .btn-request {
