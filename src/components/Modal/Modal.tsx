@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, FC, ReactNode, useRef, useCallback } from 'react';
-
+import { IoMdClose } from 'react-icons/io';
 import { ModalPortal } from '../ModalPortal/ModalPortal';
 import { RxCross1 } from 'react-icons/rx';
 
