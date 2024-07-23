@@ -22,6 +22,7 @@ const config: Config = {
           'linear-gradient(to right, #035d95, #049bbe, #01c8ee)',
         modalWorkProcessBg: "url('/images/modalWorkProcessBg.png')",
         modalWorkProcessLightBg: "url('/images/modalWorkProcessLightBg.png')",
+        modalServicesBg: "url('/images/modalServicesBg.png')",
         'hero-bg-up': "url('/images/hero-bg-up.svg')",
         'hero-bg-down': "url('/images/hero-bg-down.svg')",
         'ourServices-bg':

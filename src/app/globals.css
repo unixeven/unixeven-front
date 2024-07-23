@@ -103,7 +103,15 @@ body {
   @apply gradient-border relative size-[358px] md:size-[727px] rounded-full  bg-gainsboro  !bg-modalWorkProcessLightBg bg-center   dark:bg-blackMain dark:bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center;
 
   button {
-    @apply absolute right-[68px] top-[42px] md:right-32 md:top-32;
+    @apply absolute right-[68px] top-[42px] size-5 md:size-8 md:right-32 md:top-32 text-cobalt dark:text-lightWhite;
+  }
+}
+
+.modal-services {
+  @apply relative w-[358px] h-[594px]  rounded-[32px]  bg-gainsboro  bg-modalWorkProcessLightBg    dark:bg-blackMain !bg-modalServicesBg bg-contain bg-bottom bg-no-repeat px-8 py-[104px]  flex items-center justify-center;
+
+  button {
+    @apply absolute right-8 top-8 size-8 md:right-32 md:top-32 text-cobalt dark:text-lightWhite;
   }
 }
 .btn-request {
