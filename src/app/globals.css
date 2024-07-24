@@ -21,6 +21,7 @@ body {
   border-radius: 9999px;
   overflow: hidden;
   background-image: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark .gradient-border::before,
@@ -38,11 +39,18 @@ body {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark .gradient-border:hover::before,
 .dark .gradient-border:focus::before {
   background: #02f5ee;
+}
+
+.dark .gradient-border:hover,
+.dark .gradient-border:focus {
+  color: #02f5ee;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
 }
 
 .btn-light {
@@ -53,10 +61,12 @@ body {
 .btn-light:hover,
 .btn-light:focus {
   background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+  box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
 }
 
 .dark .btn-light {
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark .btn-light:hover,
@@ -115,6 +125,29 @@ body {
     @apply absolute right-8 top-8 size-8  text-cobalt dark:text-lightWhite;
   }
 }
+
 .btn-request {
   @apply w-[358px] md:w-[340px] desk:w-[400px];
+}
+
+.dark #open-modal {
+  transition: all 0.3s ease-in-out;
+}
+
+.dark #open-modal:hover,
+.dark #open-modal:focus {
+  background: none;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: initial;
+  color: #02f5ee;
+}
+
+#open-modal:hover,
+#open-modal:focus {
+  background: none;
+  -webkit-background-clip: none;
+  -webkit-text-fill-color: initial;
+  color: #049bbe;
+  border-color: #049bbe;
+  box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
 }

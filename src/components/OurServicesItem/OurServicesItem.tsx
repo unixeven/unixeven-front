@@ -22,9 +22,9 @@ export const OurServicesItem: FC<OurServicesItemProps> = ({
   return (
     <li
       key={service.id}
-      className="w-full desk:w-[calc((100%-2*24px)/3)] gradient-border dark:border-0  border-2 border-cobalt relative px-6 pb-6 pt-[46px] md:px-10 md:pt-[109px] md:pb-10 desk:px-6 desk:pt-[46px] desk:pb-6 flex flex-col items-center  justify-center gap-4 !rounded-[32px] before:!rounded-[32px]"
+      className="w-full  desk:w-[calc((100%-2*24px)/3)] gradient-border dark:border-0  border-2 border-cobalt relative px-6 pb-6 pt-[46px] md:px-10 md:pt-[109px] md:pb-10 desk:px-6 desk:pt-[46px] desk:pb-6 flex flex-col items-center  justify-center gap-4 !rounded-[32px] before:!rounded-[32px] transition-all duration-300 hover:border-pacificBlue hover:shadow-custom-black "
     >
-      <h3 className="uppercase font-montserrat text-[25px]/[40px] font-medium tracking-[0.5px]">
+      <h3 className="uppercase font-montserrat text-[25px]/[40px] font-medium tracking-[0.5px] dark:text-lightWhite text-cobalt">
         {service.title}
       </h3>
       <Image
@@ -35,9 +35,10 @@ export const OurServicesItem: FC<OurServicesItemProps> = ({
       />
 
       <button
+        id="open-modal"
         onClick={() => handleOpenModal(service)}
         onKeyDown={handleKeyDown}
-        className=" self-end text-4xl  gradient-text gradient-border dark:border-0  border-2 border-cobalt relative size-[50px]  "
+        className="outline-none self-end text-4xl   gradient-text gradient-border dark:border-0  border-2 border-cobalt relative size-[50px]   "
       >
         &#129126;
       </button>
