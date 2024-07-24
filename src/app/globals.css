@@ -124,7 +124,7 @@ body {
 }
 
 .modal-services {
-  @apply gradient-border border-2 border-cobalt dark:border-0   before:!rounded-[32px]  relative w-[358px] h-[594px] md:w-[518px] md:h-[652px] desk:w-[757px] desk:h-[617px]    bg-gainsboro  bg-modalWorkProcessLightBg    dark:bg-blackMain !bg-modalServicesBg md:!bg-modalServicesBgMd desk:!bg-modalServicesBgDesk   bg-no-repeat bg-contain md:!bg-[length:60%_50%] desk:!bg-[length:70%_50%] bg-right-bottom md:bg-auto px-8 py-[104px] md:px-[46px] md:py-24 desk:px-24 desk:py-[100px]  flex items-center justify-center;
+  @apply gradient-border border-2 border-cobalt dark:border-0   before:!rounded-[32px]  relative w-[358px] h-[594px] md:w-[518px] md:h-[652px] desk:w-[757px] desk:h-[617px]    bg-gainsboro      dark:bg-blackMain bg-modalServicesBg md:!bg-modalServicesBgMd desk:!bg-modalServicesBgDesk   bg-no-repeat bg-contain md:!bg-[length:60%_50%] desk:!bg-[length:70%_50%] bg-right-bottom  px-8 py-[104px] md:px-[46px] md:py-24 desk:px-24 desk:py-[100px]  flex items-center justify-center;
   border-radius: 32px;
 
   button {
@@ -143,7 +143,8 @@ body {
 .dark #open-modal:hover,
 .dark #open-modal:focus {
   background: none;
-  -webkit-background-clip: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
   -webkit-text-fill-color: initial;
   color: #02f5ee;
   box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
@@ -152,7 +153,8 @@ body {
 #open-modal:hover,
 #open-modal:focus {
   background: none;
-  -webkit-background-clip: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
   -webkit-text-fill-color: initial;
   color: #049bbe;
   border-color: #049bbe;
