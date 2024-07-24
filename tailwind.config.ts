@@ -21,6 +21,9 @@ const config: Config = {
         'contactUs-bg': "url('/images/contactUs-bg.webp')",
         'contactUs-bg-md': "url('/images/contactUs-bg-md.webp')",
         'contactUs-bg-desk': "url('/images/contactUs-bg-desk.webp')",
+        'contactUs-light-bg': "url('/images/contactUs-light-bg.webp')",
+        'contactUs-light-bg-md': "url('/images/contactUs-light-bg-md.webp')",
+        'contactUs-light-bg-desk': "url('/images/contactUs-light-bg-desk.webp')",
         'btn-background-color':
           'linear-gradient(to right, #035d95, #049bbe, #01c8ee)',
         modalWorkProcessBg: "url('/images/modalWorkProcessBg.png')",
