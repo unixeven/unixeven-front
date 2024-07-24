@@ -18,6 +18,9 @@ const config: Config = {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
         'workingProcess-bg-md': "url('/images/workingProcess-bg-md.png')",
         'workingProcess-bg-desk': "url('/images/workingProcess-bg-desk.png')",
+        'contactUs-bg': "url('/images/contactUs-bg.webp')",
+        'contactUs-bg-md': "url('/images/contactUs-bg-md.webp')",
+        'contactUs-bg-desk': "url('/images/contactUs-bg-desk.webp')",
         'btn-background-color':
           'linear-gradient(to right, #035d95, #049bbe, #01c8ee)',
         modalWorkProcessBg: "url('/images/modalWorkProcessBg.png')",
