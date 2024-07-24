@@ -140,6 +140,7 @@ body {
   -webkit-background-clip: none;
   -webkit-text-fill-color: initial;
   color: #02f5ee;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
 }
 
 #open-modal:hover,
