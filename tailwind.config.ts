@@ -12,7 +12,8 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        'cyan-light': '0 4px 6px rgba(2, 245, 238, 0.5)',
+        'custom-white': '4px 4px 10px 0px rgba(255, 255, 255, 0.70)',
+        'custom-black': '4px 4px 10px 0px rgba(4, 155, 190, 0.20);',
       },
       backgroundImage: {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
