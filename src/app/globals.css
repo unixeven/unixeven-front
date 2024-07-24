@@ -21,11 +21,18 @@ body {
   border-radius: 9999px;
   overflow: hidden;
   background-image: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.gradient-border::before,
+.btn::before {
+  display: none;
 }
 
 .dark .gradient-border::before,
 .dark .btn::before {
   content: '';
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -38,11 +45,18 @@ body {
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
   -webkit-mask-composite: xor;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark .gradient-border:hover::before,
 .dark .gradient-border:focus::before {
   background: #02f5ee;
+}
+
+.dark .gradient-border:hover,
+.dark .gradient-border:focus {
+  color: #02f5ee;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
 }
 
 .btn-light {
@@ -53,10 +67,12 @@ body {
 .btn-light:hover,
 .btn-light:focus {
   background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+  box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
 }
 
 .dark .btn-light {
   background-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .dark .btn-light:hover,
@@ -108,13 +124,39 @@ body {
 }
 
 .modal-services {
-  @apply gradient-border border-2 border-cobalt dark:border-0   before:!rounded-[32px]  relative w-[358px] h-[594px] md:w-[518px] md:h-[652px] desk:w-[757px] desk:h-[617px]    bg-gainsboro  bg-modalWorkProcessLightBg    dark:bg-blackMain !bg-modalServicesBg md:!bg-modalServicesBgMd desk:!bg-modalServicesBgDesk   bg-no-repeat bg-contain bg-bottom md:bg-auto px-8 py-[104px] md:px-[46px] md:py-24 desk:px-24 desk:py-[100px]  flex items-center justify-center;
+  @apply gradient-border border-2 border-cobalt dark:border-0   before:!rounded-[32px]  relative w-[358px] h-[594px] md:w-[518px] md:h-[652px] desk:w-[757px] desk:h-[617px]    bg-gainsboro      dark:bg-blackMain bg-modalServicesBg md:!bg-modalServicesBgMd desk:!bg-modalServicesBgDesk   bg-no-repeat bg-contain md:!bg-[length:60%_50%] desk:!bg-[length:70%_50%] bg-right-bottom  px-8 py-[104px] md:px-[46px] md:py-24 desk:px-24 desk:py-[100px]  flex items-center justify-center;
   border-radius: 32px;
 
   button {
     @apply absolute right-8 top-8 size-8  text-cobalt dark:text-lightWhite;
   }
 }
+
 .btn-request {
   @apply w-[358px] md:w-[340px] desk:w-[400px];
+}
+
+.dark #open-modal {
+  transition: all 0.3s ease-in-out;
+}
+
+.dark #open-modal:hover,
+.dark #open-modal:focus {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: #02f5ee;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
+}
+
+#open-modal:hover,
+#open-modal:focus {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: #049bbe;
+  border-color: #049bbe;
+  box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
 }
