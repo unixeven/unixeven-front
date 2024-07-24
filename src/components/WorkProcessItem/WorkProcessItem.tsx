@@ -67,9 +67,9 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
         tabIndex={0}
         aria-label={`Open modal for ${process.name}`}
       >
-        <p className="text-lightWhite text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
+        <h3 className="text-lightWhite text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
           {process.name}
-        </p>
+        </h3>
       </button>
     </li>
   );
