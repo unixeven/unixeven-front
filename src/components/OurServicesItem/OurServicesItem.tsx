@@ -38,7 +38,7 @@ export const OurServicesItem: FC<OurServicesItemProps> = ({
         id="open-modal"
         onClick={() => handleOpenModal(service)}
         onKeyDown={handleKeyDown}
-        className="outline-none self-end text-4xl   gradient-text gradient-border dark:border-0  border-2 border-cobalt relative size-[50px]   "
+        className="animate-pulse outline-none self-end text-4xl   gradient-text gradient-border dark:border-0  border-2 border-cobalt relative size-[50px]   "
       >
         &#129126;
       </button>
