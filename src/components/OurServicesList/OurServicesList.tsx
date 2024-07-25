@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+
 import services from '../../data/ourServices.json';
 import { useState } from 'react';
 import { Services } from '@/types/difinitions';
@@ -13,8 +13,6 @@ export const OurServicesList = () => {
   const [selectedServices, setSelectedServices] = useState<Services | null>(
     null
   );
-  console.log(`isModalOpen:`, isModalOpen);
-  console.log(`selectedServices:`, selectedServices);
 
   const handleOpenModal = (process: Services) => {
     setSelectedServices(process);
