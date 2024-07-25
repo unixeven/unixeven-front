@@ -13,8 +13,6 @@ export const OurServicesList = () => {
   const [selectedServices, setSelectedServices] = useState<Services | null>(
     null
   );
-  console.log(`isModalOpen:`, isModalOpen);
-  console.log(`selectedServices:`, selectedServices);
 
   const handleOpenModal = (process: Services) => {
     setSelectedServices(process);
