@@ -27,23 +27,27 @@ export const AboutUs = () => {
             <Image
               src={AboutUs_1}
               alt="Person explaining a diagram on a whiteboard to colleagues"
+              sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
               className="rounded-tl-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
             />
             <Image
               src={AboutUs_2}
               alt="Group of people working together at a table with laptops"
               className="rounded-bl-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
+              sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
             />
           </div>
           <div className="flex flex-col gap-[14px] md:gap-[24px] desk:gap-6 pt-[38px] md:pt-[73px] desk:pt-16">
             <Image
               src={AboutUs_3}
               alt="Computer screen displaying code"
+              sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
               className="rounded-tr-[43px]  w-[171px] md:w-[340px] desk:w-[294px]"
             />
             <Image
               src={AboutUs_4}
               alt="Laptop on a desk with a chair beside it"
+              sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
               className="rounded-br-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
             />
           </div>
