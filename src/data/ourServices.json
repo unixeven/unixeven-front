@@ -1,7 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Web Development Solutions",
+    "title": "Web Dev Solutions",
+    "icon": "laptop-webrepo",
     "category": "Development",
     "content": "We offer comprehensive solutions for developing high-quality, intuitive websites. We combine innovative design, advanced technologies, and a personalized approach to each project to ensure a unique user experience and maximum audience engagement. Our team of professionals is ready to bring your ideas to life.",
     "subsections": {
@@ -41,6 +42,7 @@
     "id": 2,
     "title": "QA Testing",
     "category": "Quality Assurance",
+    "icon": "test",
     "content": "Our Quality Assurance services ensure that all your digital solutions meet the highest standards of quality. From automated testing to comprehensive manual checks, we safeguard your software against potential faults and bugs to deliver a seamless end-user experience.",
     "subsections": {
       "Functional Testing": [
@@ -79,6 +81,7 @@
     "id": 3,
     "title": "UI/UX Design",
     "category": "Design",
+    "icon": "web-uiux",
     "content": "Our UI/UX Design services focus on creating engaging and aesthetically pleasing interfaces that provide seamless user experiences. Through meticulous research and innovative design practices, we ensure that our designs meet the needs of your target audience and align with your business goals.",
     "subsections": {
       "User Research": [
@@ -115,8 +118,9 @@
   },
   {
     "id": 4,
-    "title": "Server-Side Development",
+    "title": "Server-Side Dev",
     "category": "Backend Development",
+    "icon": "server-dev",
     "content": "Our server-side development services focus on creating robust and scalable backend systems that power your applications. Utilizing the latest frameworks and technologies, we ensure that your server architecture is secure, efficient, and capable of handling complex business logic and data processing.",
     "subsections": {
       "API Development": [
@@ -153,8 +157,9 @@
   },
   {
     "id": 5,
-    "title": "Mobile App Development",
+    "title": "Mobile App Dev",
     "category": "Mobile Development",
+    "icon": "mob-cod",
     "content": "We specialize in crafting mobile applications that offer compelling user experiences and robust functionality. Our end-to-end mobile app development services cover everything from concept to deployment, ensuring your app performs seamlessly across all devices and platforms.",
     "subsections": {
       "iOS Development": [

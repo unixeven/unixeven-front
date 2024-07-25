@@ -12,7 +12,8 @@ const config: Config = {
   theme: {
     extend: {
       boxShadow: {
-        'cyan-light': '0 4px 6px rgba(2, 245, 238, 0.5)',
+        'custom-white': '4px 4px 10px 0px rgba(255, 255, 255, 0.70)',
+        'custom-black': '4px 4px 10px 0px rgba(4, 155, 190, 0.20);',
       },
       backgroundImage: {
         'workingProcess-bg': "url('/images/workingProcess-bg.png')",
@@ -22,8 +23,18 @@ const config: Config = {
           'linear-gradient(to right, #035d95, #049bbe, #01c8ee)',
         modalWorkProcessBg: "url('/images/modalWorkProcessBg.png')",
         modalWorkProcessLightBg: "url('/images/modalWorkProcessLightBg.png')",
+        modalServicesBg: "url('/images/modalServicesBg.png')",
+        modalServicesBgMd: "url('/images/modalServicesBgMd.png')",
+        modalServicesBgDesk: "url('/images/modalServicesBgDesk.png')",
         'hero-bg-up': "url('/images/hero-bg-up.svg')",
         'hero-bg-down': "url('/images/hero-bg-down.svg')",
+        'ourServices-bg':
+          "url('/images/ourServicesUp-bg.png'),url('/images/ourServicesUp-bg.png')",
+        'ourServices-bg-md': "url('/images/ourServicesMd-bg.png')",
+        'ourServices-bg-desk': "url('/images/ourServicesDesk-bg.png')",
+      },
+      backgroundPosition: {
+        ourServicesPosition: 'center 21px, center calc(100% - 12px)',
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],
