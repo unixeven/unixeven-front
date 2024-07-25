@@ -8,9 +8,9 @@ import { TitleSections } from "../TitleSection/TitleSection";
 
 export const AboutUs = () => {
   return (
-    <section className="w-full px-4 desk:px-24 py-16 md:py-20 desk:py-[88px]">
+    <section className="md:bg-aboutUs-bg-md md:!bg-[length:396px_455px] desk:bg-aboutUs-bg-desk desk:!bg-[length:404px_503px] bg-no-repeat bg-right-top  w-full px-4 desk:px-24 py-16 md:py-20 desk:py-[88px]">
       <TitleSections text="about us" id="about-us-title" />
-      <div className="flex flex-col desk:flex-row gap-12 md:gap-8 desk:gap-5">
+      <div className="flex flex-col desk:flex-row gap-12 md:gap-8 desk:gap-6">
         <div className="mt-14 relative desk:w-1/2">
           <div className="absolute inset-0 flex flex-col justify-between z-0 py-5">
             <div className="img-border w-[70px] desk:w-[140px] h-11 desk:h-[76px] mx-auto"></div>
