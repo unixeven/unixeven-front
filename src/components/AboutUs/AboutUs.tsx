@@ -20,25 +20,25 @@ export const AboutUs = () => {
             <div className="flex flex-col gap-4 desk:gap-6">
               <Image
                 src={AboutUs_1}
-                alt="AboutUs_1"
-                className="rounded-tl-[43px] w-[171px] md:w-[340px]"
+                alt="Person explaining a diagram on a whiteboard to colleagues"
+                className="rounded-tl-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
               />
               <Image
                 src={AboutUs_2}
-                alt="AboutUs_2"
-                className="rounded-bl-[43px] mb-4 w-[171px] md:w-[340px]"
+                alt="Group of people working together at a table with laptops"
+                className="rounded-bl-[43px] mb-4 w-[171px] md:w-[340px] desk:w-[294px]"
               />
             </div>
             <div className="flex flex-col gap-4 desk:gap-6 pt-9">
               <Image
                 src={AboutUs_3}
-                alt="AboutUs_3"
-                className="rounded-tr-[43px]  w-[171px] md:w-[340px]"
+                alt="Computer screen displaying code"
+                className="rounded-tr-[43px]  w-[171px] md:w-[340px] desk:w-[294px]"
               />
               <Image
                 src={AboutUs_4}
-                alt="AboutUs_4"
-                className="rounded-br-[43px] w-[171px] md:w-[340px]"
+                alt="Laptop on a desk with a chair beside it"
+                className="rounded-br-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
               />
             </div>
           </div>
