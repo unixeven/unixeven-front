@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+
 import services from '../../data/ourServices.json';
 import { useState } from 'react';
 import { Services } from '@/types/difinitions';
