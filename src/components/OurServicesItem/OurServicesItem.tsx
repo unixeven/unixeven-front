@@ -1,5 +1,5 @@
 import { Services } from '@/types/difinitions';
-import Image from 'next/image';
+
 import { FC, KeyboardEvent } from 'react';
 
 interface OurServicesItemProps {
