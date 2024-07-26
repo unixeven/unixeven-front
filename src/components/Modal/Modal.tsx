@@ -1,8 +1,9 @@
 'use client';
 
 import { useEffect, FC, ReactNode, useRef, useCallback } from 'react';
-import { IoMdClose } from 'react-icons/io';
+
 import { ModalPortal } from '../ModalPortal/ModalPortal';
+import { RxCross1 } from 'react-icons/rx';
 
 interface ModalProps {
   children: ReactNode;
@@ -96,7 +97,7 @@ export const Modal: FC<ModalProps> = ({
             aria-label="Close modal"
             ref={closeButtonRef}
           >
-            <IoMdClose className="fill-cobalt dark:fill-lightWhite size-5 md:size-8" />
+            <RxCross1 className="fill-cobalt dark:fill-lightWhite size-full" />
           </button>
           {children}
         </div>
