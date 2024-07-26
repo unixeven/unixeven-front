@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+.dark body {
   background-color: #070707;
-  color: #fafafa;
+}
+
+body {
+  background-color: #dedede;
 }
 
 @layer utilities {
