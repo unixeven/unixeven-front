@@ -34,6 +34,9 @@ const config: Config = {
         modalServicesBg: "url('/images/modalServicesBg.png')",
         modalServicesBgMd: "url('/images/modalServicesBgMd.png')",
         modalServicesBgDesk: "url('/images/modalServicesBgDesk.png')",
+        modalContactUsBg: "url('/images/modal-contactUs-bg.png')",
+        modalContactUsBgMd: "url('/images/modal-contactUs-bg-md.png')",
+        modalContactUsBgDesk: "url('/images/modal-contactUs-bg-desk.png')",
         "hero-bg-up": "url('/images/hero-bg-up.svg')",
         "hero-bg-down": "url('/images/hero-bg-down.svg')",
         "ourServices-bg":

@@ -132,6 +132,15 @@ body {
   }
 }
 
+.modal-contactUs {
+  @apply gradient-border before:!rounded-[32px] relative flex items-center justify-center w-[358px] max-h-[745px] md:w-[661px] md:max-h-[780px] desk:w-[757px] bg-gainsboro dark:bg-blackMain !bg-modalContactUsBg md:!bg-modalContactUsBgMd desk:!bg-modalContactUsBgDesk bg-no-repeat bg-contain md:!bg-[length:45%_120%] desk:!bg-[length:40%_110%] bg-left-top px-8 py-[104px] md:px-[46px] md:py-24 desk:p-28 ;
+  border-radius: 32px;
+
+  button {
+    @apply absolute right-4 top-6 md:right-8 md:top-8 desk:right-12 desk:top-12 size-8  text-cobalt dark:text-lightWhite;
+  }
+}
+
 .btn-request {
   @apply w-[358px] md:w-[340px] desk:w-[400px];
 }

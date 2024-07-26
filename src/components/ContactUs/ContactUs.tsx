@@ -1,12 +1,22 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from '../Button/Button';
 import { TitleContactUs } from '../TitleContactUs/TitleContactUs';
 import { SocialContactUs } from '../SocialContactUs/SocialContactUs';
+import { Modal } from '../Modal/Modal';
 
 
 export const ContactUs = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
   return (
   <section 
   aria-labelledby="section-contact-us"
@@ -14,9 +24,20 @@ export const ContactUs = () => {
     >
     <div className='flex flex-col items-center gap-6 '>
       <TitleContactUs/>
-      <Button buttonType="button" className="btn-request" text="Make a request" onClick={() => { }} />
+      <Button buttonType="button" className="btn-request" text="Make a request" handleModal={handleOpenModal} />
     </div>
-    <SocialContactUs/>
+    <SocialContactUs />
+      
+     <Modal
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+        className="modal-contactUs"
+        title="Contact us"
+        description="Form contact us"
+      >
+        qwre
+      </Modal>
+      
   </section>
   )
 };
