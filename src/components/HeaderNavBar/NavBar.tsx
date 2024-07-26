@@ -22,7 +22,7 @@ interface NavBarProps {
 
 export const NavBar: FC<NavBarProps> = ({ nav }) => {
   return (
-    <ul className="flex flex-col gap-7 md:flex-row items-center justify-center md:gap-4 lg:gap-8">
+    <ul className="flex flex-col gap-10 md:flex-row items-center justify-center md:gap-4 lg:gap-8">
       {nav.map(({ name, id }) => {
         // const LinkIcon = icon;
         return (
@@ -32,7 +32,7 @@ export const NavBar: FC<NavBarProps> = ({ nav }) => {
               offset={30}
               smooth={true}
               duration={500}
-              className="block md:py-5 text-2xl text-center md:text-base lg:text-2xl cursor-pointer"
+              className="block md:py-5 text-2xl text-center font-medium cursor-pointer"
             >
               {name}
             </Link>

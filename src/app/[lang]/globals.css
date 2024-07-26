@@ -135,3 +135,36 @@ span.px-1.relative.inline-flex {
 div.px-1.relative.flex-shrink-0 {
   margin-right: 0;
 }
+
+.burger-icon {
+  position: relative;
+  width: 32px; /* Ширина іконки */
+  height: 32px; /* Висота іконки */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  display: block;
+  width: 100%; /* Ширина ліній */
+  height: 3px; /* Висота ліній */
+  background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+  border-radius: 2px; /* Згладжені кути ліній */
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: 4px; /* Відступ верхньої лінії */
+}
+
+.burger-icon span::after {
+  bottom: 4px; /* Відступ нижньої лінії */
+}

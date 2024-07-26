@@ -13,6 +13,7 @@ export const LanguageSwitcher = () => {
   // const [choiceLang, setChoiceLang] = useState(false);
   const router = useRouter();
   const searchParams = useParams();
+  console.log(searchParams);
 
   useEffect(() => {
     if (searchParams.lang === 'uk') {
@@ -32,14 +33,13 @@ export const LanguageSwitcher = () => {
     <Switch
       isSelected={isSelected}
       onValueChange={switchLang}
-      className="justify-between "
-      // className={`${isSelected ? 'translate-x-0' : 'translate-x-6'}`}
+      className="gradient-border "
       classNames={{
-        base: ' ',
-        wrapper: 'bg-transparent gradient-border before:p-[1.5px]',
-        thumb: 'bg-transparent',
-        thumbIcon: 'fill-white  ml-0',
-        label: '',
+        base: '',
+        wrapper: 'bg-transparent',
+        thumb: 'bg-transparent border shadow-none border-red-700 border-none',
+        thumbIcon: 'fill-white',
+        label: ' ',
         startContent: 'text-lightWhite ',
         endContent: 'text-lightWhite ',
       }}

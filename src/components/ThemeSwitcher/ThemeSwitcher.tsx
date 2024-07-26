@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import { ThemeSwitch } from '../ThemeSwitch/ThemeSwitch';
 
@@ -25,7 +27,7 @@ export const ThemeSwitcher = () => {
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prevTheme => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
   };
 
   if (!isMounted) {
