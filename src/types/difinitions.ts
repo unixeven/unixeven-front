@@ -14,3 +14,25 @@ export interface Services {
   content: string;
   icon: string;
 }
+
+export interface DataMessage {
+  name: string;
+  email: string;
+  phoneNumber: string;
+  messageContact: string;
+}
+
+export interface Errors {
+  name?: {
+    _errors: string[];
+  };
+  email?: {
+    _errors: string[];
+  };
+  phoneNumber?: {
+    _errors: string[];
+  };
+  messageContact?: {
+    _errors: string[];
+  };
+}
