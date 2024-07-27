@@ -31,7 +31,7 @@ body {
 
 .dark .gradient-border::before,
 .dark .btn::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -94,7 +94,7 @@ body {
 }
 
 .title-section::before {
-  content: "";
+  content: '';
   display: none;
   position: absolute;
   left: 0px;
@@ -133,7 +133,7 @@ body {
 }
 
 .modal-contactUs {
-  @apply gradient-border before:!rounded-[32px] relative flex items-center justify-center w-[358px] h-[745px] md:w-[661px] md:h-[780px] desk:w-[757px] bg-gainsboro dark:bg-blackMain !bg-modalContactUsBg md:!bg-modalContactUsBgMd desk:!bg-modalContactUsBgDesk bg-no-repeat bg-[length:90%_60%] md:!bg-[length:50%_60%] desk:!bg-[length:45%_60%] bg-left-top px-8 py-[104px] md:px-[46px] md:py-24 desk:p-28 ;
+  @apply gradient-border before:!rounded-[32px] relative flex items-center justify-center w-[358px] h-[745px] md:w-[661px] md:h-[780px] desk:w-[757px] bg-gainsboro dark:bg-blackMain !bg-modalContactUsBg md:!bg-modalContactUsBgMd desk:!bg-modalContactUsBgDesk bg-no-repeat bg-[length:90%_60%] md:!bg-[length:50%_60%] desk:!bg-[length:45%_60%] bg-left-top px-8 py-[104px] md:px-[46px] md:py-24 desk:p-28;
   border-radius: 32px;
 
   #close-modal {
@@ -142,14 +142,12 @@ body {
 }
 
 .form-input {
-  @apply font-montserrat text-base w-full px-5 py-4 gradient-border before:!rounded-2xl border-2 border-cobalt dark:border-0 relative bg-transparent dark:bg-gainsboro;
+  @apply font-montserrat text-base w-full px-5 py-4 gradient-border before:!rounded-2xl border-2 border-cobalt dark:border-0 outline-0 relative bg-transparent dark:bg-gainsboro;
   border-radius: 16px;
-  
 }
-.form-input::placeholder{
-    @apply text-cobalt dark:text-tundora;
+.form-input::placeholder {
+  @apply text-cobalt dark:text-tundora;
 }
-
 
 .btn-request {
   @apply w-[358px] md:w-[340px] desk:w-[400px];
