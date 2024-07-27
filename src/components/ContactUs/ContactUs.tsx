@@ -5,6 +5,7 @@ import { Button } from '../Button/Button';
 import { TitleContactUs } from '../TitleContactUs/TitleContactUs';
 import { SocialContactUs } from '../SocialContactUs/SocialContactUs';
 import { Modal } from '../Modal/Modal';
+import { FormContactUs } from '../FormContactUs/FormContactUs';
 
 
 export const ContactUs = () => {
@@ -28,14 +29,14 @@ export const ContactUs = () => {
     </div>
     <SocialContactUs />
       
-     <Modal
+      <Modal
         isOpen={isModalOpen}
         onClose={handleCloseModal}
         className="modal-contactUs"
         title="Contact us"
         description="Form contact us"
       >
-        qwre
+        <FormContactUs/>
       </Modal>
       
   </section>

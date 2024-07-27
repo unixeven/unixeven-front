@@ -65,6 +65,7 @@ const config: Config = {
         cobalt: "#035D95",
         prussianBlue: "#00276B",
         gainsboro: "#DEDEDE",
+        tundora: "#5C5C5C",
       },
     },
   },
