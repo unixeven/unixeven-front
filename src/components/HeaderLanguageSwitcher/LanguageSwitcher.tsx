@@ -33,15 +33,15 @@ export const LanguageSwitcher = () => {
     <Switch
       isSelected={isSelected}
       onValueChange={switchLang}
-      className="gradient-border "
+      className="btn "
       classNames={{
         base: '',
         wrapper: 'bg-transparent',
         thumb: 'bg-transparent border shadow-none border-red-700 border-none',
-        thumbIcon: 'fill-white',
+        thumbIcon: 'dark:fill-white fill-cobalt',
         label: ' ',
-        startContent: 'text-lightWhite ',
-        endContent: 'text-lightWhite ',
+        startContent: 'font-montserrat dark:text-lightWhite text-cobalt',
+        endContent: 'font-montserrat dark:text-lightWhite text-cobalt',
       }}
       thumbIcon={<MdLanguage size={16} />}
       defaultSelected

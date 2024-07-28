@@ -2,19 +2,6 @@
 
 import { FC } from 'react';
 import { Link } from 'react-scroll';
-// import { GrServices } from "react-icons/gr";
-// import { GiProcessor } from "react-icons/gi";
-// import { IoMdBriefcase } from "react-icons/io";
-// import { RiTeamFill } from "react-icons/ri";
-// import { FaPhone } from "react-icons/fa";
-
-// const links = [
-//   { name: "Послуги", id: "services", icon: GrServices },
-//   { name: "Процеси", id: "processes", icon: GiProcessor },
-//   { name: "Портфоліо", id: "portfolio", icon: IoMdBriefcase },
-//   { name: "Команда", id: "team", icon: RiTeamFill },
-//   { name: "Контакти", id: "contacts", icon: FaPhone },
-// ];
 
 interface NavBarProps {
   nav: { name: string; id: string }[];
@@ -22,9 +9,8 @@ interface NavBarProps {
 
 export const NavBar: FC<NavBarProps> = ({ nav }) => {
   return (
-    <ul className="flex flex-col gap-10 md:flex-row items-center justify-center md:gap-4 lg:gap-8">
+    <ul className="flex flex-col gap-10 xl:flex-row items-center justify-center">
       {nav.map(({ name, id }) => {
-        // const LinkIcon = icon;
         return (
           <li key={id}>
             <Link
@@ -32,7 +18,7 @@ export const NavBar: FC<NavBarProps> = ({ nav }) => {
               offset={30}
               smooth={true}
               duration={500}
-              className="block md:py-5 text-2xl text-center font-medium cursor-pointer"
+              className="block text-2xl/normal dark:text-lightWhite text-prussianBlue text-center font-montserrat font-medium cursor-pointer"
             >
               {name}
             </Link>

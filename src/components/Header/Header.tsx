@@ -11,7 +11,7 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ nav }) => {
   return (
-    <header className="px-4 py-6 md:px-6 desk:px-24 flex items-center justify-between">
+    <header className="px-4 py-6 md:px-6 xl:px-24 flex items-center justify-between">
       <Logo width={82} height={73} />
       <div className="hidden xl:block">
         <NavBar nav={nav} />

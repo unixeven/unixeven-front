@@ -23,18 +23,18 @@ export const BurgerMenu: FC<BurgerMenuProps> = ({ nav }) => {
   };
   return (
     <div className="block xl:hidden">
-      <div className="burger-icon" onClick={toggleMenu}>
+      <button type="button" className="burger-icon" onClick={toggleMenu}>
         <span></span>
-      </div>
+      </button>
 
       {/* <RxHamburgerMenu size={32} onClick={toggleMenu} className="" /> */}
 
       {isOpen && (
-        <div className="absolute top-0 left-0 z-40 min-h-screen min-w-full rounded-[32px] bg-blackMain">
+        <div className="absolute top-0 left-0 z-40 min-h-screen min-w-full dark:bg-blackMain bg-gainsboro">
           <RxCross1
             size={40}
             onClick={toggleMenu}
-            className="absolute top-10 right-4"
+            className="absolute top-10 right-4 dark:text-lightWhite text-prussianBlue"
           />
           <div className="flex flex-col items-center gap-20 mt-[215px]">
             <NavBar nav={nav} />
