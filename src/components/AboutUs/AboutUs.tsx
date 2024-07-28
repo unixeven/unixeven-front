@@ -14,7 +14,7 @@ export const AboutUs = () => {
     >
       <TitleSections text="about us" id="about-us-title" />
       <div className="w-full flex flex-col desk:flex-row gap-12 md:gap-8 desk:gap-6">
-        <div className="relative flex gap-4 md:gap-[26px] desk:gap-6 w-full desk:w-1/2 z-10 justify-center">
+        <div className="relative flex gap-4 md:gap-[26px] desk:gap-6 w-full desk:w-max z-10 justify-center">
           <div
             aria-hidden="true"
             className="absolute inset-0 h-full flex flex-col justify-between items-center z-[-1] py-[22px] md:py-11 desk:py-10"
@@ -52,7 +52,7 @@ export const AboutUs = () => {
             />
           </div>
         </div>
-        <div className="desk:w-1/2 flex flex-col justify-center items-center gap-6 font-montserrat text-2xl/9 font-normal  dark:text-lightWhite text-prussianBlue">
+        <div className="desk:w-1/2 flex flex-col justify-center items-center gap-6 font-montserrat text-2xl/9 font-normal tracking-[0.5px]  dark:text-lightWhite text-prussianBlue">
           <p>
             Our mission is simple: to elevate your brand through exceptional
             design. We believe that great design has the power to connect,
