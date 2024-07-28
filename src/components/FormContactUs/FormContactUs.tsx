@@ -3,6 +3,7 @@
 import { createUserMessage } from '@/services/actions';
 import { Errors } from '@/types/difinitions';
 import { useFormState } from 'react-dom';
+import { Button } from '../Button/Button';
 
 const initialState = {
   message: '',
@@ -20,6 +21,7 @@ export const FormContactUs = () => {
       <h2 className="font-montserrat text-[40px]/normal tracking-[1.2px] font-normal text-cobalt dark:text-lightWhite">
         Contact us
       </h2>
+      <label className='w-full relative'>
       <input
         type="text"
         name="name"
@@ -27,8 +29,12 @@ export const FormContactUs = () => {
         className="form-input"
       />
       {state?.errors && (
-        <span className="text-red-500">{state.errors?.name?._errors[0]}</span>
-      )}
+        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
+          {state.errors?.name?._errors[0]}
+        </span>
+        )}
+      </label>
+      <label className='w-full relative'>
       <input
         type="email"
         name="email"
@@ -36,8 +42,12 @@ export const FormContactUs = () => {
         className="form-input"
       />
       {state?.errors && (
-        <span className="text-red-500">{state?.errors?.email?._errors[0]}</span>
-      )}
+        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
+          {state?.errors?.email?._errors[0]}
+        </span>
+        )}
+      </label>
+      <label className='w-full relative'>
       <input
         type="tel"
         name="phoneNumber"
@@ -45,25 +55,25 @@ export const FormContactUs = () => {
         className="form-input"
       />
       {state?.errors && (
-        <span className="text-red-500">
+        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
           {state?.errors?.phoneNumber?._errors[0]}
         </span>
       )}
-
+      </label>
+      <label className='w-full relative'>
       <textarea
         name="messageContact"
         placeholder="Your Message..."
         className="form-input min-h-[147px]"
       />
       {state?.errors && (
-        <span className="text-red-500">
+        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
           {state?.errors?.messageContact?._errors[0]}
         </span>
-      )}
-      <button type="submit" className="btn-submit">
-        Submit
-      </button>
-      {/* <button type="submit" className="btn-submit">Submit<buton/> */}
+        )}
+      </label>
+      
+      <Button buttonType="submit" text="Submit" className="btn-submit" handleModal={() => {}} />
     </form>
   );
 };

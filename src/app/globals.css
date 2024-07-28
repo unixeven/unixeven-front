@@ -142,8 +142,8 @@ body {
 }
 
 .form-input {
-  @apply font-montserrat text-base w-full px-5 py-4 gradient-border before:!rounded-2xl border-2 border-cobalt dark:border-0 outline-0 relative bg-transparent dark:bg-gainsboro;
-  border-radius: 16px;
+  @apply font-montserrat text-base w-full px-5 py-4 rounded-2xl border-2 border-cobalt dark:border-0 dark:text-black outline-0 relative bg-transparent dark:bg-gainsboro;
+  
 }
 .form-input::placeholder {
   @apply text-cobalt dark:text-tundora;
