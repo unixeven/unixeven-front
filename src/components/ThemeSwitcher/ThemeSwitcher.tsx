@@ -6,7 +6,9 @@ import { ThemeSwitch } from '../ThemeSwitch/ThemeSwitch';
 export const ThemeSwitcher = () => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
-      return window.localStorage.getItem('theme') ?? 'dark';
+      const savedTheme = window.localStorage.getItem('theme');
+
+      return savedTheme ?? 'dark';
     }
     return 'dark';
   });
@@ -26,8 +28,10 @@ export const ThemeSwitcher = () => {
     setIsMounted(true);
   }, [theme]);
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+  const toggleTheme = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newTheme = event.target.checked ? 'light' : 'dark';
+
+    setTheme(newTheme);
   };
 
   if (!isMounted) {
