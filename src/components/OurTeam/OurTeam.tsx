@@ -17,7 +17,7 @@ interface OurTeamProps {
       id: string;
       url: string;
       name: string;
-      positionWork: string;
+      positiOnWork: string;
       aboutPerson: string;
     }[];
   };
@@ -28,10 +28,10 @@ export const OurTeam: React.FC<OurTeamProps> = ({ meetOurTeam }) => {
 
   return (
     <section
-      aria-labelledby="Meet our team"
+      aria-labelledby={title}
       className="py-16 px-4 md:py-20 md:px-6 xl:py-[88px] xl:px-24 bg-bg_OurTeam_tablet xl:bg-bg_OurTeam_desk bg-[length:198px_368px] md:bg-[length:268px_518px] xl:bg-left xl:bg-[length:50%_100%] bg-left-top bg-no-repeat"
     >
-      <TitleSections text={title} id="Meet our team" />
+      <TitleSections text={title} id={title} />
 
       <Swiper
         modules={[FreeMode, Pagination, Keyboard, Mousewheel]}
@@ -50,7 +50,7 @@ export const OurTeam: React.FC<OurTeamProps> = ({ meetOurTeam }) => {
         }}
         className="team-slider mt-14 xl:mt-16 h-[400px]"
       >
-        {infoTeam.map(({ id, url, name, positionWork }) => {
+        {infoTeam.map(({ id, url, name, positiOnWork }) => {
           return (
             <SwiperSlide key={id} className="group">
               <div className="relative overflow-hidden rounded-[15px] ">
@@ -63,7 +63,7 @@ export const OurTeam: React.FC<OurTeamProps> = ({ meetOurTeam }) => {
                 />
                 <div className="font-montserrat text-lightWhite absolute top-0 left-1/2 -translate-x-1/2 w-[300px] rounded-[15px] h-full flex flex-col gap-2 items-center justify-end p-7 bg-backgroundTeam translate-y-full duration-300 ease-in-out group-hover:translate-y-0 hover:border-3 dark:border-[#09aaa4] border-cobalt">
                   <p className="text-xl/normal font-bold tracking-[0.6px]">
-                    {positionWork}
+                    {positiOnWork}
                   </p>
                   <p className="text-base tracking-[0.48px]">{name}</p>
                 </div>

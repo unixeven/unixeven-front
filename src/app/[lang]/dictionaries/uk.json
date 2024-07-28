@@ -32,49 +32,49 @@
         "id": "1",
         "url": "/images/OurTeamImage/1.png",
         "name": "Гном 1",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "2",
         "url": "/images/OurTeamImage/2.png",
         "name": "Гном 2",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "3",
         "url": "/images/OurTeamImage/3.png",
         "name": "Гном 3",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "4",
         "url": "/images/OurTeamImage/4.png",
         "name": "Анна",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "5",
         "url": "/images/OurTeamImage/5.png",
         "name": "Гном 4",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "6",
         "url": "/images/OurTeamImage/6.png",
         "name": "Гном 5",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "7",
         "url": "/images/OurTeamImage/7.png",
         "name": "Гном 6",
-        "positionWork": "Розробник",
+        "positiOnWork": "Розробник",
         "aboutPerson": ""
       }
     ]
