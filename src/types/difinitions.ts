@@ -36,3 +36,8 @@ export interface Errors {
     _errors: string[];
   };
 }
+
+export interface InitialState {
+  message: string,
+  errors: Errors,
+}

@@ -1,17 +1,20 @@
 'use client';
 
 import { createUserMessage } from '@/services/actions';
-import { Errors } from '@/types/difinitions';
+import { Errors, InitialState } from '@/types/difinitions';
 import { useFormState } from 'react-dom';
 import { Button } from '../Button/Button';
+import { InputForm } from '../InputForm/InputForm';
 
-const initialState = {
+
+const initialState: InitialState = {
   message: '',
   errors: {} as Errors,
 };
 
 export const FormContactUs = () => {
   const [state, formAction] = useFormState(createUserMessage, initialState);
+  
 
   return (
     <form
@@ -21,45 +24,9 @@ export const FormContactUs = () => {
       <h2 className="font-montserrat text-[40px]/normal tracking-[1.2px] font-normal text-cobalt dark:text-lightWhite">
         Contact us
       </h2>
-      <label className='w-full relative'>
-      <input
-        type="text"
-        name="name"
-        placeholder="Your name"
-        className="form-input"
-      />
-      {state?.errors && (
-        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
-          {state.errors?.name?._errors[0]}
-        </span>
-        )}
-      </label>
-      <label className='w-full relative'>
-      <input
-        type="email"
-        name="email"
-        placeholder="Your email"
-        className="form-input"
-      />
-      {state?.errors && (
-        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
-          {state?.errors?.email?._errors[0]}
-        </span>
-        )}
-      </label>
-      <label className='w-full relative'>
-      <input
-        type="tel"
-        name="phoneNumber"
-        placeholder="Phone number"
-        className="form-input"
-      />
-      {state?.errors && (
-        <span className="text-red-500 text-sm italic absolute -bottom-5 left-0">
-          {state?.errors?.phoneNumber?._errors[0]}
-        </span>
-      )}
-      </label>
+      <InputForm type="text" name="name" placeholder="Your name" state={state} />
+      <InputForm type="email" name="email" placeholder="Your email" state={state} />
+      <InputForm type="tel" name="phoneNumber" placeholder="Phone number" state={state} />
       <label className='w-full relative'>
       <textarea
         name="messageContact"
