@@ -63,7 +63,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
       <button
         onClick={() => handleOpenModal(process)}
         onKeyDown={handleKeyDown}
-        className="gradient-border btn-light size-full relative outline-none "
+        className="gradient-border !border-0 btn-light size-full relative outline-none "
         tabIndex={0}
         aria-label={`Open modal for ${process.name}`}
       >

@@ -22,6 +22,12 @@ body {
   overflow: hidden;
   background-image: none;
   transition: all 0.3s ease-in-out;
+  border: 2px solid #035d95;
+}
+
+.dark .gradient-border,
+.dark .btn {
+  border: none;
 }
 
 .gradient-border::before,
@@ -31,7 +37,7 @@ body {
 
 .dark .gradient-border::before,
 .dark .btn::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -93,8 +99,24 @@ body {
   }
 }
 
+.icon {
+  content: '';
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  padding: 2px;
+  background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
 .title-section::before {
-  content: "";
+  content: '';
   display: none;
   position: absolute;
   left: 0px;
@@ -113,6 +135,10 @@ body {
   .title-section::before {
     display: block;
   }
+}
+
+:root {
+  --nextui-danger: transparent;
 }
 
 .modal-workingProcess {
@@ -136,6 +162,14 @@ body {
   @apply w-[358px] md:w-[340px] desk:w-[400px];
 }
 
+span.px-1.relative.inline-flex {
+  margin-right: 0;
+}
+
+div.px-1.relative.flex-shrink-0 {
+  margin-right: 0;
+}
+
 .dark .img-border {
   background-color: #049bbe;
   background-image: none;
@@ -143,28 +177,73 @@ body {
 
 .img-border {
   background-image: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
-  .dark #open-modal {
-    transition: all 0.3s ease-in-out;
-  }
+}
+.dark #open-modal {
+  transition: all 0.3s ease-in-out;
+}
 
-  .dark #open-modal:hover,
-  .dark #open-modal:focus {
-    background: none;
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: initial;
-    color: #02f5ee;
-    box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
-  }
+.dark #open-modal:hover,
+.dark #open-modal:focus {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: #02f5ee;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
+}
 
-  #open-modal:hover,
-  #open-modal:focus {
-    background: none;
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: initial;
-    color: #049bbe;
-    border-color: #049bbe;
-    box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
-  }
+#open-modal:hover,
+#open-modal:focus {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: #049bbe;
+  border-color: #049bbe;
+  box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
+}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+.burger-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #035d95;
+  border-radius: 2px;
+}
+
+.dark .burger-icon span,
+.dark .burger-icon span::before,
+.dark .burger-icon span::after {
+  background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: 4px;
+}
+
+.burger-icon span::after {
+  bottom: 4px;
 }
