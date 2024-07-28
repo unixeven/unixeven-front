@@ -8,16 +8,30 @@ import { OurClients } from '@/components/OurClients/OurClients';
 import { OurServices } from '@/components/OurServices/OurServices';
 import { OurTeam } from '@/components/OurTeam/OurTeam';
 import { WorkingProcess } from '@/components/WorkingProcess/WorkingProcess';
+import { getDictionary, Locale } from './dictionaries';
 
-export default function Home() {
+interface HomeProps {
+  params: {
+    lang: Locale;
+  };
+}
+
+export default async function Home({ params: { lang } }: HomeProps) {
+  const {
+    aboutUs,
+    meetOurTeam,
+    services,
+    processes,
+    clientsSay,
+    portfolio,
+    contacts,
+  } = await getDictionary(lang);
+
   return (
     <main>
-      {/* <div className="bg-hero-bg-up  bg-no-repeat"> */}
-
       <Hero />
-      {/* </div> */}
       <AboutUs />
-      <OurTeam />
+      <OurTeam meetOurTeam={meetOurTeam} />
       <OurServices />
       <WorkingProcess />
       <OurClients />

@@ -27,8 +27,6 @@ export const BurgerMenu: FC<BurgerMenuProps> = ({ nav }) => {
         <span></span>
       </button>
 
-      {/* <RxHamburgerMenu size={32} onClick={toggleMenu} className="" /> */}
-
       {isOpen && (
         <div className="absolute top-0 left-0 z-40 min-h-screen min-w-full dark:bg-blackMain bg-gainsboro">
           <RxCross1
