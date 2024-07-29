@@ -22,6 +22,12 @@ body {
   overflow: hidden;
   background-image: none;
   transition: all 0.3s ease-in-out;
+  border: 2px solid #035d95;
+}
+
+.dark .gradient-border,
+.dark .btn {
+  border: none;
 }
 
 .gradient-border::before,
@@ -31,7 +37,7 @@ body {
 
 .dark .gradient-border::before,
 .dark .btn::before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   top: 0;
@@ -93,8 +99,24 @@ body {
   }
 }
 
+.icon {
+  content: '';
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 9999px;
+  padding: 2px;
+  background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: xor;
+}
+
 .title-section::before {
-  content: "";
+  content: '';
   display: none;
   position: absolute;
   left: 0px;
@@ -115,6 +137,10 @@ body {
   }
 }
 
+:root {
+  --nextui-danger: transparent;
+}
+
 .modal-workingProcess {
   @apply gradient-border relative size-[358px] md:size-[727px] rounded-full  bg-gainsboro  !bg-modalWorkProcessLightBg bg-center   dark:bg-blackMain dark:bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center;
 
@@ -132,8 +158,38 @@ body {
   }
 }
 
+.modal-contactUs {
+  @apply gradient-border before:!rounded-[32px] relative flex items-center justify-center w-[358px] h-[745px] md:w-[661px] md:h-[780px] desk:w-[757px] bg-gainsboro dark:bg-blackMain !bg-modalContactUsBg md:!bg-modalContactUsBgMd desk:!bg-modalContactUsBgDesk bg-no-repeat bg-[length:90%_60%] md:!bg-[length:50%_60%] desk:!bg-[length:45%_60%] bg-left-top px-8 py-[104px] md:px-[46px] md:py-24 desk:p-28;
+  border-radius: 32px;
+
+  #close-modal {
+    @apply absolute right-4 top-6 md:right-8 md:top-8 desk:right-12 desk:top-12 size-8  text-cobalt dark:text-lightWhite;
+  }
+}
+
+.form-input {
+  @apply font-montserrat text-base w-full px-5 py-4 rounded-2xl border-2 border-cobalt dark:border-0 dark:text-black outline-0 relative bg-transparent dark:bg-gainsboro;
+  
+}
+.form-input::placeholder {
+  @apply text-cobalt dark:text-tundora;
+}
+
 .btn-request {
   @apply w-[358px] md:w-[340px] desk:w-[400px];
+}
+
+<<<<<<<<< Temporary merge branch 1:src/app/[lang]/globals.css
+span.px-1.relative.inline-flex {
+  margin-right: 0;
+}
+
+div.px-1.relative.flex-shrink-0 {
+  margin-right: 0;
+=========
+.btn-submit {
+  @apply !w-[218px] !h-[70px] !p-5;
+>>>>>>>>> Temporary merge branch 2:src/app/globals.css
 }
 
 .dark .img-border {
@@ -143,28 +199,90 @@ body {
 
 .img-border {
   background-image: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
-  .dark #open-modal {
-    transition: all 0.3s ease-in-out;
-  }
+}
+.dark #open-modal {
+  transition: all 0.3s ease-in-out;
+}
 
-  .dark #open-modal:hover,
-  .dark #open-modal:focus {
-    background: none;
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: initial;
-    color: #02f5ee;
-    box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
-  }
+.dark #open-modal:hover,
+.dark #open-modal:focus {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: #02f5ee;
+  box-shadow: 4px 4px 10px 0px rgba(255, 255, 255, 0.7);
+}
 
-  #open-modal:hover,
-  #open-modal:focus {
-    background: none;
-    background-clip: border-box;
-    -webkit-background-clip: border-box;
-    -webkit-text-fill-color: initial;
-    color: #049bbe;
-    border-color: #049bbe;
-    box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
-  }
+#open-modal:hover,
+#open-modal:focus {
+  background: none;
+  background-clip: border-box;
+  -webkit-background-clip: border-box;
+  -webkit-text-fill-color: initial;
+  color: #049bbe;
+  border-color: #049bbe;
+  box-shadow: 4px 4px 10px 0px rgba(4, 155, 190, 0.2);
+}
+
+/**
+  |============================
+  | Header
+  |============================
+*/
+
+.burger-icon {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger-icon span,
+.burger-icon span::before,
+.burger-icon span::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #035d95;
+  border-radius: 2px;
+}
+
+.dark .burger-icon span,
+.dark .burger-icon span::before,
+.dark .burger-icon span::after {
+  background: linear-gradient(to right, #035d95, #049bbe, #01c8ee);
+}
+
+.burger-icon span::before,
+.burger-icon span::after {
+  position: absolute;
+}
+
+.burger-icon span::before {
+  top: 4px;
+}
+
+.burger-icon span::after {
+  bottom: 4px;
+}
+
+/**
+  |============================
+  | OutTeam
+  |============================
+*/
+
+.team-slider .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  background-color: #f1f1f1;
+  opacity: 0.7;
+}
+.team-slider .swiper-pagination-bullet-active {
+  background-color: #007aff;
+  opacity: 1;
 }
