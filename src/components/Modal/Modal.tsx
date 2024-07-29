@@ -91,6 +91,7 @@ export const Modal: FC<ModalProps> = ({
             </div>
           )}
           <button
+            id='close-modal'
             type="button"
             className="transition-transform duration-300 hover:scale-125 focus:outline-none focus:scale-125 "
             onClick={onClose}
