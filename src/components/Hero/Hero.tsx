@@ -37,11 +37,14 @@ export const Hero = () => {
 
   return (
     <section className="  w-full pt-[276px] pb-[297px] md:pt-[380px] md:pb-[450px] xl:pt-[320px] xl:pb-[277px]">
-      <h1 ref={titleRef} className="text-center mb-10 font-cinzelDecorativev">
+      <h1
+        ref={titleRef}
+        className="text-center mb-10 md:mb-[60px] font-cinzelDecorativev"
+      >
         {'UNIXEVEN'.split('').map((letter, index) => (
           <span
             key={index}
-            className="letter inline-block gradient-text font-cinzelDecorative text-[56px]/[40px] lg:text-[120px]/[85px] font-bold tracking-[0.5px]"
+            className="letter inline-block gradient-text font-cinzelDecorative text-[56px]/[40px] md:text-[120px]/[85px] font-bold tracking-[0.5px]"
           >
             {letter}
           </span>

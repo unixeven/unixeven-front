@@ -31,7 +31,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
 
   return (
     <main>
-      <div className="w-full desk:bg-hero-bg-desk bg-no-repeat bg-heroPosition bg-hero-bg-desk-size">
+      <div className="w-full bg-hero-bg-mob md:bg-hero-bg-md desk:bg-hero-bg-desk bg-no-repeat bg-heroPositionMob desk:bg-heroPositionDesk md:bg-heroPositionMd bg-hero-bg-mob-size desk:bg-hero-bg-desk-size md:bg-hero-bg-md-size">
         <Header nav={header.nav} />
         <Hero />
       </div>
