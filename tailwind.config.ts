@@ -50,14 +50,22 @@ const config: Config = {
         backgroundTeam:
           'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.6) 100%)',
         'hero-bg-desk':
-          "url('/images/heroLeft-bg-desk.svg'),url('/images/heroCentre-bg-desk.png'),url('/images/heroRight-bg-desk.svg')",
+          "url('/images/heroLeft-bg-desk.png'),url('/images/heroCentre-bg-desk.png'),url('/images/heroRight-bg-desk.png')",
+        'hero-bg-md':
+          "url('/images/heroLeft-bg-md.png'),url('/images/heroCentre-bg-desk.png'),url('/images/heroRight-bg-md.png')",
+        'hero-bg-mob':
+          "url('/images/heroLeft-bg-mob.png'),url('/images/heroCentre-bg-mob.png'),url('/images/heroRight-bg-mob.png')",
       },
       backgroundPosition: {
         ourServicesPosition: 'center 21px, center calc(100% - 12px)',
-        heroPosition: 'left bottom,center ,right bottom',
+        heroPositionDesk: 'left bottom,center ,right bottom',
+        heroPositionMd: 'left bottom,center,right center',
+        heroPositionMob: 'left  top 7rem,center,right bottom',
       },
       backgroundSize: {
-        'hero-bg-desk-size': 'auto, contain, auto',
+        'hero-bg-desk-size': '20% 50%, 95% 95%, 45% 95%',
+        'hero-bg-md-size': '28% 49%, 95% 95%, 55% 80%',
+        'hero-bg-mob-size': '37% 43%, 95% 95%, 63% 49%',
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],
