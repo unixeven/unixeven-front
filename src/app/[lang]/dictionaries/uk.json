@@ -1,0 +1,87 @@
+{
+  "lang": ["UA", "EN"],
+  "header": {
+    "nav": [
+      {
+        "name": "Про нас",
+        "id": "about us"
+      },
+      {
+        "name": "Послуги",
+        "id": "services"
+      },
+      {
+        "name": "Процес",
+        "id": "process"
+      },
+      {
+        "name": "Портфоліо",
+        "id": "portfolio"
+      },
+      {
+        "name": "Контакти",
+        "id": "contacts"
+      }
+    ]
+  },
+  "aboutUs": { "title": "Послуги" },
+  "meetOurTeam": {
+    "title": "Знайомтесь з нашою командою",
+    "infoTeam": [
+      {
+        "id": "1",
+        "url": "/images/OurTeamImage/1.png",
+        "name": "Гном 1",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      },
+      {
+        "id": "2",
+        "url": "/images/OurTeamImage/2.png",
+        "name": "Гном 2",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      },
+      {
+        "id": "3",
+        "url": "/images/OurTeamImage/3.png",
+        "name": "Гном 3",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      },
+      {
+        "id": "4",
+        "url": "/images/OurTeamImage/4.png",
+        "name": "Анна",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      },
+      {
+        "id": "5",
+        "url": "/images/OurTeamImage/5.png",
+        "name": "Гном 4",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      },
+      {
+        "id": "6",
+        "url": "/images/OurTeamImage/6.png",
+        "name": "Гном 5",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      },
+      {
+        "id": "7",
+        "url": "/images/OurTeamImage/7.png",
+        "name": "Гном 6",
+        "positiOnWork": "Розробник",
+        "aboutPerson": ""
+      }
+    ]
+  },
+  "services": { "title": "Наші Послуги" },
+  "processes": { "title": "Робочий Процес" },
+  "clientsSay": { "title": "Що кажуть наші клієнти" },
+  "portfolio": { "title": "Наше Портфоліо" },
+  "contacts": { "title": "Контакти" }
+}

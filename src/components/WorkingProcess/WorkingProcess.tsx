@@ -49,7 +49,7 @@ export const WorkingProcess = () => {
         id="working-process-title"
         titleRef={titleRef}
       />
-      <ThemeSwitcher />
+
       <WorkingProcessList />
     </section>
   );

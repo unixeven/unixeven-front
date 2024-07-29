@@ -1,0 +1,88 @@
+{
+  "lang": ["UA", "EN"],
+  "header": {
+    "nav": [
+      {
+        "name": "About us",
+        "id": "about us"
+      },
+      {
+        "name": "Services",
+        "id": "our-services-title"
+      },
+      {
+        "name": "Process",
+        "id": "process"
+      },
+      {
+        "name": "Portfolio",
+        "id": "portfolio"
+      },
+      {
+        "name": "Contacts",
+        "id": "contacts"
+      }
+    ]
+  },
+  "aboutUs": { "title": "Services" },
+  "meetOurTeam": {
+    "title": "Meet our team",
+    "infoTeam": [
+      {
+        "id": "1",
+        "url": "/images/OurTeamImage/1.png",
+        "name": "Gnome 1",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "2",
+        "url": "/images/OurTeamImage/2.png",
+        "name": "Gnome 2",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "3",
+        "url": "/images/OurTeamImage/3.png",
+        "name": "Gnome 3",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "4",
+        "url": "/images/OurTeamImage/4.png",
+        "name": "Anna",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "5",
+        "url": "/images/OurTeamImage/5.png",
+        "name": "Gnome 4",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "6",
+        "url": "/images/OurTeamImage/6.png",
+        "name": "Gnome 5",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "7",
+        "url": "/images/OurTeamImage/7.png",
+        "name": "Gnome 6",
+        "positiOnWork": "Developer",
+        "aboutPerson": ""
+      }
+    ]
+  },
+  "services": { "title": "Our Services" },
+  "processes": { "title": "Working Process" },
+  "clientsSay": { "title": "What our clients say" },
+  "portfolio": { "title": "Our Portfolio" },
+
+  "contacts": { "title": "Contacts" }
+}
