@@ -1,12 +1,12 @@
 import React, { FC, KeyboardEvent, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import { gsap } from 'gsap';
-import { WorkProcess } from '@/types/difinitions';
+import { Process } from '@/types/difinitions';
 
 interface WorkProcessItemProps {
-  process: WorkProcess;
+  process: Process;
   index: number;
-  handleOpenModal: (process: WorkProcess) => void;
+  handleOpenModal: (process: Process) => void;
 }
 
 export const WorkProcessItem: FC<WorkProcessItemProps> = ({
@@ -67,7 +67,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
         tabIndex={0}
         aria-label={`Open modal for ${process.name}`}
       >
-        <h3 className="text-lightWhite text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
+        <h3 className="text-lightWhite px-2 break-words text-balance w-full font-montserrat text-xl/5 md:text-[22px]/6 md:font-medium text-center font-bold tracking-[0.6px]">
           {process.name}
         </h3>
       </button>

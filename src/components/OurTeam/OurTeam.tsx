@@ -9,18 +9,10 @@ import { TitleSections } from '../TitleSection/TitleSection';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import { MeetOurTeam } from '@/types/difinitions';
 
 interface OurTeamProps {
-  meetOurTeam: {
-    title: string;
-    infoTeam: {
-      id: string;
-      url: string;
-      name: string;
-      positiOnWork: string;
-      aboutPerson: string;
-    }[];
-  };
+  meetOurTeam: MeetOurTeam;
 }
 
 export const OurTeam: React.FC<OurTeamProps> = ({ meetOurTeam }) => {
@@ -50,7 +42,7 @@ export const OurTeam: React.FC<OurTeamProps> = ({ meetOurTeam }) => {
         }}
         className="team-slider mt-14 xl:mt-16 h-[400px]"
       >
-        {infoTeam.map(({ id, url, name, positiOnWork }) => {
+        {infoTeam.map(({ id, url, name, positionWork }) => {
           return (
             <SwiperSlide key={id} className="group">
               <div className="relative overflow-hidden rounded-[15px] ">
@@ -63,7 +55,7 @@ export const OurTeam: React.FC<OurTeamProps> = ({ meetOurTeam }) => {
                 />
                 <div className="font-montserrat text-lightWhite absolute top-0 left-1/2 -translate-x-1/2 w-[300px] rounded-[15px] h-full flex flex-col gap-2 items-center justify-end p-7 bg-backgroundTeam translate-y-full duration-300 ease-in-out group-hover:translate-y-0 hover:border-3 dark:border-[#09aaa4] border-cobalt">
                   <p className="text-xl/normal font-bold tracking-[0.6px]">
-                    {positiOnWork}
+                    {positionWork}
                   </p>
                   <p className="text-base tracking-[0.48px]">{name}</p>
                 </div>

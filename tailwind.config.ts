@@ -48,15 +48,19 @@ const config: Config = {
         'ourServices-bg-desk': "url('/images/ourServicesDesk-bg.png')",
         backgroundTeam:
           'linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.6) 100%)',
+        'hero-bg-desk':
+          "url('/images/heroLeft-bg-desk.svg'),url('/images/heroRight-bg-desk.svg')",
       },
       backgroundPosition: {
         ourServicesPosition: 'center 21px, center calc(100% - 12px)',
+        heroPosition: 'left bottom,right bottom',
       },
       fontFamily: {
         montserrat: ['"Montserrat"', 'sans-serif'],
         dmSerif: ['"DM Serif Display"', 'serif'],
         poppins: ['"Poppins"', 'sans-serif'],
         inter: ['"Inter"', 'sans-serif'],
+        cinzelDecorative: ['"Cinzel Decorative"', 'serif'],
       },
       screens: {
         desk: '1440px',
