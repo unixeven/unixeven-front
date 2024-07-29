@@ -7,12 +7,12 @@
         "id": "about us"
       },
       {
-        "name": "Services",
+        "name": "Our Services",
         "id": "our-services-title"
       },
       {
-        "name": "Process",
-        "id": "process"
+        "name": "Working Process",
+        "id": "working-process-title"
       },
       {
         "name": "Portfolio",
@@ -32,55 +32,149 @@
         "id": "1",
         "url": "/images/OurTeamImage/1.png",
         "name": "Gnome 1",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "2",
         "url": "/images/OurTeamImage/2.png",
         "name": "Gnome 2",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "3",
         "url": "/images/OurTeamImage/3.png",
         "name": "Gnome 3",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "4",
         "url": "/images/OurTeamImage/4.png",
         "name": "Anna",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "5",
         "url": "/images/OurTeamImage/5.png",
         "name": "Gnome 4",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "6",
         "url": "/images/OurTeamImage/6.png",
         "name": "Gnome 5",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "7",
         "url": "/images/OurTeamImage/7.png",
         "name": "Gnome 6",
-        "positiOnWork": "Developer",
+        "positionWork": "Developer",
         "aboutPerson": ""
       }
     ]
   },
   "services": { "title": "Our Services" },
-  "processes": { "title": "Working Process" },
+  "workProcesses": {
+    "title": "Working Process",
+    "processes": [
+      {
+        "id": 1,
+        "name": "Agile Development",
+
+        "details": {
+          "Iterative Planning & Execution": "Application of iterative planning and development, allowing quick adaptation to changes and regular feedback from clients.",
+          "Cross-Functional Teams": "Working in cross-functional teams to ensure flexibility and improve communication between developers, designers, and project managers."
+        }
+      },
+      {
+        "id": 2,
+        "name": "Innovation & Research",
+
+        "details": {
+          "Emerging Technologies": "Exploration and application of the latest technologies for continuous improvement of developments and offering clients advanced solutions.",
+          "R&D Initiatives": "Research and development initiatives that help discover new opportunities and create innovative products."
+        }
+      },
+      {
+        "id": 3,
+        "name": "Project Start & Estimation",
+
+        "details": {
+          "Expertise Assessment": "Analysis of resources, capabilities, and constraints of the project to determine its viability and potential success.",
+          "Estimate & Proposal": "Developing a detailed plan and budget for the project, including timelines and required resources."
+        }
+      },
+      {
+        "id": 4,
+        "name": "Planning & Strategy",
+
+        "details": {
+          "Research & Analysis": "Analysis of user needs and competitive environment to develop a product strategy.",
+          "User Story & Mockups": "Creating preliminary product concepts, visualizing its functions and user interaction."
+        }
+      },
+      {
+        "id": 5,
+        "name": "Design & Prototyping",
+
+        "details": {
+          "UI/UX Design": "Creating an intuitive and attractive interface that meets user needs.",
+          "Prototyping": "Visualization of the product concept and its testing to validate the idea and gather feedback."
+        }
+      },
+      {
+        "id": 6,
+        "name": "Dev & Implement",
+
+        "details": {
+          "Development Process": "Programming and creating a functional product according to the technical specification.",
+          "Server-Side Scripting": "Developing the server part of the product, including API and integration with other systems."
+        }
+      },
+      {
+        "id": 7,
+        "name": "Quality Assurance & Testing",
+
+        "details": {
+          "QA Testing": "Testing the product for compliance with functional requirements and usability.",
+          "Performance & Security Testing": "Assessing the reliability, performance speed, and security of the product against potential threats."
+        }
+      },
+      {
+        "id": 8,
+        "name": "Deployment & Delivery",
+
+        "details": {
+          "Delivery": "Integrating the product into the operational environment and its launch.",
+          "Cloud Services": "Supporting cloud infrastructure and ensuring continuous operation of the product."
+        }
+      },
+      {
+        "id": 9,
+        "name": "Evaluation & Growth",
+
+        "details": {
+          "Success Measurement": "Analyzing project results, including assessing efficiency and receiving feedback from users.",
+          "Continuous Improvement": "Constant optimization of the product, its updating, and development in accordance with changing requirements and technologies."
+        }
+      },
+      {
+        "id": 10,
+        "name": "Support & Evolution",
+
+        "details": {
+          "Support": "Technical maintenance of the product, ensuring its stable operation and solving emerging problems.",
+          "Evolution": "Development of the product, adapting it to new market requirements, and implementing improvements to meet user needs."
+        }
+      }
+    ]
+  },
   "clientsSay": { "title": "What our clients say" },
   "portfolio": { "title": "Our Portfolio" },
 
