@@ -24,7 +24,11 @@
       }
     ]
   },
-  "aboutUs": { "title": "Services" },
+  "aboutUs": {
+    "title": "About us",
+    "text_1": "Our mission is simple: to elevate your brand through exceptional design. We believe that great design has the power to connect, inspire, and drive success. By understanding your unique vision and goals, we craft bespoke design solutions that resonate with your audience and stand out in the marketplace.",
+    "text_2": "We are your partners in digital success. We strive to exceed your expectations by delivering exceptional results that not only meet but surpass your business goals. Trust Unixeven to turn your ideas into reality and help your business thrive in the digital world."
+  },
   "meetOurTeam": {
     "title": "Meet our team",
     "infoTeam": [
