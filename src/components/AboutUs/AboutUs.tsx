@@ -1,18 +1,19 @@
-import React from 'react';
-import Image from 'next/image';
-import AboutUs_1 from '../../../public/images/AboutUs_1.webp';
-import AboutUs_2 from '../../../public/images/AboutUs_2.webp';
-import AboutUs_3 from '../../../public/images/AboutUs_3.webp';
-import AboutUs_4 from '../../../public/images/AboutUs_4.webp';
-import { TitleSections } from '../TitleSection/TitleSection';
+import React from "react";
+import Image from "next/image";
+import AboutUs_1 from "../../../public/images/AboutUs_1.webp";
+import AboutUs_2 from "../../../public/images/AboutUs_2.webp";
+import AboutUs_3 from "../../../public/images/AboutUs_3.webp";
+import AboutUs_4 from "../../../public/images/AboutUs_4.webp";
+import { TitleSections } from "../TitleSection/TitleSection";
 
-export const AboutUs = () => {
+export const AboutUs = ({ aboutUs }) => {
+  const { title, text_1, text_2 } = aboutUs;
   return (
     <section
-      aria-labelledby="about-us-title"
+      aria-labelledby={title}
       className="flex flex-col item gap-14 desk:gap-16 md:bg-aboutUs-bg-md md:!bg-[length:396px_455px] desk:bg-aboutUs-bg-desk desk:!bg-[length:404px_503px] bg-no-repeat bg-right-top  w-full px-4 md:px-6 desk:px-24 py-16 md:py-20 desk:py-[88px]"
     >
-      <TitleSections text="about us" id="about-us-title" />
+      <TitleSections text={title} id={title} />
       <div className="w-full flex flex-col desk:flex-row gap-12 md:gap-8 desk:gap-6">
         <div className="relative flex gap-4 md:gap-[26px] desk:gap-6 w-full desk:w-max z-10 justify-center">
           <div
@@ -53,19 +54,8 @@ export const AboutUs = () => {
           </div>
         </div>
         <div className="desk:w-1/2 flex flex-col justify-center items-center gap-6 font-montserrat text-2xl/9 font-normal tracking-[0.5px]  dark:text-lightWhite text-prussianBlue">
-          <p>
-            Our mission is simple: to elevate your brand through exceptional
-            design. We believe that great design has the power to connect,
-            inspire, and drive success. By understanding your unique vision and
-            goals, we craft bespoke design solutions that resonate with your
-            audience and stand out in the marketplace.
-          </p>
-          <p>
-            We are your partners in digital success. We strive to exceed your
-            expectations by delivering exceptional results that not only meet
-            but surpass your business goals. Trust Unixeven to turn your ideas
-            into reality and help your business thrive in the digital world.
-          </p>
+          <p>{text_1}</p>
+          <p>{text_2}</p>
         </div>
       </div>
     </section>
