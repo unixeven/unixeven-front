@@ -169,7 +169,15 @@ body {
 
 .form-input {
   @apply font-montserrat text-base w-full px-5 py-4 rounded-2xl border-2 border-cobalt dark:border-0 dark:text-black outline-0 relative bg-transparent dark:bg-gainsboro;
-  
+  @apply transition-colors duration-200 ease-in-out;
+
+  &:hover {
+    @apply bg-gray-300 dark:bg-cyan-200;
+  }
+
+  &:focus {
+    @apply bg-gray-300 dark:bg-cyan-200;
+  }
 }
 .form-input::placeholder {
   @apply text-cobalt dark:text-tundora;
@@ -190,7 +198,6 @@ span.px-1.relative.inline-flex {
 div.px-1.relative.flex-shrink-0 {
   margin-right: 0;
 }
-
 
 .dark .img-border {
   background-color: #049bbe;
