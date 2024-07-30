@@ -61,16 +61,7 @@ export interface DataMessage {
 }
 
 export interface Errors {
-  name?: {
-    _errors: string[];
-  };
-  email?: {
-    _errors: string[];
-  };
-  phoneNumber?: {
-    _errors: string[];
-  };
-  messageContact?: {
+  [key: string]: {
     _errors: string[];
   };
 }
