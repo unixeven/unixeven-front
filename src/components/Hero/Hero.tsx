@@ -36,8 +36,12 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="  w-full pt-[276px] pb-[297px] md:pt-[380px] md:pb-[450px] xl:pt-[320px] xl:pb-[277px]">
+    <section
+      className="w-full pt-[276px] pb-[297px] md:pt-[380px] md:pb-[450px] xl:pt-[320px] xl:pb-[277px]"
+      aria-labelledby="hero-title"
+    >
       <h1
+        id="hero-title"
         ref={titleRef}
         className="text-center mb-10 md:mb-[60px] font-cinzelDecorativev"
       >
@@ -55,6 +59,7 @@ export const Hero = () => {
         className="btn-request mx-auto"
         text="Make a request"
         handleModal={handleOpenModal}
+        ariaLabel="Make a request"
       />
 
       <Modal
