@@ -1,8 +1,8 @@
 import React, { FC } from 'react';
-import { WorkProcess } from '@/types/difinitions';
+import { Process } from '@/types/difinitions';
 
 interface WorkingProcessDetailsProps {
-  process: WorkProcess;
+  process: Process;
 }
 
 export const WorkingProcessDetails: FC<WorkingProcessDetailsProps> = ({

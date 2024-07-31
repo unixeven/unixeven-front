@@ -41,11 +41,25 @@ export interface WorkProcesses {
   processes: Process[];
 }
 
-export interface Services {
+export interface ServiceSubsection {
   id: number;
   title: string;
-  content: string;
+}
+
+export interface Service {
+  id: number;
+  title: string;
   icon: string;
+  category: string;
+  content: string;
+  subsections: {
+    [key: string]: ServiceSubsection[];
+  };
+}
+
+export interface ServicesData {
+  titleSection: string;
+  ourServices: Service[];
 }
 
 export interface Dictionary {
@@ -53,7 +67,7 @@ export interface Dictionary {
   header: Header;
   aboutUs: AboutUsSection;
   meetOurTeam: MeetOurTeam;
-  // services: Service[];
+  services: ServicesData;
   workProcesses: WorkProcesses;
   // clientsSay: ClientsSay;
   // portfolio: Portfolio;
