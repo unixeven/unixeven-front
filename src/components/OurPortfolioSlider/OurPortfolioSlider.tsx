@@ -11,14 +11,14 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 export const Slider: FC = () => {
   return (
     <div className="collection relative">
-      <button className="prev size-[42px] flex justify-center items-center z-10 border-2 border-lightWhite rounded-full absolute bottom-2/4 left-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
-        <IoIosArrowBack className="size-8 fill-lightWhite" />
+      <button className="prev size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full absolute bottom-1/2 left-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+        <IoIosArrowBack className="size-8 dark:fill-lightWhite fill-cobalt" />
       </button>
-      <button className="next size-[42px] flex justify-center items-center z-10 border-2 border-lightWhite rounded-full absolute bottom-2/4 right-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
-        <IoIosArrowForward className="size-8 fill-lightWhite" />
+      <button className="next size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full absolute bottom-1/2 right-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+        <IoIosArrowForward className="size-8  dark:fill-lightWhite fill-cobalt" />
       </button>
       <Swiper
-        className="w-[1036px]"
+        className="md:w-[570px] desk:w-[1036px]"
         modules={[Navigation, EffectCoverflow, Autoplay]}
         navigation={{
           prevEl: '.prev',
@@ -35,9 +35,25 @@ export const Slider: FC = () => {
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 279,
           modifier: 2,
           slideShadows: true,
+        }}
+        breakpoints={{
+          320: {
+            coverflowEffect: {
+              depth: 100,
+            },
+          },
+          768: {
+            coverflowEffect: {
+              depth: 435,
+            },
+          },
+          1440: {
+            coverflowEffect: {
+              depth: 279,
+            },
+          },
         }}
         autoplay={{
           delay: 3000,
