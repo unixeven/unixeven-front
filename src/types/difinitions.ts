@@ -7,6 +7,12 @@ export interface Header {
   nav: NavItem[];
 }
 
+export interface AboutUsSection {
+  title: string;
+  text_1: string;
+  text_2: string;
+}
+
 export interface TeamMember {
   id: string;
   url: string;
@@ -45,7 +51,7 @@ export interface Services {
 export interface Dictionary {
   lang: string[];
   header: Header;
-  // aboutUs: AboutUs;
+  aboutUs: AboutUsSection;
   meetOurTeam: MeetOurTeam;
   // services: Service[];
   workProcesses: WorkProcesses;

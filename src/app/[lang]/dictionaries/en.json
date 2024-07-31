@@ -4,15 +4,15 @@
     "nav": [
       {
         "name": "About us",
-        "id": "about us"
+        "id": "About us"
       },
       {
-        "name": "Our Services",
+        "name": "Services",
         "id": "our-services-title"
       },
       {
-        "name": "Working Process",
-        "id": "working-process-title"
+        "name": "Process",
+        "id": "Working Process"
       },
       {
         "name": "Portfolio",

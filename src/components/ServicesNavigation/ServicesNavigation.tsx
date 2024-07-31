@@ -4,8 +4,9 @@ import services from '../../data/ourServices.json';
 import Link from 'next/link';
 import { FooterTitle } from '../FooterTitle/FooterTitle';
 import { scroller } from 'react-scroll';
+import { FC } from 'react';
 
-export const ServicesNavigation: React.FC = () => {
+export const ServicesNavigation: FC = () => {
   const handleScrollToServices = (index: number) => {
     const offset = index === 3 || index === 4 ? -550 : -300;
 

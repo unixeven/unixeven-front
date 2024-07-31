@@ -15,7 +15,7 @@ export const NavBar: FC<NavBarProps> = ({ nav }) => {
           <li key={id}>
             <Link
               to={id}
-              offset={30}
+              offset={-50}
               smooth={true}
               duration={500}
               className="block text-2xl/normal dark:text-lightWhite text-prussianBlue text-center font-montserrat font-medium cursor-pointer"
