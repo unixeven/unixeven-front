@@ -1,12 +1,17 @@
-import React from "react";
-import Image from "next/image";
-import AboutUs_1 from "../../../public/images/AboutUs_1.webp";
-import AboutUs_2 from "../../../public/images/AboutUs_2.webp";
-import AboutUs_3 from "../../../public/images/AboutUs_3.webp";
-import AboutUs_4 from "../../../public/images/AboutUs_4.webp";
-import { TitleSections } from "../TitleSection/TitleSection";
+import React, { FC } from 'react';
+import Image from 'next/image';
+import AboutUs_1 from '../../../public/images/AboutUs_1.webp';
+import AboutUs_2 from '../../../public/images/AboutUs_2.webp';
+import AboutUs_3 from '../../../public/images/AboutUs_3.webp';
+import AboutUs_4 from '../../../public/images/AboutUs_4.webp';
+import { TitleSections } from '../TitleSection/TitleSection';
+import { AboutUsSection } from '@/types/difinitions';
 
-export const AboutUs = ({ aboutUs }) => {
+interface AboutUsProps {
+  aboutUs: AboutUsSection;
+}
+
+export const AboutUs: FC<AboutUsProps> = ({ aboutUs }) => {
   const { title, text_1, text_2 } = aboutUs;
   return (
     <section
