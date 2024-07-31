@@ -1,25 +1,13 @@
 'use client';
 
 import services from '../../data/ourServices.json';
-import Link from 'next/link';
 import { FooterTitle } from '../FooterTitle/FooterTitle';
-import { scroller } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { FC } from 'react';
 
 export const ServicesNavigation: FC = () => {
-  const handleScrollToServices = (index: number) => {
-    const offset = index === 3 || index === 4 ? -550 : -300;
-
-    scroller.scrollTo(`service-button-${index}`, {
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart',
-      offset,
-    });
-
-    const button = document.getElementById(
-      `service-button-${index}`
-    ) as HTMLButtonElement;
+  const handleSetActive = (to: string) => {
+    const button = document.getElementById(to) as HTMLButtonElement;
     if (button) {
       button.focus();
     }
@@ -33,12 +21,13 @@ export const ServicesNavigation: FC = () => {
           {services.map((service, index) => (
             <li key={service.id} className="text-lg/normal font-normal">
               <Link
-                href={`#service-button-${index}`}
-                onClick={e => {
-                  e.preventDefault();
-                  handleScrollToServices(index);
-                }}
-                className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
+                to={`service-button-${index}`}
+                spy={true}
+                smooth={true}
+                duration={800}
+                offset={index === 3 || index === 4 ? -550 : -300}
+                onSetActive={handleSetActive}
+                className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none cursor-pointer"
               >
                 {service.title}
               </Link>
