@@ -10,15 +10,9 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 
 export const Slider: FC = () => {
   return (
-    <div className="collection relative">
-      <button className="prev size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full absolute bottom-1/2 left-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
-        <IoIosArrowBack className="size-8 dark:fill-lightWhite fill-cobalt" />
-      </button>
-      <button className="next size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full absolute bottom-1/2 right-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
-        <IoIosArrowForward className="size-8  dark:fill-lightWhite fill-cobalt" />
-      </button>
+    <div className="collection relative flex flex-col items-center gap-4 md:gap-0">
       <Swiper
-        className="md:w-[570px] desk:w-[1036px]"
+        className="w-[343px] md:w-[550px] desk:w-[1036px]"
         modules={[Navigation, EffectCoverflow, Autoplay]}
         navigation={{
           prevEl: '.prev',
@@ -39,14 +33,14 @@ export const Slider: FC = () => {
           slideShadows: true,
         }}
         breakpoints={{
-          320: {
+          375: {
             coverflowEffect: {
               depth: 100,
             },
           },
           768: {
             coverflowEffect: {
-              depth: 435,
+              depth: 462,
             },
           },
           1440: {
@@ -66,7 +60,7 @@ export const Slider: FC = () => {
               src="/images/ourPortfolio/image1.jpg"
               alt="Slide 1"
               fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 390px"
+              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
@@ -77,7 +71,7 @@ export const Slider: FC = () => {
               src="/images/ourPortfolio/image2.jpg"
               alt="Slide 2"
               fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 390px"
+              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
@@ -88,7 +82,7 @@ export const Slider: FC = () => {
               src="/images/ourPortfolio/image3.jpg"
               alt="Slide 3"
               fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 390px"
+              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
@@ -99,7 +93,7 @@ export const Slider: FC = () => {
               src="/images/ourPortfolio/image4.jpg"
               alt="Slide 4"
               fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 390px"
+              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
@@ -110,7 +104,7 @@ export const Slider: FC = () => {
               src="/images/ourPortfolio/image5.jpg"
               alt="Slide 5"
               fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 390px"
+              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
@@ -121,12 +115,20 @@ export const Slider: FC = () => {
               src="/images/ourPortfolio/image6.jpg"
               alt="Slide 6"
               fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 390px"
+              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
       </Swiper>
+      <div className="flex items-center justify-around gap-10 ">
+        <button className="prev size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 left-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+          <IoIosArrowBack className="size-8 dark:fill-lightWhite fill-cobalt" />
+        </button>
+        <button className="next size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 right-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+          <IoIosArrowForward className="size-8  dark:fill-lightWhite fill-cobalt" />
+        </button>
+      </div>
     </div>
   );
 };
