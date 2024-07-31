@@ -299,9 +299,9 @@ div.px-1.relative.flex-shrink-0 {
 }
 
 .collection .content {
-  @apply w-[390px] md:w-[279px] desk:w-[400px] border-2 border-pacificBlue rounded-[36px] overflow-hidden;
+  @apply w-[343px] md:w-[279px] desk:w-[400px] border-2 border-pacificBlue rounded-[36px] overflow-hidden;
 }
 
 .imgPortofolio {
-  @apply w-[390px] md:w-[279px] desk:w-[400px];
+  @apply w-[343px] md:w-[279px] desk:w-[400px];
 }
