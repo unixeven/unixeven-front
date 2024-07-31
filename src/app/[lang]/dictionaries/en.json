@@ -381,5 +381,29 @@
   "clientsSay": { "title": "What our clients say" },
   "portfolio": { "title": "Our Portfolio" },
 
-  "contacts": { "title": "Contacts" }
+  "contacts": { "title": "Contacts" },
+  "footer": {
+    "navServises": [
+      {
+        "name": "About us",
+        "id": "About us"
+      },
+      {
+        "name": "Services",
+        "id": "Our Services"
+      },
+      {
+        "name": "Process",
+        "id": "Working Process"
+      },
+      {
+        "name": "Portfolio",
+        "id": "portfolio"
+      },
+      {
+        "name": "Contacts",
+        "id": "contacts"
+      }
+    ]
+  }
 }
