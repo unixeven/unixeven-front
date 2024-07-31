@@ -10,6 +10,7 @@ import { OurTeam } from '@/components/OurTeam/OurTeam';
 import { WorkingProcess } from '@/components/WorkingProcess/WorkingProcess';
 import { getDictionary, Locale } from './dictionaries';
 import { Header } from '@/components/Header/Header';
+import { OurPortfolio } from '@/components/OurPortfolio/OurPortfolio';
 
 interface HomeProps {
   params: {
@@ -42,6 +43,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
       <OurServices services={services} />
       <WorkingProcess workProcesses={workProcesses} />
       <OurClients />
+      <OurPortfolio />
       <ContactUs />
       <Footer footer={footer} />
     </main>
