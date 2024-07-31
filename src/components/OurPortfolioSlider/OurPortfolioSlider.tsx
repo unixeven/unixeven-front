@@ -11,11 +11,11 @@ import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
 export const Slider: FC = () => {
   return (
     <div className="collection relative">
-      <button className="prev size-[42px] flex justify-center items-center z-10 border-2 border-lightWhite rounded-full absolute bottom-2/4 left-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform ">
-        <IoIosArrowBack className="size-8  fill-lightWhite " />
+      <button className="prev size-[42px] flex justify-center items-center z-10 border-2 border-lightWhite rounded-full absolute bottom-2/4 left-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+        <IoIosArrowBack className="size-8 fill-lightWhite" />
       </button>
-      <button className="next size-[42px] flex justify-center items-center z-10 border-2 border-lightWhite rounded-full absolute  bottom-2/4 right-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
-        <IoIosArrowForward className=" size-8 fill-lightWhite" />
+      <button className="next size-[42px] flex justify-center items-center z-10 border-2 border-lightWhite rounded-full absolute bottom-2/4 right-0 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+        <IoIosArrowForward className="size-8 fill-lightWhite" />
       </button>
       <Swiper
         className="w-[1036px]"
@@ -29,12 +29,14 @@ export const Slider: FC = () => {
         centeredSlides={true}
         loop={true}
         autoHeight={true}
-        slidesPerView={3}
+        slidesPerView="auto"
+        loopAdditionalSlides={1}
+        loopAddBlankSlides={true}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
-          depth: 160,
-          modifier: 2.5,
+          depth: 279,
+          modifier: 2,
           slideShadows: true,
         }}
         autoplay={{
