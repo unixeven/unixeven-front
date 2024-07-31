@@ -16,7 +16,7 @@ export const Header: FC<HeaderProps> = ({ nav }) => {
       <div className="hidden xl:block">
         <NavBar nav={nav} />
       </div>
-      <div className="flex items-center justify-around gap-3 ">
+      <div className="flex items-center justify-around gap-3 h-8 dark:h-8 ">
         <LanguageSwitcher />
         <ThemeSwitcher />
         <BurgerMenu nav={nav} />

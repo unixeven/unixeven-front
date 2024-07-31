@@ -33,7 +33,7 @@ export const LanguageSwitcher = () => {
       onValueChange={switchLang}
       className="btn "
       classNames={{
-        base: '',
+        base: ' h-full w-[56px]   ',
         wrapper: 'bg-transparent',
         thumb: 'bg-transparent border shadow-none border-red-700 border-none',
         thumbIcon: 'dark:fill-white fill-cobalt',
