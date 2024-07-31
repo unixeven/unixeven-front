@@ -8,7 +8,7 @@
       },
       {
         "name": "Services",
-        "id": "our-services-title"
+        "id": "Our Services"
       },
       {
         "name": "Process",
@@ -83,7 +83,206 @@
       }
     ]
   },
-  "services": { "title": "Our Services" },
+  "services": {
+    "titleSection": "Our Services",
+    "ourServices": [
+      {
+        "id": 1,
+        "title": "Web Dev Solutions",
+        "icon": "laptop-webrepo",
+        "category": "Development",
+        "content": "We offer comprehensive solutions for developing high-quality, intuitive websites. We combine innovative design, advanced technologies, and a personalized approach to each project to ensure a unique user experience and maximum audience engagement. Our team of professionals is ready to bring your ideas to life.",
+        "subsections": {
+          "Design and Development": [
+            {
+              "id": 1,
+              "title": "Detailed coverage of the web design and development process, including user interface and interaction, as well as front-end and back-end development."
+            }
+          ],
+          "E-commerce Expertise": [
+            {
+              "id": 1,
+              "title": "Discusses the creation of online stores, including payment system integration, product catalog management, and transaction security."
+            }
+          ],
+          "SEO and Marketing": [
+            {
+              "id": 1,
+              "title": "Explains how to optimize the website for search engines and methods for online promotion to attract the target audience."
+            }
+          ],
+          "Responsive Web Design": [
+            {
+              "id": 1,
+              "title": "Discusses the importance and methods of developing websites that work effectively on various devices and screens (mobile, tablets, desktops)."
+            }
+          ],
+          "Support and Maintenance": [
+            {
+              "id": 1,
+              "title": "Information about provided website support and update services, including regular content updates, technical support, and website security assurance."
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "QA Testing",
+        "category": "Quality Assurance",
+        "icon": "test",
+        "content": "Our Quality Assurance services ensure that all your digital solutions meet the highest standards of quality. From automated testing to comprehensive manual checks, we safeguard your software against potential faults and bugs to deliver a seamless end-user experience.",
+        "subsections": {
+          "Functional Testing": [
+            {
+              "id": 1,
+              "title": "Validating software actions for all user requirements, ensuring accurate functionality and behavior."
+            }
+          ],
+          "Usability Testing": [
+            {
+              "id": 2,
+              "title": "Assessing the application's user interface and user experience to ensure intuitive navigation and ease of use."
+            }
+          ],
+          "Performance Testing": [
+            {
+              "id": 3,
+              "title": "Evaluating performance under various conditions to ensure reliability, speed, and scalability."
+            }
+          ],
+          "Security Testing": [
+            {
+              "id": 4,
+              "title": "Identifying vulnerabilities and security gaps to protect against threats and data breaches."
+            }
+          ],
+          "Automation Testing": [
+            {
+              "id": 5,
+              "title": "Utilizing automated test scripts to increase efficiency and coverage of the test cycles."
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "title": "UI/UX Design",
+        "category": "Design",
+        "icon": "web-uiux",
+        "content": "Our UI/UX Design services focus on creating engaging and aesthetically pleasing interfaces that provide seamless user experiences. Through meticulous research and innovative design practices, we ensure that our designs meet the needs of your target audience and align with your business goals.",
+        "subsections": {
+          "User Research": [
+            {
+              "id": 1,
+              "title": "Employs various methodologies to understand user needs and behaviors to inform design decisions."
+            }
+          ],
+          "Prototyping": [
+            {
+              "id": 2,
+              "title": "Creating blueprints and interactive prototypes to visualize the structure and flow of the digital product."
+            }
+          ],
+          "UI Design": [
+            {
+              "id": 3,
+              "title": "Crafting visually stunning interface designs that enhance user interaction and engagement."
+            }
+          ],
+          "UX Design": [
+            {
+              "id": 4,
+              "title": "Focusing on the overall feel of the experience, ensuring the product logically flows from one step to the next."
+            }
+          ],
+          "Interaction Design": [
+            {
+              "id": 5,
+              "title": "Designing interactive elements to create meaningful relationships between users and the product."
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "title": "Server-Side Dev",
+        "category": "Backend Development",
+        "icon": "server-dev",
+        "content": "Our server-side development services focus on creating robust and scalable backend systems that power your applications. Utilizing the latest frameworks and technologies, we ensure that your server architecture is secure, efficient, and capable of handling complex business logic and data processing.",
+        "subsections": {
+          "API Development": [
+            {
+              "id": 1,
+              "title": "Designing and implementing secure, scalable, and maintainable APIs for seamless integration between different systems and services."
+            }
+          ],
+          "Database Design": [
+            {
+              "id": 2,
+              "title": "Structuring and optimizing databases for high performance and reliability in data storage and retrieval."
+            }
+          ],
+          "Cloud Services": [
+            {
+              "id": 3,
+              "title": "Leveraging cloud platforms for enhanced server-side capabilities, providing scalable and flexible infrastructure solutions."
+            }
+          ],
+          "Security and Compliance": [
+            {
+              "id": 4,
+              "title": "Implementing industry-standard security practices and ensuring compliance with legal and regulatory requirements for data protection."
+            }
+          ],
+          "Server-Side Scripting": [
+            {
+              "id": 5,
+              "title": "Creating dynamic web page content and server-side applications using various scripting languages and frameworks."
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "title": "Mobile App Dev",
+        "category": "Mobile Development",
+        "icon": "mob-cod",
+        "content": "We specialize in crafting mobile applications that offer compelling user experiences and robust functionality. Our end-to-end mobile app development services cover everything from concept to deployment, ensuring your app performs seamlessly across all devices and platforms.",
+        "subsections": {
+          "iOS Development": [
+            {
+              "id": 1,
+              "title": "Creating custom iOS applications with a focus on clean design, user-friendly interface, and powerful features."
+            }
+          ],
+          "Android Development": [
+            {
+              "id": 2,
+              "title": "Building Android apps that are scalable, efficient, and tailored to the Android ecosystem, ensuring broad compatibility."
+            }
+          ],
+          "Cross-platform Development": [
+            {
+              "id": 3,
+              "title": "Utilizing frameworks like React Native or Flutter to develop apps that deliver a native-like experience on both iOS and Android."
+            }
+          ],
+          "UI/UX Design for Mobile": [
+            {
+              "id": 4,
+              "title": "Designing intuitive and engaging mobile interfaces and experiences that captivate users and drive engagement."
+            }
+          ],
+          "Mobile App Testing": [
+            {
+              "id": 5,
+              "title": "Ensuring the highest quality and performance of your mobile app with our comprehensive testing services."
+            }
+          ]
+        }
+      }
+    ]
+  },
   "workProcesses": {
     "title": "Working Process",
     "processes": [

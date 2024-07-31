@@ -1,20 +1,25 @@
 'use client';
 
 import services from '../../data/ourServices.json';
-import { useState } from 'react';
-import { Services } from '@/types/difinitions';
+import { FC, useState } from 'react';
 
 import { OurServicesItem } from '../OurServicesItem/OurServicesItem';
 import { ServicesDetails } from '../ServicesDetails/ServicesDetails';
 import { Modal } from '../Modal/Modal';
+import { Service, ServicesData } from '@/types/difinitions';
 
-export const OurServicesList = () => {
+interface OurServicesListProps {
+  services: ServicesData;
+}
+
+export const OurServicesList: FC<OurServicesListProps> = ({ services }) => {
+  console.log(`services:`, services);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedServices, setSelectedServices] = useState<Services | null>(
+  const [selectedServices, setSelectedServices] = useState<Service | null>(
     null
   );
 
-  const handleOpenModal = (process: Services) => {
+  const handleOpenModal = (process: Service) => {
     setSelectedServices(process);
     setIsModalOpen(true);
   };
@@ -27,7 +32,7 @@ export const OurServicesList = () => {
   return (
     <>
       <ul className="w-full md:w-[540px] desk:w-full flex flex-col desk:flex-row desk:flex-wrap gap-4 desk:justify-center">
-        {services.map((service: Services, index: number) => (
+        {services.ourServices.map((service: Service, index: number) => (
           <OurServicesItem
             key={service.id}
             service={service}
@@ -43,7 +48,7 @@ export const OurServicesList = () => {
         title="Our services details"
         description={selectedServices ? selectedServices.title : undefined}
       >
-        {selectedServices && <ServicesDetails services={selectedServices} />}
+        {selectedServices && <ServicesDetails service={selectedServices} />}
       </Modal>
     </>
   );

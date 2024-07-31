@@ -1,18 +1,18 @@
-import { Services } from '@/types/difinitions';
+import { Service } from '@/types/difinitions';
 import { FC } from 'react';
 
 interface ServicesDetailsProps {
-  services: Services;
+  service: Service;
 }
 
-export const ServicesDetails: FC<ServicesDetailsProps> = ({ services }) => {
+export const ServicesDetails: FC<ServicesDetailsProps> = ({ service }) => {
   return (
     <div className="size-full flex flex-col items-center gap-4 md:gap-6 desk:gap-10 dark:text-lightWhite text-cobalt">
       <h2 className="uppercase font-montserrat text-[25px]/[40px] font-medium tracking-[0.5px]">
-        {services.title}
+        {service.title}
       </h2>
       <p className="font-montserrat text-base font-normal tracking-[0.48px] md:text-2xl/9 md:tracking-[0.5px]">
-        {services.content}
+        {service.content}
       </p>
     </div>
   );
