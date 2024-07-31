@@ -27,6 +27,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
     clientsSay,
     portfolio,
     contacts,
+    footer,
   } = await getDictionary(lang);
 
   return (
@@ -42,7 +43,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
       <WorkingProcess workProcesses={workProcesses} />
       <OurClients />
       <ContactUs />
-      <Footer />
+      <Footer footer={footer} />
     </main>
   );
 }

@@ -1,11 +1,15 @@
 'use client';
 
-import services from '../../data/ourServices.json';
 import { FooterTitle } from '../FooterTitle/FooterTitle';
 import { Link } from 'react-scroll';
 import { FC } from 'react';
+import { FooterData } from '@/types/difinitions';
 
-export const ServicesNavigation: FC = () => {
+interface ServicesNavigationProps {
+  footer: FooterData;
+}
+
+export const ServicesNavigation: FC<ServicesNavigationProps> = ({ footer }) => {
   const handleSetActive = (to: string) => {
     const button = document.getElementById(to) as HTMLButtonElement;
     if (button) {
@@ -15,11 +19,11 @@ export const ServicesNavigation: FC = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <FooterTitle text="Services" />
+      <FooterTitle text={footer.title.services} />
       <nav className="">
         <ul className="flex flex-col gap-4">
-          {services.map((service, index) => (
-            <li key={service.id} className="text-lg/normal font-normal">
+          {footer.servicesList.map((item, index) => (
+            <li key={index} className="text-lg/normal font-normal">
               <Link
                 to={`service-button-${index}`}
                 spy={true}
@@ -29,7 +33,7 @@ export const ServicesNavigation: FC = () => {
                 onSetActive={handleSetActive}
                 className="transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none cursor-pointer"
               >
-                {service.title}
+                {item}
               </Link>
             </li>
           ))}

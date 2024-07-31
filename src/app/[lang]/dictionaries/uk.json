@@ -370,5 +370,27 @@
   },
   "clientsSay": { "title": "Що кажуть наші клієнти" },
   "portfolio": { "title": "Наше Портфоліо" },
-  "contacts": { "title": "Контакти" }
+  "contacts": { "title": "Контакти" },
+  "footer": {
+    "title": {
+      "services": "Послуги",
+      "onlineChat": "Онлайн чат",
+      "contactUs": "Зв'яжіться з нами"
+    },
+    "servicesList": [
+      "Веб-розробка",
+      "Тестування QA",
+      "UI/UX Дизайн",
+      "Розробка серверної частини",
+      "Розробка мобільних додатків"
+    ],
+    "onlineChat": {
+      "telegram": "Telegram",
+      "viber": "Viber"
+    },
+    "contactUs": {
+      "phone": "+380967845734",
+      "email": "email458678@gmail.com"
+    }
+  }
 }

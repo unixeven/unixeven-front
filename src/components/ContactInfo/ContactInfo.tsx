@@ -1,30 +1,38 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { FiMail, FiPhoneCall } from 'react-icons/fi';
 import { FooterTitle } from '../FooterTitle/FooterTitle';
+import { FooterData } from '@/types/difinitions';
 
-export const ContactInfo = () => {
+export interface ContactInfoProps {
+  footer: FooterData;
+}
+
+export const ContactInfo: FC<ContactInfoProps> = ({ footer }) => {
+  const { title, contactUs } = footer;
+  const { phone, email } = contactUs;
+
   return (
     <address className="flex flex-col gap-6">
-      <FooterTitle text="Contact us" />
+      <FooterTitle text={title.contactUs} />
       <ul className="flex flex-col gap-2 text-lg font-normal">
         <li className="flex items-center gap-2">
           <a
-            href="tel:+380967845734"
+            href={`tel:${phone}`}
             className="flex items-center gap-2 transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
-            aria-label="Call us at +380967845734"
+            aria-label={`Call us at ${phone}`}
           >
             <FiPhoneCall size={36} />
-            +380967845734
+            {phone}
           </a>
         </li>
         <li className="flex items-center gap-2">
           <a
-            href="mailto:email458678@gmail.com"
+            href={`mailto:${email}`}
             className="flex items-center gap-2 transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
-            aria-label="Email us at email458678@gmail.com"
+            aria-label={`Email us at ${email}`}
           >
             <FiMail size={36} />
-            email458678@gmail.com
+            {email}
           </a>
         </li>
       </ul>

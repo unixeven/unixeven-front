@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { FaTelegramPlane, FaViber } from 'react-icons/fa';
 import { FooterTitle } from '../FooterTitle/FooterTitle';
+import { FooterData } from '@/types/difinitions';
 
-export const OnlineChat = () => {
+interface OnlineChatProps {
+  footer: FooterData;
+}
+
+export const OnlineChat: FC<OnlineChatProps> = ({ footer }) => {
+  const { title, onlineChat } = footer;
   return (
     <div className="flex flex-col gap-6">
-      <FooterTitle text="Online chat" />
+      <FooterTitle text={title.onlineChat} />
       <ul className="flex flex-col gap-2 text-lg font-normal">
         <li className="flex items-center gap-2">
           <a
@@ -14,7 +20,7 @@ export const OnlineChat = () => {
             aria-label="Chat on Telegram"
           >
             <FaTelegramPlane size={36} />
-            Telegram
+            {onlineChat.telegram}
           </a>
         </li>
         <li className="flex items-center gap-2">
@@ -24,7 +30,7 @@ export const OnlineChat = () => {
             aria-label="Chat on Viber"
           >
             <FaViber size={36} />
-            Viber
+            {onlineChat.viber}
           </a>
         </li>
       </ul>
