@@ -11,7 +11,6 @@ interface BurgerMenuProps {
 
 export const BurgerMenu: FC<BurgerMenuProps> = ({ nav }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(`isOpen:`, isOpen);
 
   const toggleMenu = () => {
     const body = document.body;

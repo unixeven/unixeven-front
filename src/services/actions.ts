@@ -18,7 +18,6 @@ export const createUserMessage = async (
   };
 
   const result = formDataSchema.safeParse(data);
-  console.log(`result:`, result);
 
   if (!result.success) {
     return {
