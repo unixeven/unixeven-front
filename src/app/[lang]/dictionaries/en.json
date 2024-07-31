@@ -383,27 +383,25 @@
 
   "contacts": { "title": "Contacts" },
   "footer": {
-    "navServises": [
-      {
-        "name": "About us",
-        "id": "About us"
-      },
-      {
-        "name": "Services",
-        "id": "Our Services"
-      },
-      {
-        "name": "Process",
-        "id": "Working Process"
-      },
-      {
-        "name": "Portfolio",
-        "id": "portfolio"
-      },
-      {
-        "name": "Contacts",
-        "id": "contacts"
-      }
-    ]
+    "title": {
+      "services": "Services",
+      "onlineChat": "Online chat",
+      "contactUs": "Contact us"
+    },
+    "servicesList": [
+      "Web Dev Solutions",
+      "QA Testing",
+      "UI/UX Design",
+      "Server-Side Dev",
+      "Mobile App Dev"
+    ],
+    "onlineChat": {
+      "telegram": "Telegram",
+      "viber": "Viber"
+    },
+    "contactUs": {
+      "phone": "+380967845734",
+      "email": "email458678@gmail.com"
+    }
   }
 }

@@ -62,6 +62,23 @@ export interface ServicesData {
   ourServices: Service[];
 }
 
+export interface FooterData {
+  title: {
+    services: string;
+    onlineChat: string;
+    contactUs: string;
+  };
+  servicesList: string[];
+  onlineChat: {
+    telegram: string;
+    viber: string;
+  };
+  contactUs: {
+    phone: string;
+    email: string;
+  };
+}
+
 export interface Dictionary {
   lang: string[];
   header: Header;
@@ -72,6 +89,7 @@ export interface Dictionary {
   // clientsSay: ClientsSay;
   // portfolio: Portfolio;
   // contacts: Contacts;
+  footer: FooterData;
 }
 export interface DataMessage {
   name: string;
