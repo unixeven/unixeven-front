@@ -13,7 +13,6 @@ interface OurServicesListProps {
 }
 
 export const OurServicesList: FC<OurServicesListProps> = ({ services }) => {
-  console.log(`services:`, services);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedServices, setSelectedServices] = useState<Service | null>(
     null
