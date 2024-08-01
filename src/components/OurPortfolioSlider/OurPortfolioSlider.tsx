@@ -4,138 +4,40 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
-import { Navigation, EffectCoverflow, Autoplay } from 'swiper/modules';
+
 import Image from 'next/image';
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+
+import { SliderNavigaionButton } from '../SliderNavigaionButton/SliderNavigaionButton';
+import { swiperConfig } from './swiperConfig';
+import { slides } from './slides';
 
 export const Slider: FC = () => {
   return (
     <div className="collection relative flex flex-col items-center gap-4 md:gap-0">
       <Swiper
         className="w-[343px] md:w-[550px] desk:w-[1036px]"
-        modules={[Navigation, EffectCoverflow, Autoplay]}
-        navigation={{
-          prevEl: '.prev',
-          nextEl: '.next',
-        }}
-        effect="coverflow"
-        grabCursor={true}
-        centeredSlides={true}
-        loop={true}
-        autoHeight={true}
-        slidesPerView="auto"
-        loopAdditionalSlides={1}
-        loopAddBlankSlides={true}
-        coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
-          modifier: 2,
-          slideShadows: true,
-        }}
-        breakpoints={{
-          375: {
-            coverflowEffect: {
-              depth: 100,
-            },
-          },
-          768: {
-            coverflowEffect: {
-              depth: 462,
-            },
-          },
-          1440: {
-            coverflowEffect: {
-              depth: 279,
-            },
-          },
-        }}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
+        {...swiperConfig}
         aria-live="polite"
       >
-        <SwiperSlide className="content" aria-label="Slide 1">
-          <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
-            <Image
-              src="/images/ourPortfolio/image1.jpg"
-              alt="Project 1"
-              fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
-              className="object-cover"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="content" aria-label="Slide 2">
-          <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
-            <Image
-              src="/images/ourPortfolio/image2.jpg"
-              alt="Project 2"
-              fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
-              className="object-cover"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="content" aria-label="Slide 3">
-          <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
-            <Image
-              src="/images/ourPortfolio/image3.jpg"
-              alt="Project 3"
-              fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
-              className="object-cover"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="content" aria-label="Slide 4">
-          <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
-            <Image
-              src="/images/ourPortfolio/image4.jpg"
-              alt="Project 4"
-              fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
-              className="object-cover"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="content" aria-label="Slide 5">
-          <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
-            <Image
-              src="/images/ourPortfolio/image5.jpg"
-              alt="Project 5"
-              fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
-              className="object-cover"
-            />
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="content" aria-label="Slide 6">
-          <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
-            <Image
-              src="/images/ourPortfolio/image6.jpg"
-              alt="Project 6"
-              fill
-              sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
-              className="object-cover"
-            />
-          </div>
-        </SwiperSlide>
+        {slides.map((slide, index) => (
+          <SwiperSlide
+            key={slide.id}
+            className="content"
+            aria-label={slide.ariaLabel}
+          >
+            <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
+              <Image
+                src={slide.src}
+                alt={slide.alt}
+                fill
+                sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
+                className="object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
-      <div className="flex items-center justify-around gap-10">
-        <button
-          className="prev size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 left-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform duration-300 ease-in-out"
-          aria-label="Previous slide"
-        >
-          <IoIosArrowBack className="size-8 dark:fill-lightWhite fill-cobalt" />
-        </button>
-        <button
-          className="next size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 right-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform duration-300 ease-in-out"
-          aria-label="Next slide"
-        >
-          <IoIosArrowForward className="size-8 dark:fill-lightWhite fill-cobalt" />
-        </button>
-      </div>
+      <SliderNavigaionButton />
     </div>
   );
 };
