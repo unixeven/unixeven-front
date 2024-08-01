@@ -294,14 +294,28 @@ div.px-1.relative.flex-shrink-0 {
   opacity: 1;
 }
 
+/**
+  |============================
+  | OurPortfolio
+  |============================
+*/
 .collection {
   @apply w-full flex justify-center items-center;
 }
 
 .collection .content {
-  @apply w-[343px] md:w-[279px] desk:w-[400px] border-2 border-pacificBlue rounded-[36px] overflow-hidden;
+  @apply w-[343px] md:w-[279px] desk:w-[400px]  rounded-[36px] overflow-hidden;
 }
 
 .imgPortofolio {
   @apply w-[343px] md:w-[279px] desk:w-[400px];
+}
+
+.swiper-slide-active {
+  border: 2px solid #049bbe;
+  transition: border-color 0.3s;
+}
+
+.dark .swiper-slide-active {
+  --color-border-active: #049bbe;
 }

@@ -53,67 +53,68 @@ export const Slider: FC = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
+        aria-live="polite"
       >
-        <SwiperSlide className="content">
+        <SwiperSlide className="content" aria-label="Slide 1">
           <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
             <Image
               src="/images/ourPortfolio/image1.jpg"
-              alt="Slide 1"
+              alt="Project 1"
               fill
               sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="content">
+        <SwiperSlide className="content" aria-label="Slide 2">
           <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
             <Image
               src="/images/ourPortfolio/image2.jpg"
-              alt="Slide 2"
+              alt="Project 2"
               fill
               sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="content">
+        <SwiperSlide className="content" aria-label="Slide 3">
           <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
             <Image
               src="/images/ourPortfolio/image3.jpg"
-              alt="Slide 3"
+              alt="Project 3"
               fill
               sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="content">
+        <SwiperSlide className="content" aria-label="Slide 4">
           <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
             <Image
               src="/images/ourPortfolio/image4.jpg"
-              alt="Slide 4"
+              alt="Project 4"
               fill
               sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="content">
+        <SwiperSlide className="content" aria-label="Slide 5">
           <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
             <Image
               src="/images/ourPortfolio/image5.jpg"
-              alt="Slide 5"
+              alt="Project 5"
               fill
               sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
             />
           </div>
         </SwiperSlide>
-        <SwiperSlide className="content">
+        <SwiperSlide className="content" aria-label="Slide 6">
           <div className="relative w-full h-[482px] desk:h-[482px] md:h-[410px]">
             <Image
               src="/images/ourPortfolio/image6.jpg"
-              alt="Slide 6"
+              alt="Project 6"
               fill
               sizes="(max-width: 767px) 279px, (max-width: 1023px) 400px, 343px"
               className="object-cover"
@@ -121,12 +122,18 @@ export const Slider: FC = () => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div className="flex items-center justify-around gap-10 ">
-        <button className="prev size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 left-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
+      <div className="flex items-center justify-around gap-10">
+        <button
+          className="prev size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 left-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform duration-300 ease-in-out"
+          aria-label="Previous slide"
+        >
           <IoIosArrowBack className="size-8 dark:fill-lightWhite fill-cobalt" />
         </button>
-        <button className="next size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 right-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform">
-          <IoIosArrowForward className="size-8  dark:fill-lightWhite fill-cobalt" />
+        <button
+          className="next size-[42px] flex justify-center items-center z-10 border-2 dark:border-lightWhite border-cobalt rounded-full md:absolute bottom-1/2 right-2 cursor-pointer hover:scale-110 focus:scale-110 transition-transform duration-300 ease-in-out"
+          aria-label="Next slide"
+        >
+          <IoIosArrowForward className="size-8 dark:fill-lightWhite fill-cobalt" />
         </button>
       </div>
     </div>
