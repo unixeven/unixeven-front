@@ -43,7 +43,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
       <OurServices services={services} />
       <WorkingProcess workProcesses={workProcesses} />
       <OurClients />
-      <OurPortfolio />
+      <OurPortfolio portfolio={portfolio} />
       <ContactUs />
       <Footer footer={footer} />
     </main>
