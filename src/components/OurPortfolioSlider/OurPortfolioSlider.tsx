@@ -9,9 +9,14 @@ import Image from 'next/image';
 
 import { SliderNavigaionButton } from '../SliderNavigaionButton/SliderNavigaionButton';
 import { swiperConfig } from './swiperConfig';
-import { slides } from './slides';
 
-export const Slider: FC = () => {
+import { Slide } from '@/types/difinitions';
+
+interface SliderProps {
+  slides: Slide[];
+}
+
+export const Slider: FC<SliderProps> = ({ slides }) => {
   return (
     <div className="collection relative flex flex-col items-center gap-4 md:gap-0">
       <Swiper

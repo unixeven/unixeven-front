@@ -26,21 +26,6 @@ export interface MeetOurTeam {
   infoTeam: TeamMember[];
 }
 
-export interface WorkProcessDetails {
-  [key: string]: string;
-}
-
-export interface Process {
-  id: number;
-  name: string;
-  details: WorkProcessDetails;
-}
-
-export interface WorkProcesses {
-  title: string;
-  processes: Process[];
-}
-
 export interface ServiceSubsection {
   id: number;
   title: string;
@@ -60,6 +45,33 @@ export interface Service {
 export interface ServicesData {
   titleSection: string;
   ourServices: Service[];
+}
+
+export interface WorkProcessDetails {
+  [key: string]: string;
+}
+
+export interface Process {
+  id: number;
+  name: string;
+  details: WorkProcessDetails;
+}
+
+export interface WorkProcesses {
+  title: string;
+  processes: Process[];
+}
+
+export interface Slide {
+  id: number;
+  src: string;
+  alt: string;
+  ariaLabel: string;
+}
+
+export interface Portfolio {
+  title: string;
+  slides: Slide[];
 }
 
 export interface FooterData {
@@ -87,7 +99,7 @@ export interface Dictionary {
   services: ServicesData;
   workProcesses: WorkProcesses;
   // clientsSay: ClientsSay;
-  // portfolio: Portfolio;
+  portfolio: Portfolio;
   // contacts: Contacts;
   footer: FooterData;
 }

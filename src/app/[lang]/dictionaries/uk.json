@@ -369,7 +369,47 @@
     ]
   },
   "clientsSay": { "title": "Що кажуть наші клієнти" },
-  "portfolio": { "title": "Наше Портфоліо" },
+  "portfolio": {
+    "title": "Наше Портфоліо",
+    "slides": [
+      {
+        "id": 1,
+        "src": "/images/ourPortfolio/image1.jpg",
+        "alt": "Проект 1",
+        "ariaLabel": "Слайд 1"
+      },
+      {
+        "id": 2,
+        "src": "/images/ourPortfolio/image2.jpg",
+        "alt": "Проект 2",
+        "ariaLabel": "Слайд 2"
+      },
+      {
+        "id": 3,
+        "src": "/images/ourPortfolio/image3.jpg",
+        "alt": "Проект 3",
+        "ariaLabel": "Слайд 3"
+      },
+      {
+        "id": 4,
+        "src": "/images/ourPortfolio/image4.jpg",
+        "alt": "Проект 4",
+        "ariaLabel": "Слайд 4"
+      },
+      {
+        "id": 5,
+        "src": "/images/ourPortfolio/image5.jpg",
+        "alt": "Проект 5",
+        "ariaLabel": "Слайд 5"
+      },
+      {
+        "id": 6,
+        "src": "/images/ourPortfolio/image6.jpg",
+        "alt": "Проект 6",
+        "ariaLabel": "Слайд 6"
+      }
+    ]
+  },
   "contacts": { "title": "Контакти" },
   "footer": {
     "title": {

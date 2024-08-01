@@ -48,7 +48,7 @@ export const FormContactUs = () => {
         <textarea
           name="messageContact"
           placeholder="Your Message..."
-          className="form-input min-h-[147px]"
+          className="resize-none form-input min-h-[147px]"
           aria-label="Your Message"
         />
         {state?.errors && (
