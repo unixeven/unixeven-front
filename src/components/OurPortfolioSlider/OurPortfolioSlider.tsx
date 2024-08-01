@@ -15,7 +15,7 @@ export const Slider: FC = () => {
   return (
     <div className="collection relative flex flex-col items-center gap-4 md:gap-0">
       <Swiper
-        className="w-[343px] md:w-[550px] desk:w-[1036px]"
+        className="w-[343px] md:w-[550px] desk:w-[1036px] portfolio"
         {...swiperConfig}
         aria-live="polite"
       >
