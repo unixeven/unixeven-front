@@ -11,12 +11,19 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ nav }) => {
   return (
-    <header className="px-4 py-6 md:px-6 xl:px-24 flex items-center justify-between">
+    <header
+      className="px-4 py-6 md:px-6 xl:px-24 flex items-center justify-between"
+      role="banner"
+    >
       <Logo width={82} height={73} />
-      <div className="hidden xl:block">
+      <nav
+        className="hidden xl:block"
+        aria-label="Main Navigation"
+        role="navigation"
+      >
         <NavBar nav={nav} />
-      </div>
-      <div className="flex items-center justify-around gap-3 h-8 dark:h-8 ">
+      </nav>
+      <div className="flex items-center justify-around gap-3  ">
         <LanguageSwitcher />
         <ThemeSwitcher />
         <BurgerMenu nav={nav} />

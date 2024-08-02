@@ -11,7 +11,6 @@ export const LanguageSwitcher = () => {
 
   const router = useRouter();
   const searchParams = useParams();
-  console.log(searchParams);
 
   useEffect(() => {
     if (searchParams.lang === 'uk') {
@@ -31,13 +30,13 @@ export const LanguageSwitcher = () => {
     <Switch
       isSelected={isSelected}
       onValueChange={switchLang}
-      className="btn "
+      className="btn  "
       classNames={{
-        base: ' h-full w-[56px]   ',
-        wrapper: 'bg-transparent',
+        base: ' h-full ',
+        wrapper: 'bg-transparent hover:bg-red-700 focus:bg-red-700',
         thumb: 'bg-transparent border shadow-none border-red-700 border-none',
         thumbIcon: 'dark:fill-white fill-cobalt',
-        label: ' ',
+        label: 'hover:bg-default-200 ',
         startContent: 'font-montserrat dark:text-lightWhite text-cobalt',
         endContent: 'font-montserrat dark:text-lightWhite text-cobalt',
       }}
@@ -47,6 +46,7 @@ export const LanguageSwitcher = () => {
       color="danger"
       startContent={<span>EN</span>}
       endContent={<span>UA</span>}
+      aria-label="Switch language"
     ></Switch>
   );
 };

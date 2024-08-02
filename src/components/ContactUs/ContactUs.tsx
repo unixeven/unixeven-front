@@ -29,7 +29,7 @@ export const ContactUs = () => {
           className="btn-request"
           text="Make a request"
           handleModal={handleOpenModal}
-          ariaLabel={`Open modal for section-contact-us`}
+          ariaLabel="Open modal for contact us form"
         />
       </div>
       <SocialContactUs />
@@ -40,6 +40,8 @@ export const ContactUs = () => {
         className="modal-contactUs"
         title="Contact us"
         description="Form contact us"
+        aria-labelledby="modal-contact-us-title"
+        aria-describedby="modal-contact-us-description"
       >
         <FormContactUs />
       </Modal>

@@ -7,7 +7,6 @@ export const ThemeSwitcher = () => {
   const [theme, setTheme] = useState(() => {
     if (typeof window !== 'undefined' && window.localStorage) {
       const savedTheme = window.localStorage.getItem('theme');
-
       return savedTheme ?? 'dark';
     }
     return 'dark';
@@ -30,7 +29,6 @@ export const ThemeSwitcher = () => {
 
   const toggleTheme = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newTheme = event.target.checked ? 'light' : 'dark';
-
     setTheme(newTheme);
   };
 
@@ -38,5 +36,11 @@ export const ThemeSwitcher = () => {
     return null;
   }
 
-  return <ThemeSwitch checked={theme === 'light'} onChange={toggleTheme} />;
+  return (
+    <ThemeSwitch
+      checked={theme === 'light'}
+      onChange={toggleTheme}
+      aria-label="Toggle theme"
+    />
+  );
 };
