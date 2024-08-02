@@ -30,8 +30,8 @@ export const WorkingProcessList: FC<WorkingProcessListProps> = ({
   };
 
   return (
-    <>
-      <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-[720px] desk:w-full  relative desk:grid-cols-4 desk:gap-x-40 ">
+    <div className="relative">
+      <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-[720px] desk:w-full   desk:grid-cols-4 desk:gap-x-40 ">
         {workProcesses.processes.map((process: Process, index: number) => (
           <WorkProcessItem
             key={process.id}
@@ -40,8 +40,8 @@ export const WorkingProcessList: FC<WorkingProcessListProps> = ({
             handleOpenModal={handleOpenModal}
           />
         ))}
-        <WorkingLogo />
       </ul>
+      <WorkingLogo />
 
       <Modal
         isOpen={isModalOpen}
@@ -52,6 +52,6 @@ export const WorkingProcessList: FC<WorkingProcessListProps> = ({
       >
         {selectedProcess && <WorkingProcessDetails process={selectedProcess} />}
       </Modal>
-    </>
+    </div>
   );
 };

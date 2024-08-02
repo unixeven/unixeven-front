@@ -34,49 +34,49 @@
     "infoTeam": [
       {
         "id": "1",
-        "url": "/images/OurTeamImage/1.png",
+        "url": "/images/OurTeamImage/1.webp",
         "name": "Gnome 1",
         "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "2",
-        "url": "/images/OurTeamImage/2.png",
+        "url": "/images/OurTeamImage/2.webp",
         "name": "Gnome 2",
         "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "3",
-        "url": "/images/OurTeamImage/3.png",
+        "url": "/images/OurTeamImage/3.webp",
         "name": "Gnome 3",
         "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "4",
-        "url": "/images/OurTeamImage/4.png",
+        "url": "/images/OurTeamImage/4.webp",
         "name": "Anna",
         "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "5",
-        "url": "/images/OurTeamImage/5.png",
+        "url": "/images/OurTeamImage/5.webp",
         "name": "Gnome 4",
         "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "6",
-        "url": "/images/OurTeamImage/6.png",
+        "url": "/images/OurTeamImage/6.webp",
         "name": "Gnome 5",
         "positionWork": "Developer",
         "aboutPerson": ""
       },
       {
         "id": "7",
-        "url": "/images/OurTeamImage/7.png",
+        "url": "/images/OurTeamImage/7.webp",
         "name": "Gnome 6",
         "positionWork": "Developer",
         "aboutPerson": ""
@@ -384,37 +384,37 @@
     "slides": [
       {
         "id": 1,
-        "src": "/images/ourPortfolio/image1.jpg",
+        "src": "/images/ourPortfolio/image1.webp",
         "alt": "Project 1",
         "ariaLabel": "Slide 1"
       },
       {
         "id": 2,
-        "src": "/images/ourPortfolio/image2.jpg",
+        "src": "/images/ourPortfolio/image2.webp",
         "alt": "Project 2",
         "ariaLabel": "Slide 2"
       },
       {
         "id": 3,
-        "src": "/images/ourPortfolio/image3.jpg",
+        "src": "/images/ourPortfolio/image3.webp",
         "alt": "Project 3",
         "ariaLabel": "Slide 3"
       },
       {
         "id": 4,
-        "src": "/images/ourPortfolio/image4.jpg",
+        "src": "/images/ourPortfolio/image4.webp",
         "alt": "Project 4",
         "ariaLabel": "Slide 4"
       },
       {
         "id": 5,
-        "src": "/images/ourPortfolio/image5.jpg",
+        "src": "/images/ourPortfolio/image5.webp",
         "alt": "Project 5",
         "ariaLabel": "Slide 5"
       },
       {
         "id": 6,
-        "src": "/images/ourPortfolio/image6.jpg",
+        "src": "/images/ourPortfolio/image6.webp",
         "alt": "Project 6",
         "ariaLabel": "Slide 6"
       }

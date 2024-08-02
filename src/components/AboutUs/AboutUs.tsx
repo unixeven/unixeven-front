@@ -1,11 +1,11 @@
-import React, { FC } from 'react';
-import Image from 'next/image';
-import AboutUs_1 from '../../../public/images/AboutUs_1.webp';
-import AboutUs_2 from '../../../public/images/AboutUs_2.webp';
-import AboutUs_3 from '../../../public/images/AboutUs_3.webp';
-import AboutUs_4 from '../../../public/images/AboutUs_4.webp';
-import { TitleSections } from '../TitleSection/TitleSection';
-import { AboutUsSection } from '@/types/difinitions';
+import React, { FC } from "react";
+import Image from "next/image";
+import aboutUs_1 from "../../../public/images/aboutUs_1.webp";
+import aboutUs_2 from "../../../public/images/aboutUs_2.webp";
+import aboutUs_3 from "../../../public/images/aboutUs_3.webp";
+import aboutUs_4 from "../../../public/images/aboutUs_4.webp";
+import { TitleSections } from "../TitleSection/TitleSection";
+import { AboutUsSection } from "@/types/difinitions";
 
 interface AboutUsProps {
   aboutUs: AboutUsSection;
@@ -31,13 +31,13 @@ export const AboutUs: FC<AboutUsProps> = ({ aboutUs }) => {
 
           <div className="flex flex-col gap-[14px] md:gap-[24px] desk:gap-6">
             <Image
-              src={AboutUs_1}
+              src={aboutUs_1}
               alt="Person explaining a diagram on a whiteboard to colleagues"
               sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
               className="rounded-tl-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
             />
             <Image
-              src={AboutUs_2}
+              src={aboutUs_2}
               alt="Group of people working together at a table with laptops"
               className="rounded-bl-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
               sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
@@ -45,13 +45,13 @@ export const AboutUs: FC<AboutUsProps> = ({ aboutUs }) => {
           </div>
           <div className="flex flex-col gap-[14px] md:gap-[24px] desk:gap-6 pt-[38px] md:pt-[73px] desk:pt-16">
             <Image
-              src={AboutUs_3}
+              src={aboutUs_3}
               alt="Computer screen displaying code"
               sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
               className="rounded-tr-[43px]  w-[171px] md:w-[340px] desk:w-[294px]"
             />
             <Image
-              src={AboutUs_4}
+              src={aboutUs_4}
               alt="Laptop on a desk with a chair beside it"
               sizes="(max-width: 767px) 171px, (max-width: 1023px) 340px, 294px"
               className="rounded-br-[43px] w-[171px] md:w-[340px] desk:w-[294px]"
