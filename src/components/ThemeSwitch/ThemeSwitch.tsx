@@ -22,7 +22,7 @@ export const ThemeSwitch = ({ checked, onChange }: ThemeSwitchProps) => {
 
   return (
     <div className="flex flex-col gap-2">
-      <Component {...getBaseProps()}>
+      <Component {...getBaseProps()} aria-label="Theme switch">
         <VisuallyHidden>
           <input {...getInputProps()} />
         </VisuallyHidden>
@@ -30,8 +30,8 @@ export const ThemeSwitch = ({ checked, onChange }: ThemeSwitchProps) => {
           {...getWrapperProps()}
           className={slots.wrapper({
             class: [
-              'w-8 h-8',
-              'flex items-center justify-center',
+              'w-8 h-8 ',
+              'flex items-center justify-center bg-red-500',
               'rounded-lg bg-default-100 hover:bg-default-200',
             ],
           })}

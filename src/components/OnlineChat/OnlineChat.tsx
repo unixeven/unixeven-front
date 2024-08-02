@@ -9,6 +9,7 @@ interface OnlineChatProps {
 
 export const OnlineChat: FC<OnlineChatProps> = ({ footer }) => {
   const { title, onlineChat } = footer;
+
   return (
     <div className="flex flex-col gap-6">
       <FooterTitle text={title.onlineChat} />
