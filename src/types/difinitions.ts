@@ -7,6 +7,11 @@ export interface Header {
   nav: NavItem[];
 }
 
+export interface HeroData {
+  title: string;
+  textButton: string;
+}
+
 export interface AboutUsSection {
   title: string;
   text_1: string;
@@ -74,6 +79,13 @@ export interface Portfolio {
   slides: Slide[];
 }
 
+export interface ContactsData {
+  title: string;
+  subTitle: string;
+  spanText: string;
+  textButton: string;
+}
+
 export interface FooterData {
   title: {
     services: string;
@@ -94,13 +106,14 @@ export interface FooterData {
 export interface Dictionary {
   lang: string[];
   header: Header;
+  hero: HeroData;
   aboutUs: AboutUsSection;
   meetOurTeam: MeetOurTeam;
   services: ServicesData;
   workProcesses: WorkProcesses;
   // clientsSay: ClientsSay;
   portfolio: Portfolio;
-  // contacts: Contacts;
+  contacts: ContactsData;
   footer: FooterData;
 }
 export interface DataMessage {

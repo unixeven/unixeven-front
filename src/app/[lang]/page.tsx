@@ -19,6 +19,7 @@ interface HomeProps {
 export default async function Home({ params: { lang } }: HomeProps) {
   const {
     header,
+    hero,
     aboutUs,
     meetOurTeam,
     services,
@@ -33,7 +34,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
     <main>
       <div className="w-full bg-hero-bg-mob md:bg-hero-bg-md desk:bg-hero-bg-desk bg-no-repeat bg-heroPositionMob desk:bg-heroPositionDesk md:bg-heroPositionMd bg-hero-bg-mob-size desk:bg-hero-bg-desk-size md:bg-hero-bg-md-size">
         <Header nav={header.nav} />
-        <Hero />
+        <Hero hero={hero} />
       </div>
 
       <AboutUs aboutUs={aboutUs} />
@@ -42,7 +43,7 @@ export default async function Home({ params: { lang } }: HomeProps) {
       <WorkingProcess workProcesses={workProcesses} />
       <OurClients />
       <OurPortfolio portfolio={portfolio} />
-      <ContactUs />
+      <ContactUs contacts={contacts} />
       <Footer footer={footer} />
     </main>
   );

@@ -1,12 +1,22 @@
-import React from 'react';
+import { FC } from 'react';
 
-export const TitleContactUs = () => {
+interface TitleContactUsProps {
+  text: string;
+  spanText: string;
+}
+
+export const TitleContactUs: FC<TitleContactUsProps> = ({ text, spanText }) => {
+  
+  const parts = text.split(spanText);
+ 
+
   return (
-    <h2
+    <h3
       id="section-contact-us"
       className="text-center text-cobalt dark:text-lightWhite font-dmSerif w-[328px] md:w-[696px] desk:w-full text-[64px]/[96px] font-normal tracking-[0.5px] uppercase"
     >
-      Have any <span className="text-pacificBlue italic">project</span> in mind?
-    </h2>
+      {parts[0]} <span className="text-pacificBlue italic">{spanText}</span>{' '}
+      {parts[1]}
+    </h3>
   );
 };
