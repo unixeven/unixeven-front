@@ -37,7 +37,7 @@ export const Hero = () => {
 
   return (
     <section
-      className="w-full pt-[276px] pb-[297px] md:pt-[380px] md:pb-[450px] xl:pt-[320px] xl:pb-[277px]"
+      className="w-full pt-[276px] pb-[297px] md:pt-[380px] md:pb-[450px] xl:pt-[300px] xl:pb-[277px]"
       aria-labelledby="hero-title"
     >
       <h1
