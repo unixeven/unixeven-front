@@ -1,12 +1,17 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { FC, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
 import { FormContactUs } from '../FormContactUs/FormContactUs';
+import { HeroData } from '@/types/difinitions';
 
-export const Hero = () => {
+interface HeroProps {
+  hero: HeroData;
+}
+
+export const Hero: FC<HeroProps> = ({ hero }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const handleOpenModal = () => {
@@ -40,6 +45,9 @@ export const Hero = () => {
       className="w-full pt-[276px] pb-[297px] md:pt-[380px] md:pb-[450px] xl:pt-[300px] xl:pb-[277px]"
       aria-labelledby="hero-title"
     >
+      <h2 id="hero-title" className="sr-only">
+        {hero.title}
+      </h2>
       <h1
         id="hero-title"
         ref={titleRef}
@@ -57,7 +65,7 @@ export const Hero = () => {
       <Button
         buttonType="button"
         className="btn-request mx-auto"
-        text="Make a request"
+        text={hero.textButton}
         handleModal={handleOpenModal}
         ariaLabel="Make a request"
       />
