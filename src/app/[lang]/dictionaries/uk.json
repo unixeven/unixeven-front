@@ -34,49 +34,49 @@
     "infoTeam": [
       {
         "id": "1",
-        "url": "/images/OurTeamImage/1.png",
+        "url": "/images/OurTeamImage/1.webp",
         "name": "Гном 1",
         "positionWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "2",
-        "url": "/images/OurTeamImage/2.png",
+        "url": "/images/OurTeamImage/2.webp",
         "name": "Гном 2",
         "positionWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "3",
-        "url": "/images/OurTeamImage/3.png",
+        "url": "/images/OurTeamImage/3.webp",
         "name": "Гном 3",
         "positionWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "4",
-        "url": "/images/OurTeamImage/4.png",
+        "url": "/images/OurTeamImage/4.webp",
         "name": "Анна",
         "positionWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "5",
-        "url": "/images/OurTeamImage/5.png",
+        "url": "/images/OurTeamImage/5.webp",
         "name": "Гном 4",
         "positionWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "6",
-        "url": "/images/OurTeamImage/6.png",
+        "url": "/images/OurTeamImage/6.webp",
         "name": "Гном 5",
         "positionWork": "Розробник",
         "aboutPerson": ""
       },
       {
         "id": "7",
-        "url": "/images/OurTeamImage/7.png",
+        "url": "/images/OurTeamImage/7.webp",
         "name": "Гном 6",
         "positionWork": "Розробник",
         "aboutPerson": ""
@@ -374,37 +374,37 @@
     "slides": [
       {
         "id": 1,
-        "src": "/images/ourPortfolio/image1.jpg",
+        "src": "/images/ourPortfolio/image1.webp",
         "alt": "Проект 1",
         "ariaLabel": "Слайд 1"
       },
       {
         "id": 2,
-        "src": "/images/ourPortfolio/image2.jpg",
+        "src": "/images/ourPortfolio/image2.webp",
         "alt": "Проект 2",
         "ariaLabel": "Слайд 2"
       },
       {
         "id": 3,
-        "src": "/images/ourPortfolio/image3.jpg",
+        "src": "/images/ourPortfolio/image3.webp",
         "alt": "Проект 3",
         "ariaLabel": "Слайд 3"
       },
       {
         "id": 4,
-        "src": "/images/ourPortfolio/image4.jpg",
+        "src": "/images/ourPortfolio/image4.webp",
         "alt": "Проект 4",
         "ariaLabel": "Слайд 4"
       },
       {
         "id": 5,
-        "src": "/images/ourPortfolio/image5.jpg",
+        "src": "/images/ourPortfolio/image5.webp",
         "alt": "Проект 5",
         "ariaLabel": "Слайд 5"
       },
       {
         "id": 6,
-        "src": "/images/ourPortfolio/image6.jpg",
+        "src": "/images/ourPortfolio/image6.webp",
         "alt": "Проект 6",
         "ariaLabel": "Слайд 6"
       }
