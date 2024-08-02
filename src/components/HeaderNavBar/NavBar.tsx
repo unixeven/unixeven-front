@@ -13,14 +13,14 @@ export const NavBar: FC<NavBarProps> = ({ nav, toggleMenu }) => {
     <ul className="flex flex-col gap-10 xl:flex-row items-center justify-center">
       {nav.map(({ name, id }) => {
         return (
-          <li key={id}>
+          <li key={id} tabIndex={0}>
             <Link
               onClick={toggleMenu}
               to={id}
               offset={-50}
               smooth={true}
               duration={500}
-              className="block text-2xl/normal dark:text-lightWhite text-prussianBlue text-center font-montserrat font-medium cursor-pointer"
+              className="nav text-2xl/normal dark:text-lightWhite hover:text-cobalt focus:text-cobalt dark:hover:text-pacificBlue dark:focus:text-pacificBlue text-prussianBlue text-center font-montserrat font-medium cursor-pointer"
             >
               {name}
             </Link>

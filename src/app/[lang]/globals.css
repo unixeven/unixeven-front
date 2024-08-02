@@ -277,6 +277,30 @@ div.px-1.relative.flex-shrink-0 {
   bottom: 4px;
 }
 
+.nav {
+  position: relative;
+}
+
+.nav::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #035d95;
+  transition: width 0.5s ease-in-out;
+}
+
+.dark .nav::after {
+  background-color: #049bbe;
+}
+
+.nav:hover::after,
+.nav:focus::after {
+  width: 100%;
+}
+
 /**
   |============================
   | OutTeam

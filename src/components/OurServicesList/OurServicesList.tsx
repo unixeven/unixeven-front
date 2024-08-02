@@ -1,6 +1,6 @@
 'use client';
 
-import services from '../../data/ourServices.json';
+// import services from '../../data/ourServices.json';
 import { FC, useState } from 'react';
 
 import { OurServicesItem } from '../OurServicesItem/OurServicesItem';
