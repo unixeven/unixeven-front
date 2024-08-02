@@ -15,7 +15,7 @@ export const Header: FC<HeaderProps> = ({ nav }) => {
       className="px-4 py-6 md:px-6 xl:px-24 flex items-center justify-between"
       role="banner"
     >
-      <Logo width={82} height={73} />
+      <Logo width={82} />
       <nav
         className="hidden xl:block"
         aria-label="Main Navigation"
