@@ -16,7 +16,7 @@ export const WorkingLogo: FC = () => {
           rotationY: 360,
           duration: 1,
           ease: 'power2.out',
-          delay: 1.5, // задержка после анимации заголовка
+          delay: 1.5,
         }
       );
     }
@@ -27,7 +27,7 @@ export const WorkingLogo: FC = () => {
       ref={logoRef}
       className="hidden logo-container md:flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
     >
-      <Logo width={203} height={173} />
+      <Logo width={203}  />
     </div>
   );
 };

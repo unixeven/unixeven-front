@@ -1,12 +1,12 @@
 import React, { FC, KeyboardEvent, useEffect, useRef } from "react";
 import clsx from "clsx";
 import { gsap } from "gsap";
-import { WorkProcess } from "@/types/definitions";
+import { Process } from "@/types/difinitions";
 
 interface WorkProcessItemProps {
-  process: WorkProcess;
+  process: Process;
   index: number;
-  handleOpenModal: (process: WorkProcess) => void;
+  handleOpenModal: (process: Process) => void;
 }
 
 export const WorkProcessItem: FC<WorkProcessItemProps> = ({
@@ -37,7 +37,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
       ref={itemRef}
       key={process.id}
       className={clsx(
-        "size-[171px] flex justify-center items-center cursor-pointer",
+        "size-[171px] flex justify-center items-center cursor-pointer rounded-full",
         {
           "md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-end desk:self-end":
             index === 2,
@@ -63,13 +63,13 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
       <button
         onClick={() => handleOpenModal(process)}
         onKeyDown={handleKeyDown}
-        className="gradient-border size-full relative outline-none "
+        className="gradient-border !border-0 btn-light size-full relative outline-none "
         tabIndex={0}
         aria-label={`Open modal for ${process.name}`}
       >
-        <p className="text-balance w-full font-montserrat text-xl/5 md:text-2xl/6 md:font-medium text-center font-bold tracking-[0.6px]">
+        <h3 className="text-lightWhite px-2  hyphens-auto break-words text-balance w-full font-montserrat text-xl/5 md:text-[22px]/6 md:font-medium text-center font-bold tracking-[0.6px]">
           {process.name}
-        </p>
+        </h3>
       </button>
     </li>
   );

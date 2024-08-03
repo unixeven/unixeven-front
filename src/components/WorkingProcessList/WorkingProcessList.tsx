@@ -1,20 +1,25 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import workProcesses from "../../data/workProcesses.json";
+
 import { WorkingLogo } from "../WorkingLogo/WorkingLogo";
-import { WorkProcess } from "@/types/definitions";
+
 import { Modal } from "../Modal/Modal";
 import { WorkProcessItem } from "../WorkProcessItem/WorkProcessItem";
 import { WorkingProcessDetails } from "../WorkingProcessDetails/WorkingProcessDetails";
+import { Process, WorkProcesses } from "@/types/difinitions";
 
-export const WorkingProcessList: FC = () => {
+interface WorkingProcessListProps {
+  workProcesses: WorkProcesses;
+}
+
+export const WorkingProcessList: FC<WorkingProcessListProps> = ({
+  workProcesses,
+}) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedProcess, setSelectedProcess] = useState<WorkProcess | null>(
-    null
-  );
+  const [selectedProcess, setSelectedProcess] = useState<Process | null>(null);
 
-  const handleOpenModal = (process: WorkProcess) => {
+  const handleOpenModal = (process: Process) => {
     setSelectedProcess(process);
     setIsModalOpen(true);
   };
@@ -25,9 +30,9 @@ export const WorkingProcessList: FC = () => {
   };
 
   return (
-    <>
-      <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-[720px] desk:w-full  relative desk:grid-cols-4 desk:gap-x-40 ">
-        {workProcesses.map((process: WorkProcess, index: number) => (
+    <div className="relative">
+      <ul className="grid grid-cols-2 gap-4 md:gap-0 md:w-[720px] desk:w-full   desk:grid-cols-4 desk:gap-x-40 ">
+        {workProcesses.processes.map((process: Process, index: number) => (
           <WorkProcessItem
             key={process.id}
             process={process}
@@ -35,8 +40,8 @@ export const WorkingProcessList: FC = () => {
             handleOpenModal={handleOpenModal}
           />
         ))}
-        <WorkingLogo />
       </ul>
+      <WorkingLogo />
 
       <Modal
         isOpen={isModalOpen}
@@ -47,6 +52,6 @@ export const WorkingProcessList: FC = () => {
       >
         {selectedProcess && <WorkingProcessDetails process={selectedProcess} />}
       </Modal>
-    </>
+    </div>
   );
 };

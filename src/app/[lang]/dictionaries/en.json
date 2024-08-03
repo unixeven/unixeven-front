@@ -1,0 +1,456 @@
+{
+  "lang": ["UA", "EN"],
+  "header": {
+    "nav": [
+      {
+        "name": "About us",
+        "id": "About us"
+      },
+      {
+        "name": "Services",
+        "id": "Our Services"
+      },
+      {
+        "name": "Process",
+        "id": "Working Process"
+      },
+      {
+        "name": "Portfolio",
+        "id": "portfolio"
+      },
+      {
+        "name": "Contacts",
+        "id": "contacts"
+      }
+    ]
+  },
+  "hero": {
+    "title": "We are Unixeven",
+    "textButton": "Make a request"
+  },
+  "aboutUs": {
+    "title": "About us",
+    "text_1": "Our mission is simple: to elevate your brand through exceptional design. We believe that great design has the power to connect, inspire, and drive success. By understanding your unique vision and goals, we craft bespoke design solutions that resonate with your audience and stand out in the marketplace.",
+    "text_2": "We are your partners in digital success. We strive to exceed your expectations by delivering exceptional results that not only meet but surpass your business goals. Trust Unixeven to turn your ideas into reality and help your business thrive in the digital world."
+  },
+  "meetOurTeam": {
+    "title": "Meet our team",
+    "infoTeam": [
+      {
+        "id": "1",
+        "url": "/images/OurTeamImage/1.webp",
+        "name": "Danylo Diachenko",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "2",
+        "url": "/images/OurTeamImage/2.webp",
+        "name": "Gnome 2",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "3",
+        "url": "/images/OurTeamImage/3.webp",
+        "name": "Gnome 3",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "4",
+        "url": "/images/OurTeamImage/4.webp",
+        "name": "Anna",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "5",
+        "url": "/images/OurTeamImage/5.webp",
+        "name": "Gnome 4",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "6",
+        "url": "/images/OurTeamImage/6.webp",
+        "name": "Gnome 5",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      },
+      {
+        "id": "7",
+        "url": "/images/OurTeamImage/7.webp",
+        "name": "Gnome 6",
+        "positionWork": "Developer",
+        "aboutPerson": ""
+      }
+    ]
+  },
+  "services": {
+    "titleSection": "Our Services",
+    "ourServices": [
+      {
+        "id": 1,
+        "title": "Web Dev Solutions",
+        "icon": "laptop-webrepo",
+        "category": "Development",
+        "content": "We offer comprehensive solutions for developing high-quality, intuitive websites. We combine innovative design, advanced technologies, and a personalized approach to each project to ensure a unique user experience and maximum audience engagement. Our team of professionals is ready to bring your ideas to life.",
+        "subsections": {
+          "Design and Development": [
+            {
+              "id": 1,
+              "title": "Detailed coverage of the web design and development process, including user interface and interaction, as well as front-end and back-end development."
+            }
+          ],
+          "E-commerce Expertise": [
+            {
+              "id": 1,
+              "title": "Discusses the creation of online stores, including payment system integration, product catalog management, and transaction security."
+            }
+          ],
+          "SEO and Marketing": [
+            {
+              "id": 1,
+              "title": "Explains how to optimize the website for search engines and methods for online promotion to attract the target audience."
+            }
+          ],
+          "Responsive Web Design": [
+            {
+              "id": 1,
+              "title": "Discusses the importance and methods of developing websites that work effectively on various devices and screens (mobile, tablets, desktops)."
+            }
+          ],
+          "Support and Maintenance": [
+            {
+              "id": 1,
+              "title": "Information about provided website support and update services, including regular content updates, technical support, and website security assurance."
+            }
+          ]
+        }
+      },
+      {
+        "id": 2,
+        "title": "QA Testing",
+        "category": "Quality Assurance",
+        "icon": "test",
+        "content": "Our Quality Assurance services ensure that all your digital solutions meet the highest standards of quality. From automated testing to comprehensive manual checks, we safeguard your software against potential faults and bugs to deliver a seamless end-user experience.",
+        "subsections": {
+          "Functional Testing": [
+            {
+              "id": 1,
+              "title": "Validating software actions for all user requirements, ensuring accurate functionality and behavior."
+            }
+          ],
+          "Usability Testing": [
+            {
+              "id": 2,
+              "title": "Assessing the application's user interface and user experience to ensure intuitive navigation and ease of use."
+            }
+          ],
+          "Performance Testing": [
+            {
+              "id": 3,
+              "title": "Evaluating performance under various conditions to ensure reliability, speed, and scalability."
+            }
+          ],
+          "Security Testing": [
+            {
+              "id": 4,
+              "title": "Identifying vulnerabilities and security gaps to protect against threats and data breaches."
+            }
+          ],
+          "Automation Testing": [
+            {
+              "id": 5,
+              "title": "Utilizing automated test scripts to increase efficiency and coverage of the test cycles."
+            }
+          ]
+        }
+      },
+      {
+        "id": 3,
+        "title": "UI/UX Design",
+        "category": "Design",
+        "icon": "web-uiux",
+        "content": "Our UI/UX Design services focus on creating engaging and aesthetically pleasing interfaces that provide seamless user experiences. Through meticulous research and innovative design practices, we ensure that our designs meet the needs of your target audience and align with your business goals.",
+        "subsections": {
+          "User Research": [
+            {
+              "id": 1,
+              "title": "Employs various methodologies to understand user needs and behaviors to inform design decisions."
+            }
+          ],
+          "Prototyping": [
+            {
+              "id": 2,
+              "title": "Creating blueprints and interactive prototypes to visualize the structure and flow of the digital product."
+            }
+          ],
+          "UI Design": [
+            {
+              "id": 3,
+              "title": "Crafting visually stunning interface designs that enhance user interaction and engagement."
+            }
+          ],
+          "UX Design": [
+            {
+              "id": 4,
+              "title": "Focusing on the overall feel of the experience, ensuring the product logically flows from one step to the next."
+            }
+          ],
+          "Interaction Design": [
+            {
+              "id": 5,
+              "title": "Designing interactive elements to create meaningful relationships between users and the product."
+            }
+          ]
+        }
+      },
+      {
+        "id": 4,
+        "title": "Server-Side Dev",
+        "category": "Backend Development",
+        "icon": "server-dev",
+        "content": "Our server-side development services focus on creating robust and scalable backend systems that power your applications. Utilizing the latest frameworks and technologies, we ensure that your server architecture is secure, efficient, and capable of handling complex business logic and data processing.",
+        "subsections": {
+          "API Development": [
+            {
+              "id": 1,
+              "title": "Designing and implementing secure, scalable, and maintainable APIs for seamless integration between different systems and services."
+            }
+          ],
+          "Database Design": [
+            {
+              "id": 2,
+              "title": "Structuring and optimizing databases for high performance and reliability in data storage and retrieval."
+            }
+          ],
+          "Cloud Services": [
+            {
+              "id": 3,
+              "title": "Leveraging cloud platforms for enhanced server-side capabilities, providing scalable and flexible infrastructure solutions."
+            }
+          ],
+          "Security and Compliance": [
+            {
+              "id": 4,
+              "title": "Implementing industry-standard security practices and ensuring compliance with legal and regulatory requirements for data protection."
+            }
+          ],
+          "Server-Side Scripting": [
+            {
+              "id": 5,
+              "title": "Creating dynamic web page content and server-side applications using various scripting languages and frameworks."
+            }
+          ]
+        }
+      },
+      {
+        "id": 5,
+        "title": "Mobile App Dev",
+        "category": "Mobile Development",
+        "icon": "mob-cod",
+        "content": "We specialize in crafting mobile applications that offer compelling user experiences and robust functionality. Our end-to-end mobile app development services cover everything from concept to deployment, ensuring your app performs seamlessly across all devices and platforms.",
+        "subsections": {
+          "iOS Development": [
+            {
+              "id": 1,
+              "title": "Creating custom iOS applications with a focus on clean design, user-friendly interface, and powerful features."
+            }
+          ],
+          "Android Development": [
+            {
+              "id": 2,
+              "title": "Building Android apps that are scalable, efficient, and tailored to the Android ecosystem, ensuring broad compatibility."
+            }
+          ],
+          "Cross-platform Development": [
+            {
+              "id": 3,
+              "title": "Utilizing frameworks like React Native or Flutter to develop apps that deliver a native-like experience on both iOS and Android."
+            }
+          ],
+          "UI/UX Design for Mobile": [
+            {
+              "id": 4,
+              "title": "Designing intuitive and engaging mobile interfaces and experiences that captivate users and drive engagement."
+            }
+          ],
+          "Mobile App Testing": [
+            {
+              "id": 5,
+              "title": "Ensuring the highest quality and performance of your mobile app with our comprehensive testing services."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "workProcesses": {
+    "title": "Working Process",
+    "processes": [
+      {
+        "id": 1,
+        "name": "Agile Development",
+
+        "details": {
+          "Iterative Planning & Execution": "Application of iterative planning and development, allowing quick adaptation to changes and regular feedback from clients.",
+          "Cross-Functional Teams": "Working in cross-functional teams to ensure flexibility and improve communication between developers, designers, and project managers."
+        }
+      },
+      {
+        "id": 2,
+        "name": "Innovation & Research",
+
+        "details": {
+          "Emerging Technologies": "Exploration and application of the latest technologies for continuous improvement of developments and offering clients advanced solutions.",
+          "R&D Initiatives": "Research and development initiatives that help discover new opportunities and create innovative products."
+        }
+      },
+      {
+        "id": 3,
+        "name": "Project Start & Estimation",
+
+        "details": {
+          "Expertise Assessment": "Analysis of resources, capabilities, and constraints of the project to determine its viability and potential success.",
+          "Estimate & Proposal": "Developing a detailed plan and budget for the project, including timelines and required resources."
+        }
+      },
+      {
+        "id": 4,
+        "name": "Planning & Strategy",
+
+        "details": {
+          "Research & Analysis": "Analysis of user needs and competitive environment to develop a product strategy.",
+          "User Story & Mockups": "Creating preliminary product concepts, visualizing its functions and user interaction."
+        }
+      },
+      {
+        "id": 5,
+        "name": "Design & Prototyping",
+
+        "details": {
+          "UI/UX Design": "Creating an intuitive and attractive interface that meets user needs.",
+          "Prototyping": "Visualization of the product concept and its testing to validate the idea and gather feedback."
+        }
+      },
+      {
+        "id": 6,
+        "name": "Dev & Implement",
+
+        "details": {
+          "Development Process": "Programming and creating a functional product according to the technical specification.",
+          "Server-Side Scripting": "Developing the server part of the product, including API and integration with other systems."
+        }
+      },
+      {
+        "id": 7,
+        "name": "Quality Assurance & Testing",
+
+        "details": {
+          "QA Testing": "Testing the product for compliance with functional requirements and usability.",
+          "Performance & Security Testing": "Assessing the reliability, performance speed, and security of the product against potential threats."
+        }
+      },
+      {
+        "id": 8,
+        "name": "Deployment & Delivery",
+
+        "details": {
+          "Delivery": "Integrating the product into the operational environment and its launch.",
+          "Cloud Services": "Supporting cloud infrastructure and ensuring continuous operation of the product."
+        }
+      },
+      {
+        "id": 9,
+        "name": "Evaluation & Growth",
+
+        "details": {
+          "Success Measurement": "Analyzing project results, including assessing efficiency and receiving feedback from users.",
+          "Continuous Improvement": "Constant optimization of the product, its updating, and development in accordance with changing requirements and technologies."
+        }
+      },
+      {
+        "id": 10,
+        "name": "Support & Evolution",
+
+        "details": {
+          "Support": "Technical maintenance of the product, ensuring its stable operation and solving emerging problems.",
+          "Evolution": "Development of the product, adapting it to new market requirements, and implementing improvements to meet user needs."
+        }
+      }
+    ]
+  },
+  "clientsSay": { "title": "What our clients say" },
+  "portfolio": {
+    "title": "Our Portfolio",
+    "slides": [
+      {
+        "id": 1,
+        "src": "/images/ourPortfolio/image1.webp",
+        "alt": "Project 1",
+        "ariaLabel": "Slide 1"
+      },
+      {
+        "id": 2,
+        "src": "/images/ourPortfolio/image2.webp",
+        "alt": "Project 2",
+        "ariaLabel": "Slide 2"
+      },
+      {
+        "id": 3,
+        "src": "/images/ourPortfolio/image3.webp",
+        "alt": "Project 3",
+        "ariaLabel": "Slide 3"
+      },
+      {
+        "id": 4,
+        "src": "/images/ourPortfolio/image4.webp",
+        "alt": "Project 4",
+        "ariaLabel": "Slide 4"
+      },
+      {
+        "id": 5,
+        "src": "/images/ourPortfolio/image5.webp",
+        "alt": "Project 5",
+        "ariaLabel": "Slide 5"
+      },
+      {
+        "id": 6,
+        "src": "/images/ourPortfolio/image6.webp",
+        "alt": "Project 6",
+        "ariaLabel": "Slide 6"
+      }
+    ]
+  },
+
+  "contacts": {
+    "title": "Contact  us",
+    "subTitle": "Have any project in mind?",
+    "spanText": "project",
+    "textButton": "Make a request"
+  },
+  "footer": {
+    "title": {
+      "services": "Services",
+      "onlineChat": "Online chat",
+      "contactUs": "Contact us"
+    },
+    "servicesList": [
+      "Web Dev Solutions",
+      "QA Testing",
+      "UI/UX Design",
+      "Server-Side Dev",
+      "Mobile App Dev"
+    ],
+    "onlineChat": {
+      "telegram": "Telegram",
+      "viber": "Viber"
+    },
+    "contactUs": {
+      "phone": "+380967845734",
+      "email": "email458678@gmail.com"
+    }
+  }
+}
