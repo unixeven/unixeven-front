@@ -1,11 +1,14 @@
-import React, { FC } from "react";
-import Image from "next/image";
-import aboutUs_1 from "../../../public/images/aboutUs_1.webp";
-import aboutUs_2 from "../../../public/images/aboutUs_2.webp";
-import aboutUs_3 from "../../../public/images/aboutUs_3.webp";
-import aboutUs_4 from "../../../public/images/aboutUs_4.webp";
-import { TitleSections } from "../TitleSection/TitleSection";
-import { AboutUsSection } from "@/types/difinitions";
+import { FC } from 'react';
+import Image from 'next/image';
+
+import aboutUs_1 from '../../../public/images/aboutUs_1.webp';
+import aboutUs_2 from '../../../public/images/aboutUs_2.webp';
+import aboutUs_3 from '../../../public/images/aboutUs_3.webp';
+import aboutUs_4 from '../../../public/images/aboutUs_4.webp';
+
+import { TitleSections } from '../TitleSection/TitleSection';
+
+import { AboutUsSection } from '@/types/difinitions';
 
 interface AboutUsProps {
   aboutUs: AboutUsSection;

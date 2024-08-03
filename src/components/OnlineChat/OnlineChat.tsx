@@ -1,6 +1,8 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { FaTelegramPlane, FaViber } from 'react-icons/fa';
+
 import { FooterTitle } from '../FooterTitle/FooterTitle';
+
 import { FooterData } from '@/types/difinitions';
 
 interface OnlineChatProps {

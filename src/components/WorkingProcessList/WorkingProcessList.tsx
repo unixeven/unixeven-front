@@ -1,13 +1,13 @@
-"use client";
+'use client';
 
-import React, { FC, useState } from "react";
+import { FC, useState } from 'react';
 
-import { WorkingLogo } from "../WorkingLogo/WorkingLogo";
+import { WorkingLogo } from '../WorkingLogo/WorkingLogo';
+import { Modal } from '../Modal/Modal';
+import { WorkProcessItem } from '../WorkProcessItem/WorkProcessItem';
+import { WorkingProcessDetails } from '../WorkingProcessDetails/WorkingProcessDetails';
 
-import { Modal } from "../Modal/Modal";
-import { WorkProcessItem } from "../WorkProcessItem/WorkProcessItem";
-import { WorkingProcessDetails } from "../WorkingProcessDetails/WorkingProcessDetails";
-import { Process, WorkProcesses } from "@/types/difinitions";
+import { Process, WorkProcesses } from '@/types/difinitions';
 
 interface WorkingProcessListProps {
   workProcesses: WorkProcesses;

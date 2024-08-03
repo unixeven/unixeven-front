@@ -1,13 +1,14 @@
 'use client';
 import { FC } from 'react';
+import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import { SliderNavigaionButton } from '../SliderNavigaionButton/SliderNavigaionButton';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-coverflow';
 
-import Image from 'next/image';
-
-import { SliderNavigaionButton } from '../SliderNavigaionButton/SliderNavigaionButton';
 import { swiperConfig } from './swiperConfig';
 
 import { Slide } from '@/types/difinitions';

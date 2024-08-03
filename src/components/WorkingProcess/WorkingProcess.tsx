@@ -1,9 +1,11 @@
 'use client';
 
-import React, { FC, useEffect, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+
 import { TitleSections } from '../TitleSection/TitleSection';
 import { WorkingProcessList } from '../WorkingProcessList/WorkingProcessList';
-import { gsap } from 'gsap';
+
 import { WorkProcesses } from '@/types/difinitions';
 
 interface WorkingProcessProps {

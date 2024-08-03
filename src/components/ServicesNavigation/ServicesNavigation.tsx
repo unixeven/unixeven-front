@@ -1,8 +1,10 @@
 'use client';
 
-import { FooterTitle } from '../FooterTitle/FooterTitle';
 import { Link } from 'react-scroll';
 import { FC, KeyboardEvent } from 'react';
+
+import { FooterTitle } from '../FooterTitle/FooterTitle';
+
 import { FooterData } from '@/types/difinitions';
 
 interface ServicesNavigationProps {

@@ -1,8 +1,10 @@
 import React, { FC } from 'react';
+
 import { Logo } from '../Logo/Logo';
 import { ServicesNavigation } from '../ServicesNavigation/ServicesNavigation';
 import { OnlineChat } from '../OnlineChat/OnlineChat';
 import { ContactInfo } from '../ContactInfo/ContactInfo';
+
 import { FooterData } from '@/types/difinitions';
 
 interface FooterProps {

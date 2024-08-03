@@ -1,11 +1,13 @@
 'use client';
 
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
+
 import { Button } from '../Button/Button';
 import { TitleContactUs } from '../TitleContactUs/TitleContactUs';
 import { SocialContactUs } from '../SocialContactUs/SocialContactUs';
 import { Modal } from '../Modal/Modal';
 import { FormContactUs } from '../FormContactUs/FormContactUs';
+
 import { ContactsData } from '@/types/difinitions';
 
 interface ContactUsProps {

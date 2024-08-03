@@ -1,8 +1,9 @@
 'use client';
 
 import { FC, useState } from 'react';
-import { NavBar } from '../HeaderNavBar/NavBar';
 import { RxCross1 } from 'react-icons/rx';
+
+import { NavBar } from '../HeaderNavBar/NavBar';
 
 interface BurgerMenuProps {
   nav: { name: string; id: string }[];

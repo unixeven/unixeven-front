@@ -1,11 +1,11 @@
 'use client';
 
-// import services from '../../data/ourServices.json';
 import { FC, useState } from 'react';
 
 import { OurServicesItem } from '../OurServicesItem/OurServicesItem';
 import { ServicesDetails } from '../ServicesDetails/ServicesDetails';
 import { Modal } from '../Modal/Modal';
+
 import { Service, ServicesData } from '@/types/difinitions';
 
 interface OurServicesListProps {
