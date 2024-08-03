@@ -13,7 +13,6 @@ const initialState: InitialState = {
 
 export const FormContactUs = () => {
   const [state, formAction] = useFormState(createUserMessage, initialState);
-  console.log(`state:`, state);
 
   return (
     <form

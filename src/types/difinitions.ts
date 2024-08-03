@@ -1,3 +1,5 @@
+import { ZodFormattedError } from 'zod';
+
 export interface NavItem {
   name: string;
   id: string;
@@ -116,6 +118,7 @@ export interface Dictionary {
   contacts: ContactsData;
   footer: FooterData;
 }
+
 export interface DataMessage {
   name: string;
   email: string;
@@ -131,7 +134,7 @@ export interface Errors {
 
 export interface InitialState {
   message: string;
-  errors: Errors;
+  errors: Errors | ZodFormattedError<DataMessage>;
 }
 
 export interface SendMailResponse {
