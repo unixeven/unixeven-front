@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { InitialState } from '@/types/difinitions';
 
 interface InputFormProps {

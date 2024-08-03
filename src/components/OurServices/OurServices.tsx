@@ -1,6 +1,8 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+
 import { TitleSections } from '../TitleSection/TitleSection';
 import { OurServicesList } from '../OurServicesList/OurServicesList';
+
 import { ServicesData } from '@/types/difinitions';
 
 interface OurServicesProps {

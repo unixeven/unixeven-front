@@ -1,10 +1,11 @@
 'use client';
 
 import { FC } from 'react';
+
 import { TitleSections } from '../TitleSection/TitleSection';
+import { SwiperTeam } from '../SwiperTeam/SwiperTeam';
 
 import { MeetOurTeam } from '@/types/difinitions';
-import { SwiperTeam } from '../SwiperTeam/SwiperTeam';
 
 interface OurTeamProps {
   meetOurTeam: MeetOurTeam;

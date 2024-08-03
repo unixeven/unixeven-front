@@ -3,7 +3,6 @@
 import React, { useEffect, useState } from 'react';
 import { Switch } from '@nextui-org/react';
 import { MdLanguage } from 'react-icons/md';
-
 import { useParams, useRouter } from 'next/navigation';
 
 export const LanguageSwitcher = () => {

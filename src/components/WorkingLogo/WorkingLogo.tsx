@@ -1,6 +1,7 @@
-import React, { FC, useEffect, useRef } from 'react';
-import { Logo } from '../Logo/Logo';
+import { FC, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+
+import { Logo } from '../Logo/Logo';
 
 export const WorkingLogo: FC = () => {
   const logoRef = useRef<HTMLDivElement>(null);
@@ -27,7 +28,7 @@ export const WorkingLogo: FC = () => {
       ref={logoRef}
       className="hidden logo-container md:flex items-center justify-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
     >
-      <Logo width={203}  />
+      <Logo width={203} />
     </div>
   );
 };

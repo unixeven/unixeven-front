@@ -1,6 +1,8 @@
 import React, { FC } from 'react';
 import { FiMail, FiPhoneCall } from 'react-icons/fi';
+
 import { FooterTitle } from '../FooterTitle/FooterTitle';
+
 import { FooterData } from '@/types/difinitions';
 
 export interface ContactInfoProps {

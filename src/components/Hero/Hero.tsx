@@ -1,10 +1,12 @@
 'use client';
 
-import React, { FC, useEffect, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
+
 import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
 import { FormContactUs } from '../FormContactUs/FormContactUs';
+
 import { HeroData } from '@/types/difinitions';
 
 interface HeroProps {

@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
+
 import { Logo } from '../Logo/Logo';
 import { LanguageSwitcher } from '../HeaderLanguageSwitcher/LanguageSwitcher';
 import { NavBar } from '../HeaderNavBar/NavBar';
