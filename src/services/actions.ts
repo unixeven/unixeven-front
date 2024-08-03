@@ -1,12 +1,14 @@
 'use server';
 
-import { Errors } from '@/types/difinitions';
+import { DataMessage, Errors } from '@/types/difinitions';
 import { formDataSchema } from '@/utils/validationSchema';
+import { submitContactForm } from './api';
+import { ZodFormattedError } from 'zod';
 
 export const createUserMessage = async (
   prevState: {
     message: string;
-    errors: Errors;
+    errors: Errors | ZodFormattedError<DataMessage>;
   },
   formData: FormData
 ) => {
@@ -20,18 +22,17 @@ export const createUserMessage = async (
   const result = formDataSchema.safeParse(data);
 
   if (!result.success) {
+    const formattedErrors = result.error.format();
     return {
-      message: 'validation failed',
-      errors: result.error.format(),
+      message: 'Validation failed',
+      errors: formattedErrors,
     };
   }
 
   try {
-    // const response = await API call
-    console.log(data);
-    // if (!response.ok) {
-    //   throw new Error('Failed to send form data')
-    // }
+    const response = await submitContactForm(data);
+    console.log(`response:`, response);
+
     return {
       message: 'Form submitted successfully!',
       errors: {} as Errors,
