@@ -133,3 +133,7 @@ export interface InitialState {
   message: string;
   errors: Errors;
 }
+
+export interface SendMailResponse {
+  message: string;
+}

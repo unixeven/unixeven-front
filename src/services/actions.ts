@@ -2,6 +2,7 @@
 
 import { Errors } from '@/types/difinitions';
 import { formDataSchema } from '@/utils/validationSchema';
+import { submitContactForm } from './api';
 
 export const createUserMessage = async (
   prevState: {
@@ -27,11 +28,9 @@ export const createUserMessage = async (
   }
 
   try {
-    // const response = await API call
-    console.log(data);
-    // if (!response.ok) {
-    //   throw new Error('Failed to send form data')
-    // }
+    const response = await submitContactForm(data);
+    console.log(`response:`, response);
+
     return {
       message: 'Form submitted successfully!',
       errors: {} as Errors,
