@@ -55,6 +55,9 @@ const config: Config = {
           "url('/images/heroLeft-bg-md.webp'),url('/images/heroCentre-bg-desk.webp'),url('/images/heroRight-bg-md.webp')",
         "hero-bg-mob":
           "url('/images/heroLeft-bg-mob.webp'),url('/images/heroCentre-bg-mob.webp'),url('/images/heroRight-bg-mob.webp')",
+        "our-clients-mobile": "url('/images/our-clients/bg-mobile.png')",
+        "our-clients-tablet": "url('/images/our-clients/bg-tablet.png')",
+        "our-clients-desktop": "url('/images/our-clients/bg-desktop.png')",
       },
       backgroundPosition: {
         ourServicesPosition: "center 21px, center calc(100% - 12px)",

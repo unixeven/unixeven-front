@@ -1,6 +1,8 @@
 "use client";
 
 import { useRef } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Keyboard, Mousewheel } from "swiper/modules";
 
 import { TitleSections } from "../TitleSection/TitleSection";
 import { OurClientsFeedbackCard } from "../OurClientsFeedbackCard/OurClientsFeedbackCard";
@@ -8,6 +10,8 @@ import { OurClientsFeedbackCard } from "../OurClientsFeedbackCard/OurClientsFeed
 import ClientPhoto1 from "../../../public/images/our-clients/client-1.jpg";
 import ClientPhoto2 from "../../../public/images/our-clients/client-2.jpg";
 import ClientPhoto3 from "../../../public/images/our-clients/client-3.jpg";
+
+import "swiper/css";
 
 const data = [
   {
@@ -40,20 +44,41 @@ export const OurClients = () => {
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   return (
-    <section className="w-full py-16 px-4 md:py-20 md:px-28 xl:py-[88px] xl:px-24 bg-our-clients-mobile md:bg-our-clients-tablet xl:bg-our-clients-desktop bg-center bg-no-repeat bg-cover">
+    <section className="w-full py-16 px-4 md:py-20 md:px-28 xl:py-[88px] xl:px-24 bg-our-clients-mobile md:bg-our-clients-tablet xl:bg-our-clients-desktop bg-[center_bottom] bg-no-repeat bg-contain">
       <TitleSections
         text="What our clients say"
         id="our-clients-title"
         titleRef={titleRef}
       />
 
-      <ul>
-        {data.map((client) => (
-          <li key={client.id}>
-            <OurClientsFeedbackCard client={client} />
-          </li>
-        ))}
-      </ul>
+      <div className="mt-14 h-[1000px] xl:h-full xl:mt-16">
+        <Swiper
+          direction={"vertical"}
+          breakpoints={{
+            1280: {
+              direction: "horizontal",
+              spaceBetween: 32,
+            },
+          }}
+          modules={[Keyboard, Mousewheel]}
+          slidesPerView={3}
+          keyboard={{
+            enabled: true,
+            onlyInViewport: true,
+          }}
+          mousewheel
+          loop
+          className="h-full"
+        >
+          {[...data, ...data, ...data].map((client) => (
+            <SwiperSlide key={client.id}>
+              <div className="first:pt-10">
+                <OurClientsFeedbackCard client={client} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </section>
   );
 };
