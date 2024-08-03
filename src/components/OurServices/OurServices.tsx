@@ -3,7 +3,7 @@ import { FC } from 'react';
 import { TitleSections } from '../TitleSection/TitleSection';
 import { OurServicesList } from '../OurServicesList/OurServicesList';
 
-import { ServicesData } from '@/types/difinitions';
+import { ServicesData } from '@/types/definitions';
 
 interface OurServicesProps {
   services: ServicesData;

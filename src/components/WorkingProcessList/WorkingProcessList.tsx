@@ -7,7 +7,7 @@ import { Modal } from '../Modal/Modal';
 import { WorkProcessItem } from '../WorkProcessItem/WorkProcessItem';
 import { WorkingProcessDetails } from '../WorkingProcessDetails/WorkingProcessDetails';
 
-import { Process, WorkProcesses } from '@/types/difinitions';
+import { Process, WorkProcesses } from '@/types/definitions';
 
 interface WorkingProcessListProps {
   workProcesses: WorkProcesses;

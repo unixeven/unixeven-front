@@ -1,4 +1,4 @@
-import { Dictionary } from '@/types/difinitions';
+import { Dictionary } from '@/types/definitions';
 import 'server-only';
 
 export type Locale = keyof typeof dictionaries;

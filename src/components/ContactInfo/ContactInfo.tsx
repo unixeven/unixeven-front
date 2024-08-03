@@ -3,7 +3,7 @@ import { FiMail, FiPhoneCall } from 'react-icons/fi';
 
 import { FooterTitle } from '../FooterTitle/FooterTitle';
 
-import { FooterData } from '@/types/difinitions';
+import { FooterData } from '@/types/definitions';
 
 export interface ContactInfoProps {
   footer: FooterData;

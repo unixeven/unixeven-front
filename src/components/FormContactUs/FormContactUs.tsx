@@ -1,7 +1,7 @@
 'use client';
 
 import { createUserMessage } from '@/services/actions';
-import { Errors, InitialState } from '@/types/difinitions';
+import { Errors, InitialState } from '@/types/definitions';
 import { useFormState } from 'react-dom';
 import { Button } from '../Button/Button';
 import { InputForm } from '../InputForm/InputForm';

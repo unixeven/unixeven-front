@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Service } from '@/types/difinitions';
+import { Service } from '@/types/definitions';
 
 interface ServicesDetailsProps {
   service: Service;

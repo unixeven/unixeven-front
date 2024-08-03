@@ -2,7 +2,7 @@ import { FC, KeyboardEvent, useEffect, useRef } from 'react';
 import clsx from 'clsx';
 import { gsap } from 'gsap';
 
-import { Process } from '@/types/difinitions';
+import { Process } from '@/types/definitions';
 
 interface WorkProcessItemProps {
   process: Process;

@@ -7,7 +7,7 @@ import { Button } from '../Button/Button';
 import { Modal } from '../Modal/Modal';
 import { FormContactUs } from '../FormContactUs/FormContactUs';
 
-import { HeroData } from '@/types/difinitions';
+import { HeroData } from '@/types/definitions';
 
 interface HeroProps {
   hero: HeroData;

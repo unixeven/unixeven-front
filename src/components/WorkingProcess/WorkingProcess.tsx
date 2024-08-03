@@ -6,7 +6,7 @@ import { gsap } from 'gsap';
 import { TitleSections } from '../TitleSection/TitleSection';
 import { WorkingProcessList } from '../WorkingProcessList/WorkingProcessList';
 
-import { WorkProcesses } from '@/types/difinitions';
+import { WorkProcesses } from '@/types/definitions';
 
 interface WorkingProcessProps {
   workProcesses: WorkProcesses;

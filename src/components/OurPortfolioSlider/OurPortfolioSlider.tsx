@@ -11,7 +11,7 @@ import 'swiper/css/effect-coverflow';
 
 import { swiperConfig } from './swiperConfig';
 
-import { Slide } from '@/types/difinitions';
+import { Slide } from '@/types/definitions';
 
 interface SliderProps {
   slides: Slide[];
