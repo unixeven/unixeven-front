@@ -19,6 +19,8 @@ export const OnlineChat: FC<OnlineChatProps> = ({ footer }) => {
         <li className="flex items-center gap-2">
           <a
             href="https://t.me/yourUsername"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
             aria-label="Chat on Telegram"
           >
@@ -29,6 +31,8 @@ export const OnlineChat: FC<OnlineChatProps> = ({ footer }) => {
         <li className="flex items-center gap-2">
           <a
             href="viber://chat?number=+YourNumber"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
             aria-label="Chat on Viber"
           >
