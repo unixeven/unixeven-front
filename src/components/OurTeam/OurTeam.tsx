@@ -5,7 +5,7 @@ import { FC } from 'react';
 import { TitleSections } from '../TitleSection/TitleSection';
 import { SwiperTeam } from '../SwiperTeam/SwiperTeam';
 
-import { MeetOurTeam } from '@/types/difinitions';
+import { MeetOurTeam } from '@/types/definitions';
 
 interface OurTeamProps {
   meetOurTeam: MeetOurTeam;

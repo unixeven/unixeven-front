@@ -1,6 +1,6 @@
 'use server';
 
-import { DataMessage, Errors } from '@/types/difinitions';
+import { DataMessage, Errors } from '@/types/definitions';
 import { formDataSchema } from '@/utils/validationSchema';
 import { submitContactForm } from './api';
 import { ZodFormattedError } from 'zod';

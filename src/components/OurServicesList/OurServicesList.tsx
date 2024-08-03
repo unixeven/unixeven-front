@@ -6,7 +6,7 @@ import { OurServicesItem } from '../OurServicesItem/OurServicesItem';
 import { ServicesDetails } from '../ServicesDetails/ServicesDetails';
 import { Modal } from '../Modal/Modal';
 
-import { Service, ServicesData } from '@/types/difinitions';
+import { Service, ServicesData } from '@/types/definitions';
 
 interface OurServicesListProps {
   services: ServicesData;

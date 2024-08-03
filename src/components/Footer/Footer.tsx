@@ -5,7 +5,7 @@ import { ServicesNavigation } from '../ServicesNavigation/ServicesNavigation';
 import { OnlineChat } from '../OnlineChat/OnlineChat';
 import { ContactInfo } from '../ContactInfo/ContactInfo';
 
-import { FooterData } from '@/types/difinitions';
+import { FooterData } from '@/types/definitions';
 
 interface FooterProps {
   footer: FooterData;

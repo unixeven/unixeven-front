@@ -5,7 +5,7 @@ import { FC, KeyboardEvent } from 'react';
 
 import { FooterTitle } from '../FooterTitle/FooterTitle';
 
-import { FooterData } from '@/types/difinitions';
+import { FooterData } from '@/types/definitions';
 
 interface ServicesNavigationProps {
   footer: FooterData;

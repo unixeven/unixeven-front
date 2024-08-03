@@ -1,6 +1,6 @@
 import { FC, KeyboardEvent } from 'react';
 
-import { Service } from '@/types/difinitions';
+import { Service } from '@/types/definitions';
 
 interface OurServicesItemProps {
   service: Service;

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { Process } from '@/types/difinitions';
+import { Process } from '@/types/definitions';
 
 interface WorkingProcessDetailsProps {
   process: Process;

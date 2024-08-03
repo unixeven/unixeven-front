@@ -3,7 +3,7 @@ import { FaTelegramPlane, FaViber } from 'react-icons/fa';
 
 import { FooterTitle } from '../FooterTitle/FooterTitle';
 
-import { FooterData } from '@/types/difinitions';
+import { FooterData } from '@/types/definitions';
 
 interface OnlineChatProps {
   footer: FooterData;

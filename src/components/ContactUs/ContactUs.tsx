@@ -8,7 +8,7 @@ import { SocialContactUs } from '../SocialContactUs/SocialContactUs';
 import { Modal } from '../Modal/Modal';
 import { FormContactUs } from '../FormContactUs/FormContactUs';
 
-import { ContactsData } from '@/types/difinitions';
+import { ContactsData } from '@/types/definitions';
 
 interface ContactUsProps {
   contacts: ContactsData;

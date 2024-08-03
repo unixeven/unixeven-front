@@ -1,12 +1,5 @@
-import { StaticImageData } from "next/image";
-
-export interface IClientFeedback {
-  id: number;
-  name: string;
-  photo: StaticImageData | string;
-  stars: number;
-  feedback: string;
-}
+import { StaticImageData } from 'next/image';
+import { ZodFormattedError } from 'zod';
 
 export interface NavItem {
   name: string;
@@ -77,6 +70,14 @@ export interface WorkProcesses {
   processes: Process[];
 }
 
+export interface IClientFeedback {
+  id: number;
+  name: string;
+  photo: StaticImageData | string;
+  stars: number;
+  feedback: string;
+}
+
 export interface Slide {
   id: number;
   src: string;
@@ -126,6 +127,7 @@ export interface Dictionary {
   contacts: ContactsData;
   footer: FooterData;
 }
+
 export interface DataMessage {
   name: string;
   email: string;
@@ -141,5 +143,9 @@ export interface Errors {
 
 export interface InitialState {
   message: string;
-  errors: Errors;
+  errors: Errors | ZodFormattedError<DataMessage>;
+}
+
+export interface SendMailResponse {
+  message: string;
 }

@@ -8,7 +8,7 @@ import aboutUs_4 from '../../../public/images/aboutUs_4.webp';
 
 import { TitleSections } from '../TitleSection/TitleSection';
 
-import { AboutUsSection } from '@/types/difinitions';
+import { AboutUsSection } from '@/types/definitions';
 
 interface AboutUsProps {
   aboutUs: AboutUsSection;
