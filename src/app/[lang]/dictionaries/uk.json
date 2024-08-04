@@ -420,6 +420,7 @@
     "spanText": "ідея",
     "textButton": "Зв'яжіться з нами"
   },
+  "form": { "title": "Зв'яжіться з нами", "inputs": [{}] },
   "footer": {
     "title": {
       "services": "Послуги",
