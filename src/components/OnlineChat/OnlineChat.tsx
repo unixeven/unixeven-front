@@ -18,7 +18,7 @@ export const OnlineChat: FC<OnlineChatProps> = ({ footer }) => {
       <ul className="flex flex-col gap-2 text-lg font-normal">
         <li className="flex items-center gap-2">
           <a
-            href="https://t.me/yourUsername"
+            href="https://t.me/UnixevenBot"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 transition-colors duration-300 dark:hover:text-pacificBlue hover:text-lightWhite focus:text-lightWhite dark:focus:text-pacificBlue focus:outline-none"
