@@ -431,7 +431,31 @@
     "spanText": "project",
     "textButton": "Make a request"
   },
-  "form": { "title": "Contact  us", "inputs": [{}] },
+  "form": { "title": "Contact  us", 
+  "inputs": [
+    {
+      "type": "text", 
+      "name": "name",
+      "placeholder": "Your name"
+    },
+    {
+      "type": "email", 
+      "name": "email",
+      "placeholder": "Your email"
+    },
+    {
+      "type": "tel", 
+      "name": "phoneNumber",
+      "placeholder": "Phone number"
+    }
+    ],
+  "textarea": {
+    "name": "messageContact",
+    "placeholder": "Your Message..."
+
+  },
+  "buttonText": "Send"
+  },
   "footer": {
     "title": {
       "services": "Services",

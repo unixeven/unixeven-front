@@ -114,6 +114,24 @@ export interface FooterData {
   };
 }
 
+export interface FormInput { 
+  type: string;
+  name: string;
+  placeholder: string;
+}
+
+export interface FormTextarea {
+  name: string;
+  placeholder: string;
+}
+
+export interface FormStructure {
+  title: string;
+  inputs: FormInput[];
+  textarea: FormTextarea;
+  buttonText: string;
+}
+
 export interface Dictionary {
   lang: string[];
   header: Header;
@@ -126,6 +144,7 @@ export interface Dictionary {
   portfolio: Portfolio;
   contacts: ContactsData;
   footer: FooterData;
+  form: FormStructure;
 }
 
 export interface DataMessage {
@@ -149,3 +168,4 @@ export interface InitialState {
 export interface SendMailResponse {
   message: string;
 }
+

@@ -416,11 +416,37 @@
   },
   "contacts": {
     "title": "Зв'яжіться з нами",
-    "subTitle": "Є ідея для проекту?",
+    "subTitle": "Є ідея для проєкту?",
     "spanText": "ідея",
     "textButton": "Зв'яжіться з нами"
   },
-  "form": { "title": "Зв'яжіться з нами", "inputs": [{}] },
+  "form": { "title": "Зв'яжіться з нами", 
+  "inputs": [
+    {
+      "type": "text", 
+      "name": "name",
+      "placeholder": "Ваше ім'я"
+    },
+    {
+      "type": "email", 
+      "name": "email",
+      "placeholder": "Ваша електронна пошта"
+    },
+    {
+      "type": "tel", 
+      "name": "phoneNumber",
+      "placeholder": "Контактний номер телефону"
+    }
+    ],
+  "textarea": {
+    "name": "messageContact",
+    "placeholder": "Ваша повідомлення..."
+
+  },
+  "buttonText": "Відправити"
+  
+
+  },
   "footer": {
     "title": {
       "services": "Послуги",

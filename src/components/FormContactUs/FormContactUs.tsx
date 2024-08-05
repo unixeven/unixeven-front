@@ -1,10 +1,13 @@
 'use client';
 
 import { createUserMessage } from '@/services/actions';
-import { Errors, InitialState } from '@/types/definitions';
+import { Errors, FormStructure, InitialState } from '@/types/definitions';
 import { useFormState } from 'react-dom';
 import { Button } from '../Button/Button';
 import { InputForm } from '../InputForm/InputForm';
+import { useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { getDictionary } from '@/app/[lang]/dictionaries';
 
 const initialState: InitialState = {
   message: '',
@@ -13,7 +16,24 @@ const initialState: InitialState = {
 
 export const FormContactUs = () => {
   const [state, formAction] = useFormState(createUserMessage, initialState);
-
+  const [formData, setFormData] = useState <FormStructure | null>(null)
+  const { lang } = useParams();
+  
+  
+  useEffect(() => { 
+    const langData = async () => {
+      if (lang === 'uk' || lang === 'en') {
+        const data = await getDictionary(lang)
+        setFormData(data.form)
+      }
+    }
+    langData()
+  }, [lang])
+  
+  if (!formData) { return <p>Loading...</p> }
+  
+  const { title, inputs, textarea, buttonText } = formData
+  
   return (
     <form
       action={formAction}
@@ -24,30 +44,22 @@ export const FormContactUs = () => {
         id="form-title"
         className="font-montserrat text-[40px]/normal tracking-[1.2px] font-normal text-cobalt dark:text-lightWhite"
       >
-        Contact us
+        {title}
       </h2>
-      <InputForm
-        type="text"
-        name="name"
-        placeholder="Your name"
+      {inputs.map((input, index ) =>
+        <InputForm
+        key={index}
+        type={input.type}
+        name={input.name}
+        placeholder={input.placeholder}
         state={state}
-      />
-      <InputForm
-        type="email"
-        name="email"
-        placeholder="Your email"
-        state={state}
-      />
-      <InputForm
-        type="tel"
-        name="phoneNumber"
-        placeholder="Phone number"
-        state={state}
-      />
+        />
+      )}
+     
       <label className="w-full relative">
         <textarea
-          name="messageContact"
-          placeholder="Your Message..."
+          name={textarea.name}
+          placeholder={textarea.placeholder}
           className="resize-none form-input min-h-[147px]"
           aria-label="Your Message"
         />
@@ -59,7 +71,7 @@ export const FormContactUs = () => {
       </label>
       <Button
         buttonType="submit"
-        text="Submit"
+        text={buttonText}
         className="btn-submit"
         handleModal={() => {}}
         ariaLabel="Submit Form"
