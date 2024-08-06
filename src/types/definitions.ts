@@ -23,7 +23,7 @@ export interface AboutUsSection {
 
 export interface TeamMember {
   id: string;
-  url: string;
+  url: StaticImageData | string;
   name: string;
   positionWork: string;
   aboutPerson: string;
@@ -84,7 +84,7 @@ export interface IClientFeedback {
 
 export interface Slide {
   id: number;
-  src: string;
+  src: StaticImageData | string;
   alt: string;
   ariaLabel: string;
 }

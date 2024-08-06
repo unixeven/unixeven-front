@@ -7,9 +7,9 @@ import { Keyboard, Mousewheel } from 'swiper/modules';
 import { TitleSections } from '../TitleSection/TitleSection';
 import { OurClientsFeedbackCard } from '../OurClientsFeedbackCard/OurClientsFeedbackCard';
 
-import ClientPhoto1 from '../../../public/images/our-clients/client-1.jpg';
-import ClientPhoto2 from '../../../public/images/our-clients/client-2.jpg';
-import ClientPhoto3 from '../../../public/images/our-clients/client-3.jpg';
+import ClientPhoto1 from '../../../public/images/our-clients/client-1.webp';
+import ClientPhoto2 from '../../../public/images/our-clients/client-2.webp';
+import ClientPhoto3 from '../../../public/images/our-clients/client-3.webp';
 
 import 'swiper/css';
 import { ClientsFeedbackTitle } from '@/types/definitions';
