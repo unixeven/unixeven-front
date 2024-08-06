@@ -45,7 +45,7 @@ export const OurServicesList: FC<OurServicesListProps> = ({ services }) => {
         onClose={handleCloseModal}
         className="modal-services"
         title="Our services details"
-        description={selectedServices ? selectedServices.title : undefined}
+        description={selectedServices?.title ?? ''}
       >
         {selectedServices && <ServicesDetails service={selectedServices} />}
       </Modal>
