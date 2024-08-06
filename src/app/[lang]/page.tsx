@@ -1,14 +1,14 @@
-import { AboutUs } from "@/components/AboutUs/AboutUs";
-import { ContactUs } from "@/components/ContactUs/ContactUs";
-import { Footer } from "@/components/Footer/Footer";
-import { Hero } from "@/components/Hero/Hero";
-import { OurClients } from "@/components/OurClients/OurClients";
-import { OurServices } from "@/components/OurServices/OurServices";
-import { OurTeam } from "@/components/OurTeam/OurTeam";
-import { WorkingProcess } from "@/components/WorkingProcess/WorkingProcess";
-import { getDictionary, Locale } from "./dictionaries";
-import { Header } from "@/components/Header/Header";
-import { OurPortfolio } from "@/components/OurPortfolio/OurPortfolio";
+import { AboutUs } from '@/components/AboutUs/AboutUs';
+import { ContactUs } from '@/components/ContactUs/ContactUs';
+import { Footer } from '@/components/Footer/Footer';
+import { Hero } from '@/components/Hero/Hero';
+import { OurClients } from '@/components/OurClients/OurClients';
+import { OurServices } from '@/components/OurServices/OurServices';
+import { OurTeam } from '@/components/OurTeam/OurTeam';
+import { WorkingProcess } from '@/components/WorkingProcess/WorkingProcess';
+import { getDictionary, Locale } from './dictionaries';
+import { Header } from '@/components/Header/Header';
+import { OurPortfolio } from '@/components/OurPortfolio/OurPortfolio';
 
 interface HomeProps {
   params: {

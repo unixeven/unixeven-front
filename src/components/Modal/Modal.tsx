@@ -11,7 +11,7 @@ interface ModalProps {
   onClose: () => void;
   className: string;
   title: string;
-  description?: string;
+  description: string;
 }
 
 export const Modal: FC<ModalProps> = ({
@@ -71,7 +71,7 @@ export const Modal: FC<ModalProps> = ({
       <dialog
         aria-modal="true"
         aria-labelledby="modal-title"
-        aria-describedby={description ? 'modal-description' : undefined}
+        aria-describedby="modal-description"
         className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-5"
         open
       >

@@ -48,7 +48,7 @@ export const WorkingProcessList: FC<WorkingProcessListProps> = ({
         onClose={handleCloseModal}
         className="modal-workingProcess"
         title="Working process details"
-        description={selectedProcess ? selectedProcess.name : undefined}
+        description={selectedProcess?.name ?? ''}
       >
         {selectedProcess && <WorkingProcessDetails process={selectedProcess} />}
       </Modal>
