@@ -20,6 +20,7 @@ export const SwiperTeam: FC<SwiperTeamProps> = ({ meetOurTeam }) => {
 
   return (
     <Swiper
+      aria-live="polite"
       modules={[FreeMode, Pagination, Keyboard, Mousewheel]}
       breakpoints={{
         320: { slidesPerView: 1, spaceBetween: 10 },
@@ -27,6 +28,7 @@ export const SwiperTeam: FC<SwiperTeamProps> = ({ meetOurTeam }) => {
         950: { slidesPerView: 3, spaceBetween: 16 },
         1280: { slidesPerView: 4, spaceBetween: 24 },
       }}
+      grabCursor={true}
       keyboard={{ enabled: true, onlyInViewport: true }}
       mousewheel={true}
       loop={true}
