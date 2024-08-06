@@ -1,8 +1,8 @@
-import Image from "next/image";
-import { IClientFeedback } from "@/types/definitions";
+import Image from 'next/image';
+import { IClientFeedback } from '@/types/definitions';
 
-import Star from "../../../public/icons/star.svg";
-import NotFilledStar from "../../../public/icons/star-not-filled.svg";
+import Star from '../../../public/icons/star.svg';
+import NotFilledStar from '../../../public/icons/star-not-filled.svg';
 
 export const OurClientsFeedbackCard = ({
   client,
@@ -14,13 +14,17 @@ export const OurClientsFeedbackCard = ({
       <div
         className="!rounded-[32px] before:!rounded-[32px] m-[2px] h-full gradient-border py-14 px-5 flex flex-col items-center"
         tabIndex={0}
+        aria-label={`Feedback from ${client.name}`}
       >
-        <div className="absolute -top-10 left-1/2 -translate-x-1/2 flex justify-center items-center w-[94px] h-[94px] border-3 border-lightWhite rounded-full">
+        <div
+          className="absolute -top-10 left-1/2 -translate-x-1/2 flex justify-center items-center w-[94px] h-[94px] border-3 border-lightWhite rounded-full"
+          aria-hidden="true"
+        >
           <Image
             src={client.photo}
             width={91}
             height={91}
-            alt={client.name}
+            alt={`${client.name}'s photo`}
             className="w-[91px] h-[91px] object-cover rounded-full"
           />
         </div>
@@ -42,7 +46,7 @@ export const OurClientsFeedbackCard = ({
                   src={Star}
                   width={22}
                   height={22}
-                  alt="Rating star"
+                  alt="Filled rating star"
                   className="w-5 h-5 object-contain"
                 />
               ) : (
@@ -51,14 +55,14 @@ export const OurClientsFeedbackCard = ({
                   src={NotFilledStar}
                   width={22}
                   height={22}
-                  alt="Rating star"
+                  alt="Empty rating star"
                   className="w-5 h-5 object-contain"
                 />
               )
             )}
           </div>
 
-          <p className="text-center text-base tracking-[0.48px] h-[120px]  text-prussianBlue dark:text-white">
+          <p className="text-center text-base tracking-[0.48px] h-[120px] text-prussianBlue dark:text-white">
             {client.feedback}
           </p>
         </div>
