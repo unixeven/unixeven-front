@@ -1,5 +1,5 @@
-import { StaticImageData } from "next/image";
-import { ZodFormattedError } from "zod";
+import { StaticImageData } from 'next/image';
+import { ZodFormattedError } from 'zod';
 
 export interface NavItem {
   name: string;
@@ -46,7 +46,7 @@ export interface Service {
   category: string;
   content: string;
   subsections: {
-    [key: string]: ServiceSubsection[];
+    [key: string]: ServiceSubsection[] | undefined;
   };
 }
 
@@ -56,7 +56,7 @@ export interface ServicesData {
 }
 
 export interface WorkProcessDetails {
-  [key: string]: string;
+  [key: string]: string | undefined;
 }
 
 export interface Process {
