@@ -382,7 +382,9 @@
       }
     ]
   },
-  "clientsSay": { "title": "What our clients say" },
+  "clientsSay": {
+    "title": "What our clients say"
+  },
   "portfolio": {
     "title": "Our Portfolio",
     "slides": [
@@ -431,30 +433,30 @@
     "spanText": "project",
     "textButton": "Make a request"
   },
-  "form": { "title": "Contact  us", 
-  "inputs": [
-    {
-      "type": "text", 
-      "name": "name",
-      "placeholder": "Your name"
-    },
-    {
-      "type": "email", 
-      "name": "email",
-      "placeholder": "Your email"
-    },
-    {
-      "type": "tel", 
-      "name": "phoneNumber",
-      "placeholder": "Phone number"
-    }
+  "form": {
+    "title": "Contact  us",
+    "inputs": [
+      {
+        "type": "text",
+        "name": "name",
+        "placeholder": "Your name"
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Your email"
+      },
+      {
+        "type": "tel",
+        "name": "phoneNumber",
+        "placeholder": "Phone number"
+      }
     ],
-  "textarea": {
-    "name": "messageContact",
-    "placeholder": "Your Message..."
-
-  },
-  "buttonText": "Send"
+    "textarea": {
+      "name": "messageContact",
+      "placeholder": "Your Message..."
+    },
+    "buttonText": "Send"
   },
   "footer": {
     "title": {

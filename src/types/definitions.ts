@@ -1,5 +1,5 @@
-import { StaticImageData } from 'next/image';
-import { ZodFormattedError } from 'zod';
+import { StaticImageData } from "next/image";
+import { ZodFormattedError } from "zod";
 
 export interface NavItem {
   name: string;
@@ -70,6 +70,10 @@ export interface WorkProcesses {
   processes: Process[];
 }
 
+export interface ClientsFeedbackTitle {
+  title: string;
+}
+
 export interface IClientFeedback {
   id: number;
   name: string;
@@ -114,7 +118,7 @@ export interface FooterData {
   };
 }
 
-export interface FormInput { 
+export interface FormInput {
   type: string;
   name: string;
   placeholder: string;
@@ -140,7 +144,7 @@ export interface Dictionary {
   meetOurTeam: MeetOurTeam;
   services: ServicesData;
   workProcesses: WorkProcesses;
-  // clientsSay: ClientsSay;
+  clientsSay: ClientsFeedbackTitle;
   portfolio: Portfolio;
   contacts: ContactsData;
   footer: FooterData;
@@ -168,4 +172,3 @@ export interface InitialState {
 export interface SendMailResponse {
   message: string;
 }
-
