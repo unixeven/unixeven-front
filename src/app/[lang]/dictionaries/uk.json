@@ -372,7 +372,9 @@
       }
     ]
   },
-  "clientsSay": { "title": "Що кажуть наші клієнти" },
+  "clientsSay": {
+    "title": "Відгуки наших клієнтів"
+  },
   "portfolio": {
     "title": "Наше Портфоліо",
     "slides": [
@@ -420,32 +422,30 @@
     "spanText": "ідея",
     "textButton": "Зв'яжіться з нами"
   },
-  "form": { "title": "Зв'яжіться з нами", 
-  "inputs": [
-    {
-      "type": "text", 
-      "name": "name",
-      "placeholder": "Ваше ім'я"
-    },
-    {
-      "type": "email", 
-      "name": "email",
-      "placeholder": "Ваша електронна пошта"
-    },
-    {
-      "type": "tel", 
-      "name": "phoneNumber",
-      "placeholder": "Контактний номер телефону"
-    }
+  "form": {
+    "title": "Зв'яжіться з нами",
+    "inputs": [
+      {
+        "type": "text",
+        "name": "name",
+        "placeholder": "Ваше ім'я"
+      },
+      {
+        "type": "email",
+        "name": "email",
+        "placeholder": "Ваша електронна пошта"
+      },
+      {
+        "type": "tel",
+        "name": "phoneNumber",
+        "placeholder": "Контактний номер телефону"
+      }
     ],
-  "textarea": {
-    "name": "messageContact",
-    "placeholder": "Ваша повідомлення..."
-
-  },
-  "buttonText": "Відправити"
-  
-
+    "textarea": {
+      "name": "messageContact",
+      "placeholder": "Ваша повідомлення..."
+    },
+    "buttonText": "Відправити"
   },
   "footer": {
     "title": {

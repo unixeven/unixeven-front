@@ -58,7 +58,7 @@ export const OurClientsFeedbackCard = ({
             )}
           </div>
 
-          <p className="text-center text-base tracking-[0.48px] h-[120px] overflow-y-scroll text-prussianBlue dark:text-white">
+          <p className="text-center text-base tracking-[0.48px] h-[120px]  text-prussianBlue dark:text-white">
             {client.feedback}
           </p>
         </div>
