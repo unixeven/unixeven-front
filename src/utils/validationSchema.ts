@@ -1,11 +1,20 @@
-import { EMAIL_REGEX, PHONE_NUMBER_REGEX } from '../constants/regexp';
+import {
+  EMAIL_REGEX,
+  NAME_REGEX,
+  PHONE_NUMBER_REGEX,
+} from '../constants/regexp';
 import { z } from 'zod';
 
 export const formDataSchema = z.object({
   name: z
     .string({ required_error: '*Name is required' })
     .min(1, { message: '*Name is required' })
-    .max(50, { message: '*Name can not exceed 50 characters' }),
+    .max(50, { message: '*Name can not exceed 50 characters' })
+    .transform(value => value.trim())
+    .refine(value => NAME_REGEX.test(value), {
+      message: '*Please enter a valid name.',
+    }),
+
   email: z
     .string({ required_error: '*Email is required' })
     .min(1, { message: '*Email is required' })
@@ -21,5 +30,7 @@ export const formDataSchema = z.object({
   messageContact: z
     .string({ required_error: '*Massage is required' })
     .min(1, { message: '*Field is required' })
-    .max(1000),
+    .max(1000, {
+      message: '*Max length is 1000 characters.',
+    }),
 });

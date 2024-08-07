@@ -13,7 +13,7 @@ export const Logo: FC<LogoProps> = ({ width }) => {
       src={logo}
       alt="Company Unixeven Logo"
       width={width}
-      className={`block ]`}
+      className={`block darken `}
     />
   );
 };

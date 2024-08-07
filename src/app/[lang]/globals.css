@@ -343,3 +343,11 @@ div.px-1.relative.flex-shrink-0 {
 .dark .portfolio .swiper-slide-active {
   --color-border-active: #049bbe;
 }
+
+.darken {
+  filter: brightness(0.7);
+}
+
+.dark .darken {
+  filter: none;
+}
