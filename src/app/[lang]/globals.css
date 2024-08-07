@@ -145,7 +145,7 @@ body {
   @apply gradient-border relative size-[358px] md:size-[727px] rounded-full  bg-gainsboro  !bg-modalWorkProcessLightBg bg-center   dark:bg-blackMain dark:bg-modalWorkProcessBg px-11 py-16 md:px-24 md:py-44 flex items-center justify-center;
 
   button {
-    @apply absolute right-[68px] top-[42px] size-5 md:size-8 md:right-32 md:top-32 text-cobalt dark:text-lightWhite;
+    @apply absolute right-[75px] top-[42px] size-5 md:size-8 md:right-32 md:top-32 text-cobalt dark:text-lightWhite;
   }
 }
 
