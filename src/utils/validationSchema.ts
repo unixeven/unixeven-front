@@ -21,5 +21,5 @@ export const formDataSchema = z.object({
   messageContact: z
     .string({ required_error: '*Massage is required' })
     .min(1, { message: '*Field is required' })
-    .max(500),
+    .max(1000),
 });

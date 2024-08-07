@@ -72,7 +72,7 @@ export const Modal: FC<ModalProps> = ({
         aria-modal="true"
         aria-labelledby="modal-title"
         aria-describedby="modal-description"
-        className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-5"
+        className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center overflow-auto bg-transparent px-4 md:px-5 "
         open
       >
         <button

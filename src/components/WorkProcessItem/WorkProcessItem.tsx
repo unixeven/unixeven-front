@@ -38,7 +38,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
       ref={itemRef}
       key={process.id}
       className={clsx(
-        'size-[171px] flex justify-center items-center cursor-pointer rounded-full',
+        'size-[163px] flex justify-center items-center cursor-pointer rounded-full',
         {
           'md:col-span-2 md:size-[162px] md:justify-self-center desk:col-span-1 desk:justify-self-end desk:self-end':
             index === 2,
@@ -68,7 +68,7 @@ export const WorkProcessItem: FC<WorkProcessItemProps> = ({
         tabIndex={0}
         aria-label={`Open modal for ${process.name}`}
       >
-        <h3 className="text-lightWhite px-2  hyphens-auto break-words text-balance w-full font-montserrat text-xl/5 md:text-[22px]/6 md:font-medium text-center font-bold tracking-[0.6px]">
+        <h3 className="text-lightWhite px-2  hyphens-auto break-words text-balance w-full font-montserrat text-lg/5 md:text-[22px]/6 md:font-medium text-center font-bold tracking-[0.6px]">
           {process.name}
         </h3>
       </button>
