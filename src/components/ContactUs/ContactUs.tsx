@@ -53,7 +53,7 @@ export const ContactUs: FC<ContactUsProps> = ({ contacts }) => {
         aria-labelledby="modal-contact-us-title"
         aria-describedby="modal-contact-us-description"
       >
-        <FormContactUs />
+        <FormContactUs onClose={handleCloseModal} />
       </Modal>
     </section>
   );
