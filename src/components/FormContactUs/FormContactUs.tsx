@@ -8,7 +8,6 @@ import { InputForm } from '../InputForm/InputForm';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { getDictionary } from '@/app/[lang]/dictionaries';
-import { toast } from 'react-toastify';
 
 const initialState: InitialState = {
   message: '',
@@ -37,7 +36,6 @@ export const FormContactUs: React.FC<FormContactUsProps> = ({ onClose }) => {
   useEffect(() => {
     if (state.message === 'Form submitted successfully!') {
       onClose();
-      toast.success('Заявка отправлена, скоро с вами свяжутся!');
     }
   }, [state.message, onClose]);
 
