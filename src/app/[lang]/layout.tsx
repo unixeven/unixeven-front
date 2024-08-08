@@ -10,7 +10,7 @@ import {
   Inter,
   Cinzel_Decorative,
 } from 'next/font/google';
-import { getDictionary, Locale } from './dictionaries';
+import { Locale } from './dictionaries';
 
 export const metadata: Metadata = {
   title: 'uniXeven',
