@@ -8,32 +8,45 @@ import { InputForm } from '../InputForm/InputForm';
 import { useParams } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { getDictionary } from '@/app/[lang]/dictionaries';
+import { toast } from 'react-toastify';
 
 const initialState: InitialState = {
   message: '',
   errors: {} as Errors,
 };
 
-export const FormContactUs = () => {
+interface FormContactUsProps {
+  onClose: () => void;
+}
+
+export const FormContactUs: React.FC<FormContactUsProps> = ({ onClose }) => {
   const [state, formAction] = useFormState(createUserMessage, initialState);
-  const [formData, setFormData] = useState <FormStructure | null>(null)
+  const [formData, setFormData] = useState<FormStructure | null>(null);
   const { lang } = useParams();
-  
-  
-  useEffect(() => { 
+
+  useEffect(() => {
     const langData = async () => {
       if (lang === 'uk' || lang === 'en') {
-        const data = await getDictionary(lang)
-        setFormData(data.form)
+        const data = await getDictionary(lang);
+        setFormData(data.form);
       }
+    };
+    langData();
+  }, [lang]);
+
+  useEffect(() => {
+    if (state.message === 'Form submitted successfully!') {
+      onClose();
+      toast.success('Заявка отправлена, скоро с вами свяжутся!');
     }
-    langData()
-  }, [lang])
-  
-  if (!formData) { return <p>Loading...</p> }
-  
-  const { title, inputs, textarea, buttonText } = formData
-  
+  }, [state.message, onClose]);
+
+  if (!formData) {
+    return <p>Loading...</p>;
+  }
+
+  const { title, inputs, textarea, buttonText } = formData;
+
   return (
     <form
       action={formAction}
@@ -46,16 +59,15 @@ export const FormContactUs = () => {
       >
         {title}
       </h2>
-      {inputs.map((input, index ) =>
+      {inputs.map((input, index) => (
         <InputForm
-        key={index}
-        type={input.type}
-        name={input.name}
-        placeholder={input.placeholder}
-        state={state}
+          key={index}
+          type={input.type}
+          name={input.name}
+          placeholder={input.placeholder}
+          state={state}
         />
-      )}
-     
+      ))}
       <label className="w-full relative">
         <textarea
           name={textarea.name}

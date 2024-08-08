@@ -79,7 +79,7 @@ export const Hero: FC<HeroProps> = ({ hero }) => {
         title="Contact us"
         description="Form contact us"
       >
-        <FormContactUs />
+        <FormContactUs onClose={handleCloseModal} />
       </Modal>
     </section>
   );

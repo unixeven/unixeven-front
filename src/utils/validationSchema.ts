@@ -25,7 +25,7 @@ export const formDataSchema = z.object({
     .string({ required_error: '*Phone number is required' })
     .min(1, { message: '*Phone number is required' })
     .regex(PHONE_NUMBER_REGEX, {
-      message: '*Please enter a valid Phone number',
+      message: '*example "+380123456789"',
     }),
   messageContact: z
     .string({ required_error: '*Massage is required' })
