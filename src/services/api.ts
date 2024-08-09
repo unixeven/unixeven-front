@@ -3,7 +3,7 @@ import { handleError } from './errorHandler';
 import { DataMessage, SendMailResponse } from '@/types/definitions';
 
 const instance = axios.create({
-  // baseURL: 'http://localhost:3000/api',
+  // baseURL: 'http://localhost:3001/api',
   baseURL: 'https://unixeven-backend.onrender.com/api',
 });
 
