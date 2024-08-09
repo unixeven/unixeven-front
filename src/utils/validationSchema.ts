@@ -1,9 +1,6 @@
-import {
-  EMAIL_REGEX,
-  NAME_REGEX,
-  PHONE_NUMBER_REGEX,
-} from '../constants/regexp';
 import { z } from 'zod';
+import { parsePhoneNumberFromString } from 'libphonenumber-js';
+import { EMAIL_REGEX, NAME_REGEX } from '../constants/regexp';
 
 export const formDataSchema = z.object({
   name: z
@@ -21,14 +18,22 @@ export const formDataSchema = z.object({
     .regex(EMAIL_REGEX, {
       message: '*Please enter a valid email address',
     }),
+
   phoneNumber: z
     .string({ required_error: '*Phone number is required' })
     .min(1, { message: '*Phone number is required' })
-    .regex(PHONE_NUMBER_REGEX, {
-      message: '*example "+380123456789"',
-    }),
+    .refine(
+      value => {
+        const phone = parsePhoneNumberFromString(value);
+        return phone?.isValid() || false;
+      },
+      {
+        message: '*Please number (e.g., +380123456789).',
+      }
+    ),
+
   messageContact: z
-    .string({ required_error: '*Massage is required' })
+    .string({ required_error: '*Message is required' })
     .min(1, { message: '*Field is required' })
     .max(1000, {
       message: '*Max length is 1000 characters.',
