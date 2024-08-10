@@ -32,8 +32,8 @@ export const Button: FC<ButtonProps> = ({
       onClick={handleModal}
       onKeyDown={handleKeyDown}
       aria-label={ariaLabel}
-      className={`${className} outline-0 btn dark:border-0 border-2 border-cobalt relative font-montserrat text-2xl/6 font-medium text-cobalt dark:text-lightWhite h-[70px] p-5 flex justify-center items-center gap-[10px]  transition-opacity duration-300 ease-in-out ${
-        pending ? 'opacity-50 !cursor-not-allowed' : 'opacity-100'
+      className={`${className} outline-0 btn dark:border-0 border-2 border-cobalt relative font-montserrat text-2xl/6 font-medium text-cobalt dark:text-lightWhite h-[70px] p-5 flex justify-center items-center gap-[10px]  transition-opacity duration-300 ease-in-out 
+        disabled:opacity-50 disabled:!cursor-not-allowed       
       }`}
     >
       {text}
