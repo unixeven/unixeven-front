@@ -6,9 +6,7 @@ interface TitleContactUsProps {
 }
 
 export const TitleContactUs: FC<TitleContactUsProps> = ({ text, spanText }) => {
-  
   const parts = text.split(spanText);
- 
 
   return (
     <h3

@@ -61,7 +61,7 @@ export const AboutUs: FC<AboutUsProps> = ({ aboutUs }) => {
             />
           </div>
         </div>
-        <div className="desk:w-1/2 flex flex-col justify-center items-center gap-6 font-montserrat text-2xl/9 font-normal tracking-[0.5px]  dark:text-lightWhite text-prussianBlue">
+        <div className="desk:w-1/2 flex flex-col justify-center items-center gap-6 font-montserrat text-xl/7 md:text-2xl/9 font-normal tracking-[0.5px]  dark:text-lightWhite text-prussianBlue">
           <p>{text_1}</p>
           <p>{text_2}</p>
         </div>
