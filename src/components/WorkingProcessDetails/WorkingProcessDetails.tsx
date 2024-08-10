@@ -10,13 +10,20 @@ export const WorkingProcessDetails: FC<WorkingProcessDetailsProps> = ({
   process,
 }) => {
   return (
-    <div className="size-full flex flex-col justify-center items-start w-full h-full text-sm md:text-2xl font-montserrat font-normal md:font-medium tracking-[0.48px] md:tracking-[0.5px] text-lightWhite">
+    <dl className="z-10  w-[270px] h-[160px] md:w-full md:h-full flex flex-col md:justify-center  text-sm md:text-2xl font-montserrat font-normal md:font-medium tracking-[0.48px] md:tracking-[0.5px] text-lightWhite overflow-y-auto dark:text-lightWhite text-cobalt">
       {Object.entries(process.details).map(([key, value]) => (
-        <dl key={key} className="mb-1 dark:text-lightWhite text-cobalt">
-          <dt className="underline uppercase font-bold">{key}:</dt>
-          <dd className="ml-2">{value}</dd>
-        </dl>
+        <>
+          <dt
+            key={`${key}-dt`}
+            className="underline uppercase font-bold w-full"
+          >
+            {key}:
+          </dt>
+          <dd key={`${key}-dd`} className="pl-2 w-full mb-2 last:mb-0">
+            {value}
+          </dd>
+        </>
       ))}
-    </div>
+    </dl>
   );
 };
